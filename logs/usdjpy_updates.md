@@ -681,3 +681,55 @@ A sustained break above 159.073 (session high) driven by a DXY recovery would ne
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** USD/JPY 158.868 (+0.31%) · DXY 99.084
+
+# USD/JPY Delta Update — 15:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 158.868 | **24h change:** +0.31% | **24h range:** 158.545–159.073
+- **Distance from R1 (159.073):** ~21 pips — sitting just under today's high
+- **Distance from S1 (158.545):** ~32 pips — intraday low provides near-term floor
+
+---
+
+### What Changed in the Last Hour
+The Reuters report of a US-Iran sanctions deal (14:48 UTC) has pulled the DXY off its session high to 99.084 (−0.20%), creating mild headwind for USD/JPY despite US 10Y yields pushing to session highs at 4.603%. The pair has stalled just below the 159.00 figure, reflecting a tug-of-war between risk-off JPY demand (Nikkei −2.71%, VIX +2.70%) and still-elevated US yields providing USD carry support. Net impulse over the past hour is modestly bearish for the pair.
+
+---
+
+### Bias
+**DRIFT** — conflicting forces (yield support vs. dollar retreat on geopolitical relief and risk-off equity flows) cap directional conviction. Expect consolidation with a mild downside lean near 158.70–158.90.
+
+| Scenario | Probability |
+|----------|------------|
+| Rise | 25% |
+| Drift | 45% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.30 |
+| R1 | 159.073 |
+| Spot | 158.868 |
+| S1 | 158.545 |
+| S2 | 158.20 |
+
+---
+
+### Triggers
+A sustained break above 159.073 (today's high) driven by a reversal in DXY back above 99.40 would neutralise the drift/fall bias and open a run toward 159.30.
+
+---
+
+### Confidence
+**52/100** — Cross-currents between rising US 10Y yields (bullish USD/JPY) and a weakening DXY on Iran deal headlines, combined with sharp Nikkei selling (JPY-supportive), produce a low-conviction setup ahead of FOMC Minutes later this week.
+
+---
+

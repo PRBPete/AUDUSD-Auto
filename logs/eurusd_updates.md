@@ -682,3 +682,55 @@ A sustained hourly close above **1.1660** shifts bias to Rise targeting 1.1700; 
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** EUR/USD 1.1643 (-0.19%) · DXY 99.083
+
+# EUR/USD Hourly Delta-Update — 15:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 1.1643 | 24h change: −0.19% | Range: 1.1612–1.1660
+- Distance from session high (1.1660): 17 pips; from session low (1.1612): 31 pips
+- DXY at 99.08, retreating from 99.41 intraday high; US10Y at cycle high 4.603%
+
+---
+
+### What Changed in the Last Hour
+The dominant driver is the Reuters report (14:48 UTC) of a prospective US-Iran sanctions deal, which has softened safe-haven dollar demand and allowed EUR/USD to stabilise above 1.1630 after earlier weakness. However, the rally is capped: US 10Y yields have pushed to session highs at 4.603%, compressing the EUR/USD ceiling as rate-differential pressure reasserts. Price action is essentially sideways-to-slightly-bid within the upper third of the daily range, with no clean directional momentum yet established.
+
+---
+
+### Bias
+**DRIFT** — The Iran headline provides mild EUR support, but rising US yields and elevated VIX (18.6, +2.48%) limit upside conviction. Expect consolidation with a mild offered tone into the London close.
+
+| Scenario | Probability |
+|---|---|
+| Rise (above 1.1660) | 20% |
+| Drift (1.1620–1.1660) | 55% |
+| Fall (below 1.1612) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1690 |
+| R1 | 1.1660 |
+| Spot | 1.1643 |
+| S1 | 1.1612 |
+| S2 | 1.1580 |
+
+---
+
+### Triggers
+A confirmed break and close above 1.1660 (session high) would neutralise the drift/soft-bearish bias and open a retest of 1.1690; conversely, a US10Y move through 4.62% or a denial of the Iran deal would likely accelerate a move toward S1 at 1.1612.
+
+---
+
+### Confidence
+**52/100** — Conflicting forces (Iran deal softening USD vs. yields at highs) produce a low-conviction setup; FOMC Minutes later this week add further uncertainty to directional commitment.
+
+---
+

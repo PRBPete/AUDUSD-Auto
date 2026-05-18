@@ -474,3 +474,55 @@ A sustained break and close above 1.3403 (session high) would shift bias to **Ri
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** GBP/USD 1.3392 (+0.01%) · DXY 99.084
+
+# GBP/USD Hourly Delta-Update — 15:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 1.3392 | 24h change: +0.01% | Near top of 1.3304–1.3403 range.
+- **DXY:** 99.08, down 0.20% — soft but holding above 99.00 support.
+- **US10Y:** 4.603%, at session high — yield pressure capping upside.
+
+---
+
+### What changed in the last hour
+The dominant driver in the past hour is a Reuters report (14:48 UTC) of a prospective US-Iran sanctions deal, which triggered a fresh leg lower in the dollar and lifted GBP/USD toward session highs near 1.3403. Price has consolidated just below that resistance, with the DXY pulled off its early 99.41 peak. Equity risk sentiment is mixed — S&P 500 and Nasdaq are modestly negative and VIX has risen to 18.57, tempering the risk-on impulse that would typically provide further GBP tailwind.
+
+---
+
+### Bias
+**DRIFT** — GBP/USD is pressing session highs but faces confluent resistance near 1.3403, rising US 10Y yields, and equity softness limiting clean upside momentum. A sustained break higher requires follow-through on the Iran narrative.
+
+| Scenario | Probability |
+|---|---|
+| Rise (above 1.3410+) | 28% |
+| Drift (1.3370–1.3403) | 47% |
+| Fall (below 1.3370) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3430 |
+| R1 | 1.3403 |
+| Spot | 1.3392 |
+| S1 | 1.3350 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A confirmed close above 1.3403 (24h high) on meaningful volume would neutralise the drift bias and open a run toward 1.3430; conversely, a DXY recovery through 99.40 combined with S&P 500 extending losses would shift bias to Fall.
+
+---
+
+### Confidence
+**54/100** — Iran headline is fresh and unconfirmed; conflicting signals from rising yields and equity weakness introduce material uncertainty over the 1–4 hour horizon.
+
+---
+

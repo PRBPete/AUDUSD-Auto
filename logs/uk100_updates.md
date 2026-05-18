@@ -477,3 +477,55 @@ A clean break and close above **10,375** (session high / R2) would invalidate th
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10325.3096 (+0.33%) · DXY 99.074
+
+# UK100 Delta Update — 15:01 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 10,325.3 | +0.33% on the session.
+- **24h range:** 10,151.45 – 10,375.73; spot sits ~96% through the range, near the upper bound.
+- **Distance from levels:** ~50pts below session high; ~174pts above session low.
+
+---
+
+### What Changed in the Last Hour
+UK100 has consolidated near session highs after an earlier surge driven by reports of progress in Iran–US negotiations, which supported risk appetite and pressured Brent lower. Anglo American's £2.9bn Australian coal asset disposal adds a modest M&A tailwind to the index. However, a deteriorating US session (S&P 500 –0.51%, Naz –0.77%, VIX +2.48% to 18.6) is capping upside and creating a divergence between European and US risk tone.
+
+---
+
+### Bias
+**DRIFT** — proximity to the session high (10,375.73) with weakening US equity momentum and a rising VIX limits conviction for a fresh leg higher; support is not yet threatened.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,350 |
+| Spot | 10,325 |
+| S1 | 10,275 |
+| S2 | 10,200 |
+
+---
+
+### Triggers
+A sustained break above **10,375** (session high) on continued Iran–US deal optimism would neutralise the drift bias and open a push toward 10,400+; conversely, a drop below **10,275** with VIX extending above 19.5 would shift bias to **FALL**.
+
+---
+
+### Confidence
+**52 / 100** — Cross-asset signals are mixed (copper and DAX supportive; US equities and VIX cautionary), and the Iran–US headline lacks confirmed resolution, reducing directional conviction.
+
+---
+

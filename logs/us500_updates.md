@@ -474,3 +474,55 @@ A sustained break above **7,435** (intraday resistance / upper range midpoint) o
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** US500 (S&P 500) 7395.6499 (-0.46%) · DXY 99.078
+
+## US500 Delta Update — 2026-05-18 15:01 UTC
+
+---
+
+### Snapshot
+- Spot: 7,395.65 | 24h change: −0.46% | Session range: 7,383.31–7,454.85
+- Distance from R1 (~7,420): −24 pts | Distance from S1 (~7,370): +26 pts
+- VIX at 18.58 (+2.37%), pressing toward the upper end of its session range.
+
+---
+
+### What Changed in the Last Hour
+US500 has drifted lower from the session midpoint, with the 10Y yield touching its session high of 4.603% — a fresh headwind for equity multiples. NVDA-specific selling pressure (AI capex sustainability concerns) is weighing on NAS100 (−0.71%), dragging broader sentiment. Iran-related oil news briefly lifted energy names but has not provided net index support, with Brent easing to $110.04 from a session high of $112.03.
+
+---
+
+### Bias
+**DRIFT → FALL** over the next 1–4 hours. Yield pressure at cycle highs, a firm VIX, and negative tech leadership create a modest downside lean into the close.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 45% |
+| Fall | 35% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,454 |
+| R1 | 7,420 |
+| Spot | 7,395 |
+| S1 | 7,370 |
+| S2 | 7,345 |
+
+---
+
+### Triggers
+A sustained move back above 7,420 — reclaiming the session midpoint alongside a US10Y pullback below 4.57% — would neutralise the drift/fall bias and open a retest of 7,454.
+
+---
+
+### Confidence
+**52 / 100** — Mixed signals: yield headwind and VIX elevation support the cautious lean, but a firming DXY has not materialised, copper is holding (+0.36%), and DAX/FTSE are green, limiting conviction on a decisive leg lower.
+
+---
+

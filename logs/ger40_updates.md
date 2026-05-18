@@ -471,3 +471,55 @@ A clean hourly close above 24,382 (session high) with VIX retreating below 18.00
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** GER40 (DAX 40) 24312.0 (+0.46%) · DXY 99.067
+
+# GER40 Delta-Update — 15:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 24,312 | +0.46% on the session.
+- Distance from session high (24,431): ~119 pts; from session low (23,797): ~515 pts.
+- Key psychological level 24,500 remains unbroken overhead; 24,000 is the nearest structural floor.
+
+---
+
+### What Changed in the Last Hour
+GER40 has pulled modestly off the session high of 24,431, consolidating in the upper quartile of the day's range. The primary driver remains the Iran-US nuclear negotiation progress headline from 06:15 UTC, which lifted European equities broadly — FTSE also holds gains (+0.34%). However, rising headwinds are emerging: VIX is up +2.59% to 18.62, US10Y has reached the session high of 4.603%, and both S&P 500 (-0.52%) and Nasdaq 100 (-0.80%) are softening, introducing modest late-session drag on DAX sentiment.
+
+---
+
+### Bias
+**DRIFT** — momentum has stalled below 24,431 resistance with Wall Street softness and rising yields capping upside. A clean breakout above the session high is needed to re-engage bulls.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,550 |
+| R1 | 24,431 |
+| Spot | 24,312 |
+| S1 | 24,100 |
+| S2 | 23,800 |
+
+---
+
+### Triggers
+A sustained move above 24,431 (session high) would invalidate the drift bias and open a run toward 24,550; conversely, a break below 24,100 shifts bias to **FALL** and re-exposes 23,800.
+
+---
+
+### Confidence
+**58/100** — Geopolitical tailwind is clear and copper/brent are broadly constructive, but conflicting signals from rising US yields, softening US equities, and a firming VIX limit conviction. No intraday German macro catalyst is visible to resolve the standoff.
+
+---
+

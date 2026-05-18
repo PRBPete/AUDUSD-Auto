@@ -674,3 +674,55 @@ A clean break and hold above **0.7187** (session high) neutralises the drift/bea
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** AUD/USD 0.7162 (-0.76%) · DXY 99.086
+
+# AUD/USD Delta Update — 15:01 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 0.7162 | 24h change: −0.76%
+- Distance from session high (0.7187): −25 pips; from session low (0.7123): +39 pips
+- DXY at 99.09, softening modestly but US10Y pressing session highs at 4.603%
+
+---
+
+### What Changed in the Last Hour
+AUD/USD is consolidating near the lower third of its daily range as conflicting forces offset each other. The Reuters report of a US-Iran sanctions deal (14:48 UTC) pulled the dollar marginally lower, providing a modest floor, while simultaneously weighing on Brent crude — a mild mixed signal for the commodity-linked AUD. Rising US10Y yields hitting session highs (4.603%) continue to cap topside recovery attempts, with equity weakness in Nikkei (−2.71%) and HSI (−1.68%) adding residual risk-off pressure that limits AUD upside.
+
+---
+
+### Bias
+**DRIFT** — Opposing forces (softer DXY vs. elevated US10Y yields, commodity support from copper offset by equity weakness) create a directionless near-term environment. Expect range-bound action with a mild downside skew.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 45% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7187 |
+| R1 | 0.7175 |
+| Spot | 0.7162 |
+| S1 | 0.7145 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break above 0.7187 (session high) on confirmed DXY weakness below 98.98 would neutralise the drift/bearish bias and open a short-term bullish leg; conversely, a break below 0.7123 on renewed yield or equity deterioration confirms the downside scenario.
+
+---
+
+### Confidence
+**52/100** — Competing macro signals (USD softness vs. yield headwinds, commodity support vs. Asian equity weakness) produce genuine directional ambiguity; no single dominant driver is in control this hour.
+
+---
+

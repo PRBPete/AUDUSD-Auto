@@ -468,3 +468,55 @@ A decisive reclaim above 29,220 on volume would neutralise the bearish drift bia
 
 ---
 
+## 2026-05-18 15:01 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 28987.2793 (-0.69%) · DXY 99.076
+
+# NAS100 Delta Update — 2026-05-18 15:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 28,987.28 | 24h change: –0.69%
+- **Distance from session high:** –399.26 pts (29,386.54); session low: +101.29 pts (28,885.99)
+- **VIX at 18.60** (+2.48%), sitting mid-range but elevated; US10Y at cycle session high of 4.603%.
+
+---
+
+### What Changed in the Last Hour
+NAS100 drifted lower into the 15:00 UTC window as US10Y yields touched their session high of 4.603%, amplifying rate-sensitive pressure on growth names. NVDA headlines around AI capex sustainability concerns are adding incremental headwinds to the tech-heavy index, a meaningful drag given its index weighting. The index has rejected any recovery attempt toward the 29,200 area and is now compressing toward the lower third of today's range.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,386 |
+| R1 | 29,200 |
+| Spot | 28,987 |
+| S1 | 28,886 |
+| S2 | 28,700 |
+
+---
+
+### Triggers
+A sustained reclaim above 29,200 on meaningful volume would neutralise the bearish bias and shift the setup back to neutral/drift.
+
+---
+
+### Confidence
+**52 / 100** — Directional lean is supported by rising yields, elevated VIX, and NVDA-specific risk sentiment, but intraday catalysts remain headline-driven (Iran/oil, Nvidia pre-earnings narrative) and macro cross-currents (DXY softness, resilient European equities) limit conviction. No intraday volume data available to confirm institutional flow alignment.
+
+---
+
