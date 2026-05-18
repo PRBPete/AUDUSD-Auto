@@ -1,9 +1,9 @@
 """
-Multi-pair FX hourly forecast monitor.
-Covers AUD/USD, USD/JPY, EUR/USD.
+Multi-instrument hourly forecast monitor.
+Covers FX pairs and global indices.
 
 Fetches live market data + recent news, calls the Anthropic API with a
-condensed COSTAR prompt, and appends the result to per-pair log files.
+condensed COSTAR prompt, and appends the result to per-instrument log files.
 
 Designed to run unattended on GitHub Actions, triggered hourly by cron-job.org.
 """
@@ -30,14 +30,24 @@ MAX_TOKENS = 2000
 REPO_ROOT = Path(__file__).resolve().parent
 LOG_DIR = REPO_ROOT / "logs"
 
-# Pairs to monitor
+# Instruments to monitor
 PAIRS = {
+    # FX pairs
     "AUDUSD": {"ticker": "AUDUSD=X", "name": "AUD/USD"},
     "USDJPY": {"ticker": "USDJPY=X", "name": "USD/JPY"},
     "EURUSD": {"ticker": "EURUSD=X", "name": "EUR/USD"},
+    "GBPUSD": {"ticker": "GBPUSD=X", "name": "GBP/USD"},
+    # Global indices
+    "US500":  {"ticker": "^GSPC",    "name": "US500 (S&P 500)"},
+    "NAS100": {"ticker": "^NDX",     "name": "NAS100 (NASDAQ 100)"},
+    "UK100":  {"ticker": "^FTSE",    "name": "UK100 (FTSE 100)"},
+    "GER40":  {"ticker": "^GDAXI",   "name": "GER40 (DAX 40)"},
+    "HK50":   {"ticker": "^HSI",     "name": "HK50 (Hang Seng)"},
+    "JPN225": {"ticker": "^N225",    "name": "JPN225 (Nikkei 225)"},
 }
 
-# Shared context tickers (correlated assets)
+# Shared context tickers (correlated assets).
+# Any ticker that matches the main instrument is excluded automatically.
 CONTEXT_TICKERS = {
     "DXY":    "DX-Y.NYB",
     "US10Y":  "^TNX",
@@ -47,15 +57,25 @@ CONTEXT_TICKERS = {
     "BRENT":  "BZ=F",
     "SP500":  "^GSPC",
     "VIX":    "^VIX",
-    "NIKKEI": "^N225",   # Relevant for USD/JPY
-    "DAX":    "^GDAXI",  # Relevant for EUR/USD
+    "NIKKEI": "^N225",
+    "DAX":    "^GDAXI",
+    "FTSE":   "^FTSE",
+    "HSI":    "^HSI",
+    "NAS100": "^NDX",
 }
 
-# News sources per pair (yfinance symbols to pull headlines from)
+# News symbols per instrument
 PAIR_NEWS_SYMBOLS = {
     "AUDUSD": ["AUDUSD=X", "DX-Y.NYB", "GC=F"],
     "USDJPY": ["USDJPY=X", "DX-Y.NYB", "^N225"],
     "EURUSD": ["EURUSD=X", "DX-Y.NYB", "^GDAXI"],
+    "GBPUSD": ["GBPUSD=X", "DX-Y.NYB", "^FTSE"],
+    "US500":  ["^GSPC", "^VIX", "^NDX"],
+    "NAS100": ["^NDX", "^GSPC", "^VIX"],
+    "UK100":  ["^FTSE", "GBPUSD=X", "^GDAXI"],
+    "GER40":  ["^GDAXI", "EURUSD=X", "^FTSE"],
+    "HK50":   ["^HSI", "^N225"],
+    "JPN225": ["^N225", "USDJPY=X", "^HSI"],
 }
 
 # ---------------------------------------------------------------------------
@@ -85,8 +105,10 @@ def is_fx_market_open(now_utc: datetime | None = None) -> bool:
 # ---------------------------------------------------------------------------
 
 def fetch_market_data(pair_ticker: str) -> dict:
-    """Pull current quote and context for the pair + shared context tickers."""
-    tickers = {"PAIR": pair_ticker, **CONTEXT_TICKERS}
+    """Pull current quote and context for the instrument + shared context tickers."""
+    # Exclude any context ticker that is the same as the main instrument
+    filtered_context = {k: v for k, v in CONTEXT_TICKERS.items() if v != pair_ticker}
+    tickers = {"PAIR": pair_ticker, **filtered_context}
     data: dict[str, dict] = {}
 
     for name, symbol in tickers.items():
@@ -171,7 +193,7 @@ def fetch_news(news_symbols: list[str]) -> list[dict]:
 # Prompt construction
 # ---------------------------------------------------------------------------
 
-PROMPT_TEMPLATE = """You are a professional FX strategist producing a condensed
+PROMPT_TEMPLATE = """You are a professional market strategist producing a condensed
 hourly delta-update on {pair_name} for active traders. This is NOT the full COSTAR
 report — it is a tight tactical refresh.
 
@@ -399,7 +421,7 @@ def main() -> int:
     for pair_key, pair_info in PAIRS.items():
         run_pair(pair_key, pair_info, timestamp)
 
-    print(f"\n[{timestamp}] All pairs complete.")
+    print(f"\n[{timestamp}] All instruments complete.")
     return 0
 
 
