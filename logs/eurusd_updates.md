@@ -890,3 +890,55 @@ A clean hourly close above 1.1660 (session high) would shift bias to Rise; a bre
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** EUR/USD 1.1636 (-0.24%) · DXY 99.139
+
+# EUR/USD Delta Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.1636 | 24h change: −0.24% | 24h range: 1.1612–1.1660
+- **Distance from resistance:** 24 pips to session high (1.1660); ~25 pips to 1.1661 round-figure zone
+- **Distance from support:** 24 pips to session low (1.1612)
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has drifted modestly lower within the established session range, with no fresh breakout in either direction. The dominant intraday tension remains the tug-of-war between the Reuters-reported US-Iran sanctions deal narrative (USD-negative) and rising US10Y yields hitting session highs at 4.627% (USD-supportive). VIX edging up to 18.62 and Nikkei off 2.71% suggest residual risk-off pressure that is capping EUR upside.
+
+---
+
+### Bias
+**DRIFT** — range-bound consolidation favoured for the next 1–4 hours ahead of FOMC Minutes (key event this week). Conflicting macro signals prevent directional conviction.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1685 |
+| R1 | 1.1660 |
+| Spot | 1.1636 |
+| S1 | 1.1612 |
+| S2 | 1.1585 |
+
+---
+
+### Triggers
+A sustained break above 1.1660 (session high) on renewed USD-negative Iran deal headlines would neutralise the drift bias and open a test of 1.1685; conversely, a clean break below 1.1612 on yields extending above 4.63% shifts bias to **FALL**.
+
+---
+
+### Confidence
+**48/100** — Contradictory drivers (Iran deal vs. rising yields vs. rate-hike rhetoric from WSJ) and proximity to FOMC Minutes reduce directional conviction; pair is mid-range with no decisive momentum signal.
+
+---
+

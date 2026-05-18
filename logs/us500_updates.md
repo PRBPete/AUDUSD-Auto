@@ -682,3 +682,55 @@ A confirmed reclaim of **7,415** on a closing 15-min bar would neutralise the be
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** US500 (S&P 500) 7394.5498 (-0.48%) · DXY 99.139
+
+# US500 Delta-Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,394.55 | 24h change: –0.48% | 24h range: 7,353.17–7,454.85
+- **Distance from session high:** –60.3 pts (–0.81%) | **Distance from session low:** +41.4 pts (+0.56%)
+- **VIX:** 18.62, +2.59% — elevated intraday, approaching upper range at 19.44
+
+---
+
+### What Changed in the Last Hour
+Equities extended their afternoon decline as chip stocks led the Nasdaq lower (NDX –0.82%), with the US10Y yield pressing toward its session high of 4.627% — a meaningful headwind for rate-sensitive growth names. Brent crude surged +1.52% to $112.00 on Middle East developments, adding stagflationary pressure to sentiment without providing the usual energy-sector offset. The combined move — higher yields, higher oil, weaker semis — reinforced a risk-off tilt into the close of the US session.
+
+---
+
+### Bias
+**FALL** — yield pressure and chip-sector weakness dominate the near-term tape; no catalysts visible to reverse within the 1–4 hour window.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,454.85 |
+| R1 | 7,420.00 |
+| Spot | 7,394.55 |
+| S1 | 7,353.17 |
+| S2 | 7,310.00 |
+
+---
+
+### Triggers
+A decisive reclaim of **7,420** on a 30-minute close, accompanied by a pullback in US10Y below 4.58%, would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**58 / 100** — Direction is reasonably clear (yield + chip pressure), but Nikkei's sharp –2.71% drop and Brent's spike introduce cross-asset noise; after-hours flows and any Nvidia pre-earnings positioning (reporting this week) could produce sudden reversals not captured in current data.
+
+---
+

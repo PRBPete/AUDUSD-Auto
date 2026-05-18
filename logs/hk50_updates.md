@@ -695,3 +695,54 @@ A sustained reclaim above 26,000 — the prior intraday consolidation zone — w
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.14
+
+# HK50 Hourly Delta-Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 | **24h change:** −1.68% | trading in lower third of day's range (25,505–26,391).
+- **R1/R2:** ~25,900 / ~26,391 (session high); **S1/S2:** ~25,600 / ~25,505 (session low).
+
+---
+
+### What Changed in the Last Hour
+HK50 continues to bleed lower, sitting roughly 716 points off the session high with no meaningful recovery attempt. The primary driver remains the combination of rising US 10Y yields (+1.21% to 4.619%, near session high) and a sharp Nikkei sell-off (−2.71%), confirming broad Asian risk-off sentiment. MT Newswires flagged weak China economic data and oil volatility as additional headwinds, reinforcing the absence of any dip-buying catalyst at current levels.
+
+---
+
+### Bias
+**FALL** — Rising yields, elevated VIX (18.60, +2.48%), a firmer Brent (which signals cost-push pressure rather than demand strength for China), and Nikkei leading losses all point to continued downside pressure over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,900 |
+| Spot | 25,675 |
+| S1 | 25,600 |
+| S2 | 25,505 |
+
+---
+
+### Triggers
+A sustained reclaim above **25,900** — accompanied by a US 10Y yield pullback below 4.58% — would neutralise the bearish bias and shift the view to neutral/drift.
+
+---
+
+### Confidence
+**52/100** — Directional signals are aligned bearishly, but thin late-session liquidity and a single news headline (no fresh China data print confirmed in the feed) limit conviction; VIX remains elevated rather than spiking, leaving room for a volatile, whippy close.
+
+---
+

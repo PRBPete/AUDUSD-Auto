@@ -889,3 +889,55 @@ A sustained break and hourly close above 159.07 would neutralise the drift bias 
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** USD/JPY 159.055 (+0.43%) · DXY 99.136
+
+# USD/JPY Tactical Delta — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- Spot: 159.055 | +0.43% on the session, pressing the upper edge of the 24h range (158.604–159.083).
+- Distance from R1 (~159.20): ~14.5 pips offered; S1 (~158.60) is the session low and ~45 pips below.
+- US10Y at 4.621% — near 24h high — providing the primary lift to the pair.
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has consolidated in the upper quartile of its daily range as US10Y yields extended to session highs (+1.25%), reinforcing the carry differential. The DXY is softer (-0.15%), suggesting JPY weakness — not broad dollar strength — is doing the marginal work here. Nikkei's sharp -2.71% decline flags domestic risk-off pressure on equities, but has not translated into meaningful yen safe-haven demand, consistent with the ongoing rate-gap dynamic.
+
+---
+
+### Bias
+**RISE** — yield spread extension and proximity to range highs favour a near-term test of 159.20+, though the softening DXY and elevated VIX (18.63, +2.64%) cap conviction.
+
+| Scenario | Probability |
+|---|---|
+| Rise (→ 159.20–159.50) | 45% |
+| Drift (159.00 ±20 pips) | 35% |
+| Fall (← 158.60 retest) | 20% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.50 |
+| R1 | 159.20 |
+| Spot | 159.055 |
+| S1 | 158.60 |
+| S2 | 158.30 |
+
+---
+
+### Triggers
+A confirmed break and close below 158.60 (session low / S1) would neutralise the bullish bias and open a retest of 158.30, particularly if VIX accelerates above 19.50 or US10Y reverses below 4.58%.
+
+---
+
+### Confidence
+**58/100** — Yield support is clear but DXY divergence, elevated VIX, and unresolved Iran/oil geopolitical noise introduce meaningful cross-current risk; no Japan-side catalyst data in the window.
+
+---
+

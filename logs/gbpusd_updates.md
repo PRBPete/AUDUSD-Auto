@@ -682,3 +682,55 @@ A sustained break above 1.3450 (session high) would shift bias to Rise; a break 
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** GBP/USD 1.3407 (+0.12%) · DXY 99.139
+
+# GBP/USD Hourly Delta-Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.3407 | +0.12% on the session
+- **24h Range:** 1.3304–1.3450; spot sits mid-range, ~43 pips from the session high
+- **DXY:** 99.139, soft but off lows; mild USD headwind persisting
+
+---
+
+### What Changed in the Last Hour
+Price action has been subdued in the past hour, with GBP/USD consolidating near 1.3407 after failing to sustain a test of 1.3450 earlier in the session. The primary driver remains the soft dollar narrative anchored by Reuters' report of a prospective US-Iran sanctions deal, which pressured DXY. However, the competing WSJ headline flagging growing US rate-hike expectations and a notable 10Y yield at 4.621% — near session highs — is capping cable's upside and introducing a modest headwind into the NY close.
+
+---
+
+### Bias
+**DRIFT** — Conflicting macro signals (dovish USD flow vs. rising US yields and VIX uptick to 18.62) argue for range consolidation rather than a directional break in the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3450 |
+| R1 | 1.3430 |
+| Spot | 1.3407 |
+| S1 | 1.3370 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A sustained break above 1.3450 (session high) on renewed USD selling would invalidate the drift bias and open a bullish extension; conversely, a 10Y yield push materially above 4.627% or a DXY reclaim of 99.40 would shift bias to **FALL** toward S1.
+
+---
+
+### Confidence
+**52/100** — Conflicting headline drivers (Iran deal vs. rate-hike bets), late NY session illiquidity, and rising VIX all reduce conviction; no clean directional catalyst is dominant at this hour.
+
+---
+

@@ -679,3 +679,55 @@ A sustained break above 24,340 on volume — reclaiming the session's upper cons
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** GER40 (DAX 40) 24246.8906 (+0.19%) · DXY 99.138
+
+# GER40 Delta-Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- Spot: 24,246.89 | +0.19% on the session.
+- Distance from intraday high (24,430.98): −184 pts; from intraday low (23,797.33): +450 pts.
+- Holding above the mid-range pivot near 24,114 but fading off session highs.
+
+---
+
+### What Changed in the Last Hour
+GER40 is consolidating in the upper quarter of its daily range but momentum has visibly stalled, with the index giving back ground from the 24,430 session peak. The dominant cross-asset drag is a sharp VIX lift (+2.48% to 18.60) alongside a rising US 10Y yield (4.621%, near 24h high), compressing equity risk appetite late in the session. Brent's surge to $112 provides a modest offset via energy sector support, but Wall Street softness (S&P 500 −0.49%, NAS100 −0.85%) and a weak Asian close (Nikkei −2.71%, HSI −1.68%) are capping upside conviction.
+
+---
+
+### Bias
+**DRIFT** — near-term bias is sideways-to-lower into the European close and early Asia handoff, given elevated VIX, rising long-end yields, and negative US/Asian equity leads.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 50% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,431 |
+| R1 | 24,320 |
+| Spot | 24,247 |
+| S1 | 24,114 |
+| S2 | 23,797 |
+
+---
+
+### Triggers
+A clean reclaim and hold above **24,431** (session high) on volume would neutralise the drift/fall bias and reopen a push toward 24,550+; conversely, a break below **24,114** confirms near-term distribution.
+
+---
+
+### Confidence
+**52 / 100** — Mixed signals: supportive geopolitical narrative (Iran-US talks) and oil strength vs. deteriorating US equity tone, VIX acceleration, and rising 10Y yield create an ambiguous setup; no high-impact data catalyst expected in the next 1–4 hours.
+
+---
+

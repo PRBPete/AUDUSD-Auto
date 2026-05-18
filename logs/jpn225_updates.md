@@ -688,3 +688,57 @@ A sustained reclaim above 61,500 on volume would neutralise the bearish bias and
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.139
+
+# JPN225 Delta Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% | Session range: 60,376.98–63,235.77
+- Distance from intraday low: +442 pts (~+0.73%) | Distance from intraday high: −2,416 pts (−3.82%)
+- Index is trading in the lower third of its 24h range, indicating sustained selling pressure.
+
+---
+
+### What Changed in the Last Hour
+Price action has stabilised modestly above the session low of 60,376.98 but without any convincing recovery impulse. The dominant driver remains the combination of a rising US 10Y yield (+1.21% to 4.619%) compressing equity valuations and a broad Asian risk-off session attributed to soft China economic signals. No intra-hour headline catalyst has emerged to shift the tape.
+
+---
+
+### Bias
+**FALL** — bears retain control. Rising yields, elevated VIX (18.61, +2.53%), a weakening HSI (−1.68%), and the MT Newswires China headline all point to continued downside pressure into the Asia close.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,400 |
+| Spot | 60,820 |
+| S1 | 60,377 |
+| S2 | 59,900 |
+
+*R1/R2 estimated from intraday structure; S1 is confirmed session low.*
+
+---
+
+### Triggers
+A sustained reclaim above 61,400 with VIX retreating below 18.00 would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**52 / 100** — Directional read is moderately clear (yield pressure + risk-off Asia flow), but only one news headline is available, no Japan-specific macro catalyst is confirmed, and the proximity to session lows introduces mean-reversion risk near the close.
+
+---
+

@@ -685,3 +685,55 @@ A sustained break above 10,375 (session high) on meaningful volume would neutral
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10296.5898 (+0.05%) · DXY 99.139
+
+# UK100 Delta-Update — 19:01 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 10,296.6 | +0.05% on the session.
+- Distance from intraday high (10,375.7): −79 pts; from intraday low (10,151.5): +145 pts.
+- Sitting mid-range, marginally above the session midpoint (~10,263).
+
+---
+
+### What Changed in the Last Hour
+UK100 has effectively flatlined near 10,296, with no meaningful directional follow-through after European cash close. The dominant late-session driver is Brent crude's sharp advance (+1.52%, last $112.00), which provides a tailwind for energy-heavy FTSE constituents, partially offsetting softness in consumer staples (Diageo, Unilever cited as drags). US equity weakness (S&P 500 −0.64%, NAS100 −1.04%) and a rising VIX (18.61, +2.53%) are capping upside in after-hours flow.
+
+---
+
+### Bias
+**DRIFT** — Post-close, illiquid conditions and conflicting cross-asset signals (supportive oil vs. risk-off US equities and elevated VIX) argue against a decisive move. US10Y at 4.621% (near session high) adds mild macro headwind.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 55% |
+| Fall | 20% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,330 |
+| Spot | 10,297 |
+| S1 | 10,245 |
+| S2 | 10,151 |
+
+---
+
+### Triggers
+A sustained break above 10,375 (session high) on renewed energy or risk-on flow would invalidate the drift bias and open a bullish continuation; conversely, S&P 500 futures extending losses through −1% would pressure a test of S1 at 10,245.
+
+---
+
+### Confidence
+**42/100** — Post-European-close, thin liquidity reduces signal quality; Nikkei (−2.71%) and HSI (−1.68%) weakness in Asian hours introduces overnight gap risk not yet priced, and US session cross-asset divergence remains unresolved.
+
+---
+

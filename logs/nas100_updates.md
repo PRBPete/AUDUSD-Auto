@@ -678,3 +678,55 @@ A sustained reclaim above **29,050** would neutralise the bearish drift and open
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 28910.4238 (-0.95%) · DXY 99.138
+
+# NAS100 Delta Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 28,910.42 | 24h change: −0.95%
+- **24h Range:** 28,718.95 – 29,386.54; spot sitting in the lower third of range
+- **Distance from key levels:** ~191 pts above session low; ~476 pts below session high
+
+---
+
+### What Changed in the Last Hour
+NAS100 continued to press lower through the late US session, driven by a combination of rising 10Y yields (4.621%, near session highs) and broad chip-sector selling, consistent with Reuters headlines citing yield pressure as the primary headwind. VIX ticked up to 18.62 (+2.59%), confirming incremental risk-off positioning rather than a panic flush. Price has stabilised modestly above the 28,800 area but has shown no meaningful bid recovery, suggesting distribution rather than accumulation.
+
+---
+
+### Bias
+**FALL** — yield pressure at cycle highs, VIX expansion, and chip weakness provide a structurally bearish near-term backdrop with no apparent catalyst for reversal in the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,200 |
+| R1 | 29,050 |
+| Spot | 28,910 |
+| S1 | 28,720 |
+| S2 | 28,550 |
+
+---
+
+### Triggers
+A sustained reclaim above **29,050** — particularly on a reversal in 10Y yields back below 4.58% — would neutralise the bearish bias and shift to neutral/drift.
+
+---
+
+### Confidence
+**58/100** — Directional read is reasonably supported by macro cross-asset alignment (yields, VIX, sector), but late-session illiquidity and proximity to the session low introduce mean-reversion risk; no options or flow data available to corroborate.
+
+---
+

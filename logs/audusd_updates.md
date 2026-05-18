@@ -882,3 +882,55 @@ A sustained break above 0.7187 (session high) would neutralise the cautious lean
 
 ---
 
+## 2026-05-18 19:01 UTC
+
+**Snapshot:** AUD/USD 0.7152 (-0.90%) · DXY 99.136
+
+# AUD/USD Delta Update — 2026-05-18 19:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 0.7152 | 24h change: −0.90%
+- **24h range:** 0.7123–0.7187; spot sits mid-range, ~35 pips below session high
+- **Key distances:** 18 pips below R1 (0.7170), 29 pips above S1 (0.7123 session low)
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has drifted lower alongside a broad risk-off move, with S&P 500 down 0.90% and Nikkei shedding 2.71%, compressing risk appetite for commodity-linked currencies. The immediate driver is a rising US 10Y yield (4.621%, +1.25% on the day), which is tightening the rate-differential headwind against AUD despite a softer DXY (99.136). Copper (−0.17%) and Gold (−0.11%) offer no commodity-side offset.
+
+---
+
+### Bias
+**FALL** — Risk-off equity tone, rising long-end US yields, and elevated VIX (18.63, +2.64%) sustain downward pressure. DXY softness provides only partial relief and appears driven by Iran-deal headlines rather than structural USD weakness.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7187 |
+| R1 | 0.7170 |
+| Spot | 0.7152 |
+| S1 | 0.7123 |
+| S2 | 0.7100 |
+
+---
+
+### Triggers
+A sustained break above **0.7170** — reclaiming the upper third of the 24h range — would neutralise the bearish bias and shift the near-term lean to neutral/drift.
+
+---
+
+### Confidence
+**52/100** — Mixed signals (soft DXY vs. rising yields and risk-off equities) limit conviction; no Australian data catalyst on the tape, and FOMC Minutes later this week introduce asymmetric volatility risk not yet priced in directionally.
+
+---
+
