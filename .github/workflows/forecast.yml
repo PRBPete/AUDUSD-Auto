@@ -1,20 +1,19 @@
-name: AUD/USD Hourly Forecast
+name: Hourly Market Forecast
 
 on:
   workflow_dispatch:             # Triggered externally by cron-job.org every hour
 
 permissions:
-  contents: write                # Needed to commit logs back to the repo
+  contents: read                 # Read-only — no longer committing logs
 
 concurrency:
-  # If a run overruns into the next hour, cancel the older one
   group: forecast-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   forecast:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10          # 10 instruments needs a little more headroom
 
     steps:
       - name: Check out repository
@@ -31,26 +30,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run forecast
+      - name: Run forecast and send email
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY:   ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER:          ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD:  ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO:            ${{ secrets.EMAIL_TO }}
         run: python audusd_monitor.py
-
-      - name: Commit and push logs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add logs/
-          # Only commit if there are actual changes
-          if git diff --cached --quiet; then
-            echo "No log changes to commit (likely market closed)."
-          else
-            git commit -m "Hourly forecast update $(date -u +'%Y-%m-%d %H:%M UTC')"
-            # Retry push in case another run beat us to it
-            for i in 1 2 3; do
-              git pull --rebase origin ${{ github.ref_name }} && \
-              git push && break
-              echo "Push attempt $i failed, retrying..."
-              sleep 5
-            done
-          fi

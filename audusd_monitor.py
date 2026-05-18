@@ -3,19 +3,20 @@ Multi-instrument hourly forecast monitor.
 Covers FX pairs and global indices.
 
 Fetches live market data + recent news, calls the Anthropic API with a
-condensed COSTAR prompt, and appends the result to per-instrument log files.
+condensed COSTAR prompt, then emails a consolidated report.
 
 Designed to run unattended on GitHub Actions, triggered hourly by cron-job.org.
 """
 
 from __future__ import annotations
 
-import csv
 import os
+import smtplib
 import sys
 import traceback
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 import yfinance as yf
 from anthropic import Anthropic
@@ -26,9 +27,6 @@ from anthropic import Anthropic
 
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 2000
-
-REPO_ROOT = Path(__file__).resolve().parent
-LOG_DIR = REPO_ROOT / "logs"
 
 # Instruments to monitor
 PAIRS = {
@@ -46,8 +44,7 @@ PAIRS = {
     "JPN225": {"ticker": "^N225",    "name": "JPN225 (Nikkei 225)"},
 }
 
-# Shared context tickers (correlated assets).
-# Any ticker that matches the main instrument is excluded automatically.
+# Shared context tickers — any that match the main instrument are auto-excluded
 CONTEXT_TICKERS = {
     "DXY":    "DX-Y.NYB",
     "US10Y":  "^TNX",
@@ -83,10 +80,7 @@ PAIR_NEWS_SYMBOLS = {
 # ---------------------------------------------------------------------------
 
 def is_fx_market_open(now_utc: datetime | None = None) -> bool:
-    """
-    FX market is open from Sunday 22:00 UTC to Friday 22:00 UTC.
-    Closed: Friday 22:00 UTC through Sunday 22:00 UTC.
-    """
+    """FX market is open Sunday 22:00 UTC to Friday 22:00 UTC."""
     now_utc = now_utc or datetime.now(timezone.utc)
     weekday = now_utc.weekday()  # Mon=0 ... Sun=6
     hour = now_utc.hour
@@ -106,7 +100,6 @@ def is_fx_market_open(now_utc: datetime | None = None) -> bool:
 
 def fetch_market_data(pair_ticker: str) -> dict:
     """Pull current quote and context for the instrument + shared context tickers."""
-    # Exclude any context ticker that is the same as the main instrument
     filtered_context = {k: v for k, v in CONTEXT_TICKERS.items() if v != pair_ticker}
     tickers = {"PAIR": pair_ticker, **filtered_context}
     data: dict[str, dict] = {}
@@ -294,112 +287,177 @@ def call_claude(prompt: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Logging
+# Bias extraction helper
 # ---------------------------------------------------------------------------
 
-def append_markdown_log(pair_key: str, pair_name: str, timestamp_utc: str,
-                        market_data: dict, response: str) -> None:
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
-    log_file = LOG_DIR / f"{pair_key.lower()}_updates.md"
-
-    if not log_file.exists():
-        log_file.write_text(
-            f"# {pair_name} Hourly Forecast Log\n\n"
-            f"Automated hourly updates during FX market hours.\n\n"
-            f"---\n\n"
-        )
-
-    pair_data = market_data.get("PAIR", {})
-    dxy = market_data.get("DXY", {})
-    spot_line = (
-        f"{pair_name} {pair_data.get('last', 'n/a')} "
-        f"({pair_data.get('change_pct', 0):+.2f}%) · "
-        f"DXY {dxy.get('last', 'n/a')}"
-    )
-
-    block = (
-        f"## {timestamp_utc} UTC\n\n"
-        f"**Snapshot:** {spot_line}\n\n"
-        f"{response.strip()}\n\n"
-        f"---\n\n"
-    )
-
-    with log_file.open("a", encoding="utf-8") as fh:
-        fh.write(block)
-
-
-def append_csv_row(pair_key: str, timestamp_utc: str,
-                   market_data: dict, response: str) -> None:
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
-    csv_file = LOG_DIR / f"{pair_key.lower()}_data.csv"
-
-    header = [
-        "timestamp_utc", "pair", "spot", "change_pct",
-        "dxy", "us10y", "gold", "vix", "sp500",
-        "bias", "raw_response_chars",
-    ]
-
+def extract_bias(response: str) -> str:
     upper = response.upper()
-    bias = "UNKNOWN"
     if "BIAS" in upper:
         idx = upper.find("BIAS")
         window = upper[idx:idx + 400]
         if "FALL" in window:
-            bias = "FALL"
-        elif "RISE" in window:
-            bias = "RISE"
-        elif "DRIFT" in window:
-            bias = "DRIFT"
+            return "FALL"
+        if "RISE" in window:
+            return "RISE"
+        if "DRIFT" in window:
+            return "DRIFT"
+    return "—"
 
-    def g(k: str, field: str = "last") -> str:
-        return str(market_data.get(k, {}).get(field, ""))
 
-    row = [
-        timestamp_utc, pair_key,
-        g("PAIR"), g("PAIR", "change_pct"),
-        g("DXY"), g("US10Y"), g("GOLD"), g("VIX"), g("SP500"),
-        bias, len(response),
-    ]
-
-    write_header = not csv_file.exists()
-    with csv_file.open("a", newline="", encoding="utf-8") as fh:
-        writer = csv.writer(fh)
-        if write_header:
-            writer.writerow(header)
-        writer.writerow(row)
+BIAS_COLOUR = {
+    "RISE":  "#1a7f37",  # green
+    "FALL":  "#cf222e",  # red
+    "DRIFT": "#9a6700",  # amber
+    "—":     "#57606a",  # grey
+}
 
 
 # ---------------------------------------------------------------------------
-# Per-pair forecast runner
+# Email builder
 # ---------------------------------------------------------------------------
 
-def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> None:
+def build_email_html(timestamp: str, results: list[dict]) -> str:
+    """Build a clean HTML email with a summary table + full forecasts."""
+
+    # --- Summary table ---
+    rows = ""
+    for r in results:
+        bias = r["bias"]
+        colour = BIAS_COLOUR.get(bias, "#57606a")
+        spot = r["market_data"].get("PAIR", {}).get("last", "n/a")
+        chg  = r["market_data"].get("PAIR", {}).get("change_pct", 0)
+        chg_str = f"{chg:+.2f}%" if isinstance(chg, float) else "n/a"
+        rows += (
+            f"<tr>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'><b>{r['name']}</b></td>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{spot}</td>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{chg_str}</td>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8;"
+            f"color:{colour};font-weight:bold'>{bias}</td>"
+            f"</tr>"
+        )
+
+    summary_table = f"""
+    <table style='border-collapse:collapse;width:100%;margin-bottom:32px;font-size:14px'>
+      <thead>
+        <tr style='background:#f6f8fa'>
+          <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>Instrument</th>
+          <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>Spot</th>
+          <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>24h Chg</th>
+          <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>Bias</th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+    """
+
+    # --- Full forecasts ---
+    forecasts_html = ""
+    for r in results:
+        # Convert markdown-ish text to basic HTML
+        body = r["response"]
+        body = body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        # Headers
+        for level, tag in [("### ", "h4"), ("## ", "h3"), ("# ", "h2")]:
+            lines = body.split("\n")
+            body = "\n".join(
+                f"<{tag}>{line[len(level):]}</{tag}>" if line.startswith(level) else line
+                for line in lines
+            )
+        # Bold
+        import re
+        body = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", body)
+        # Tables (basic)
+        body = re.sub(r"\|(.+)\|", lambda m: "<tr>" + "".join(
+            f"<td style='padding:4px 8px;border:1px solid #d0d7de'>{c.strip()}</td>"
+            for c in m.group(1).split("|")
+        ) + "</tr>", body)
+        body = re.sub(r"(<tr>.*?</tr>\n?)+", lambda m: f"<table style='border-collapse:collapse;margin:8px 0'>{m.group()}</table>", body, flags=re.DOTALL)
+        body = body.replace("\n", "<br>")
+
+        bias = r["bias"]
+        colour = BIAS_COLOUR.get(bias, "#57606a")
+        forecasts_html += f"""
+        <div style='margin-bottom:40px;border-left:4px solid {colour};padding-left:16px'>
+          <h3 style='margin:0 0 8px;color:#24292f'>{r['name']}
+            <span style='font-size:13px;font-weight:normal;color:{colour};margin-left:8px'>{bias}</span>
+          </h3>
+          <div style='font-size:14px;line-height:1.6;color:#24292f'>{body}</div>
+        </div>
+        <hr style='border:none;border-top:1px solid #e1e4e8;margin:0 0 40px'>
+        """
+
+    return f"""
+    <!DOCTYPE html>
+    <html>
+    <body style='font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+                 max-width:800px;margin:0 auto;padding:24px;color:#24292f'>
+      <h2 style='margin:0 0 4px'>Hourly Market Forecast</h2>
+      <p style='margin:0 0 24px;color:#57606a;font-size:14px'>{timestamp} UTC &nbsp;·&nbsp; 10 instruments</p>
+      {summary_table}
+      {forecasts_html}
+      <p style='font-size:12px;color:#57606a;margin-top:32px'>
+        Automated by Claude {MODEL} via GitHub Actions
+      </p>
+    </body>
+    </html>
+    """
+
+
+# ---------------------------------------------------------------------------
+# Email sending
+# ---------------------------------------------------------------------------
+
+def send_email(subject: str, html_body: str) -> None:
+    gmail_user = os.environ["GMAIL_USER"]
+    gmail_password = os.environ["GMAIL_APP_PASSWORD"]
+    email_to = os.environ["EMAIL_TO"]
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = gmail_user
+    msg["To"] = email_to
+    msg.attach(MIMEText(html_body, "html"))
+
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        server.login(gmail_user, gmail_password)
+        server.sendmail(gmail_user, email_to, msg.as_string())
+
+
+# ---------------------------------------------------------------------------
+# Per-instrument forecast runner
+# ---------------------------------------------------------------------------
+
+def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> dict:
     pair_name = pair_info["name"]
     pair_ticker = pair_info["ticker"]
     news_symbols = PAIR_NEWS_SYMBOLS[pair_key]
 
-    print(f"\n[{timestamp}] === {pair_name} ===")
-
-    print(f"[{timestamp}] Fetching market data...")
+    print(f"[{timestamp}] {pair_name}: fetching data...")
     market_data = fetch_market_data(pair_ticker)
 
-    print(f"[{timestamp}] Fetching news...")
+    print(f"[{timestamp}] {pair_name}: fetching news...")
     news = fetch_news(news_symbols)
-    print(f"[{timestamp}] Got {len(news)} headlines.")
 
-    print(f"[{timestamp}] Calling Claude ({MODEL})...")
+    print(f"[{timestamp}] {pair_name}: calling Claude...")
     prompt = build_prompt(pair_name, market_data, news, timestamp)
     try:
         response = call_claude(prompt)
     except Exception as e:
         print(f"ERROR calling Claude for {pair_name}: {e}", file=sys.stderr)
         traceback.print_exc()
-        response = f"_API call failed: {type(e).__name__}: {e}_"
+        response = f"API call failed: {type(e).__name__}: {e}"
 
-    print(f"[{timestamp}] Writing logs...")
-    append_markdown_log(pair_key, pair_name, timestamp, market_data, response)
-    append_csv_row(pair_key, timestamp, market_data, response)
-    print(f"[{timestamp}] {pair_name} done.")
+    bias = extract_bias(response)
+    print(f"[{timestamp}] {pair_name}: bias={bias} ✓")
+
+    return {
+        "key": pair_key,
+        "name": pair_name,
+        "market_data": market_data,
+        "response": response,
+        "bias": bias,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -411,17 +469,30 @@ def main() -> int:
     timestamp = now_utc.strftime("%Y-%m-%d %H:%M")
 
     if not is_fx_market_open(now_utc):
-        print(f"[{timestamp}] FX market closed — skipping run.")
+        print(f"[{timestamp}] Market closed — skipping run.")
         return 0
 
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("ERROR: ANTHROPIC_API_KEY not set.", file=sys.stderr)
+    for var in ("ANTHROPIC_API_KEY", "GMAIL_USER", "GMAIL_APP_PASSWORD", "EMAIL_TO"):
+        if not os.environ.get(var):
+            print(f"ERROR: {var} not set.", file=sys.stderr)
+            return 1
+
+    results = []
+    for pair_key, pair_info in PAIRS.items():
+        results.append(run_pair(pair_key, pair_info, timestamp))
+
+    print(f"\n[{timestamp}] Building and sending email...")
+    subject = f"Market Forecast | {timestamp} UTC"
+    html = build_email_html(timestamp, results)
+    try:
+        send_email(subject, html)
+        print(f"[{timestamp}] Email sent ✓")
+    except Exception as e:
+        print(f"ERROR sending email: {e}", file=sys.stderr)
+        traceback.print_exc()
         return 1
 
-    for pair_key, pair_info in PAIRS.items():
-        run_pair(pair_key, pair_info, timestamp)
-
-    print(f"\n[{timestamp}] All instruments complete.")
+    print(f"[{timestamp}] All done.")
     return 0
 
 
