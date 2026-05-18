@@ -1,13 +1,7 @@
 name: AUD/USD Hourly Forecast
 
 on:
-  schedule:
-    # Cron is in UTC. FX market is open Sunday 22:00 UTC to Friday 22:00 UTC.
-    # We cover all of that window:
-    - cron: "0 22,23 * * 0"      # Sunday evening (market open)
-    - cron: "0 * * * 1-4"        # All of Mon-Thu, hourly
-    - cron: "0 0-22 * * 5"       # Friday 00:00-22:00 UTC
-  workflow_dispatch:             # Allow manual trigger from the Actions tab
+  workflow_dispatch:             # Triggered externally by cron-job.org every hour
 
 permissions:
   contents: write                # Needed to commit logs back to the repo
