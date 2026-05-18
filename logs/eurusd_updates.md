@@ -526,3 +526,55 @@ A decisive break back above 1.1652 (24h high) — particularly on a DXY reversal
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** EUR/USD 1.1647 (-0.15%) · DXY 99.118
+
+# EUR/USD Delta Update — 12:00 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- **Spot:** 1.1647 | 24h change: −0.15% | trading near the top of the 24h range (1.1612–1.1652).
+- **Key resistance:** 1.1652 (24h high, within 5 pips); next meaningful ceiling at 1.1680.
+- **Key support:** 1.1612 (24h low); 1.1580 as broader structural floor.
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has stalled just beneath the 24h high of 1.1652, consolidating in a narrow 8–10 pip band as the DXY (-0.17%) continues to drift lower on light early-week flow. The primary counterweight is a sharp rise in US10Y yields (+3.47% to 4.595%), which is capping EUR upside and preventing a clean breakout. Geopolitical noise around Iran-US tensions is adding modest haven demand for the dollar at the margin, keeping the pair in a tight holding pattern.
+
+---
+
+### Bias
+**DRIFT** — Opposing forces (soft dollar trend vs. surging 10Y yields and geopolitical risk) create a balanced, low-conviction environment near term.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1680 |
+| R1 | 1.1652 |
+| Spot | 1.1647 |
+| S1 | 1.1612 |
+| S2 | 1.1580 |
+
+---
+
+### Triggers
+A clean hourly close above **1.1652** shifts bias to Rise targeting 1.1680; a break below **1.1612** with DXY recovery above 99.40 invalidates the drift view and opens a Fall scenario toward 1.1580.
+
+---
+
+### Confidence
+**42/100** — Conflicting signals (dollar weakness vs. yield spike, elevated VIX at 18.71, Iran headline risk) limit conviction; FOMC Minutes later this week may be the dominant catalyst, making intra-day ranges noisy and unreliable.
+
+---
+

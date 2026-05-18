@@ -328,3 +328,57 @@ A sustained reclaim above 25,950 (R1) on volume would neutralise the bearish bia
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.14
+
+# HK50 Delta Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 — down **1.68%** over 24h.
+- **24h range:** 25,505.71 – 26,391.02; spot sits in the lower third of that range.
+- **Distance from levels:** ~170 pts above session low; ~716 pts below session high.
+
+---
+
+### What Changed in the Last Hour
+HK50 continued drifting lower through the Asian afternoon, consistent with broad regional pressure — Nikkei off 2.71% and S&P futures weakening 0.96%. The dominant driver remains a dual headwind: rising US10Y yields (now 4.595%, up 3.47% on the session) compressing equity risk appetite, and soft China economic data dampening commodity-linked and industrial names. No material intraday reversal signals have printed.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,900 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,250 |
+
+*R1 derived from mid-range resistance; S1 is the 24h low; S2 is a round-number extension.*
+
+---
+
+### Triggers
+A sustained reclaim above **25,900** would neutralise the bearish bias and shift the near-term outlook to neutral/drift.
+
+---
+
+### Confidence
+**52 / 100** — Directional pressure is clear (yields, regional selloff, weak China data), but only one news headline is available, intraday volume data is absent, and the session low at 25,506 has held so far, limiting conviction on the downside extension.
+
+---
+

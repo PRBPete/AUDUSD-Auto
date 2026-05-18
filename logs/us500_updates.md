@@ -318,3 +318,55 @@ A sustained reclaim above 7457 (session midpoint/R1) accompanied by US10Y pullin
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7409.1802 (-0.96%) · DXY 99.135
+
+# US500 Delta-Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,409.18 | 24h change: **−0.96%** | Trading near session lows after fading from 7,517 high.
+- **Distance from levels:** ~108 pts below session high; ~12 pts above session low (7,397.5).
+- **VIX:** 18.71 (+3.09%) — elevated and rising, confirming demand for downside protection.
+
+---
+
+### What Changed in the Last Hour
+Pre-market pressure has intensified as US10Y yields pushed to a fresh 24h high of 4.599%, compressing equity risk premiums and reinforcing the inflation-fear narrative circulating in headlines. Brent crude near $109 (off a $112 high) remains a stagflationary headwind, while Nikkei's −2.71% close and HSI's −1.68% decline signal broad risk-off tone carrying into the US open. No single catalyst has emerged in the last hour; the drift lower is macro-driven and orderly.
+
+---
+
+### Bias
+**FALL** — yield spike to cycle highs for this session, sticky oil, VIX expanding, and key earnings risk (Nvidia) creating a "sell-the-anticipation" dynamic into the afternoon.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,517 |
+| R1 | 7,460 |
+| Spot | 7,409 |
+| S1 | 7,397 |
+| S2 | 7,350 |
+
+---
+
+### Triggers
+A decisive reclaim above **7,460** on strong volume — particularly on a dovish Fed speaker, softer yield reversal, or an early Nvidia earnings leak — would neutralise the bearish bias and reopen the 7,517 range high.
+
+---
+
+### Confidence
+**58 / 100** — Directional signal is coherent (yields, VIX, global equities all aligned bearish), but Nvidia earnings optionality and the absence of US cash open data introduce meaningful uncertainty into the 1–4 hour window.
+
+---
+

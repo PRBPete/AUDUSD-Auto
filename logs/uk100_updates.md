@@ -322,3 +322,55 @@ A reclaim and hold above 10,263 (range midpoint/R1) on meaningful volume would n
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10260.4502 (-0.30%) · DXY 99.142
+
+# UK100 Delta Update — 12:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 10,260.45 | 24h change: −0.30%
+- **24h range:** 10,151.45 – 10,375.73; spot sits in the lower-middle of the range
+- **Distance from key levels:** ~115pts below session high; ~109pts above session low
+
+---
+
+### What Changed in the Last Hour
+UK100 spiked on reports of progress in Iran-US nuclear negotiations (Proactive, 11:15 UTC), temporarily arresting the broader global equity sell-off, but the move has faded with spot drifting back toward 10,260. The reversal is occurring against a deteriorating macro backdrop: VIX is up 3.2%, US10Y has pushed to 4.595% (a session high), and S&P 500 futures are down nearly 1%, suggesting the geopolitical relief trade lacks follow-through. Brent crude's softness (−0.83%) is a mild headwind for energy-heavy FTSE constituents despite the Iran headline.
+
+---
+
+### Bias
+**DRIFT → FALL** over the next 1–4 hours. Rising US yields compressing equity multiples, weak Wall Street tape, and a faded geopolitical bounce argue against upside conviction.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 40% |
+| Fall | 40% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,310 |
+| Spot | 10,260 |
+| S1 | 10,200 |
+| S2 | 10,151 |
+
+---
+
+### Triggers
+A sustained reclaim above **10,310** on volume — confirmed by a stabilisation in US10Y below 4.55% and VIX retreating under 18.00 — would neutralise the drift/fall bias and open a re-test of session highs near 10,375.
+
+---
+
+### Confidence
+**52 / 100** — Cross-asset signals are conflicted (Iran headline vs. rising yields and weak US/Asia tape); intraday momentum is ambiguous and Wall Street cash open in ~1.5 hours is a known binary risk.
+
+---
+

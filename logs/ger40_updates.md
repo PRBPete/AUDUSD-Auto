@@ -316,3 +316,55 @@ A sustained reclaim above **24,160** (R1, approximate midrange resistance) would
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** GER40 (DAX 40) 24183.6895 (-0.07%) · DXY 99.146
+
+# GER40 Delta Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 24,183.69 | 24h change: −0.07% | Intraday range: 23,797.33–24,297.95
+- **Distance from R1 (~24,298):** ~114 pts below session high / resistance
+- **Distance from S1 (~24,000):** ~184 pts above near-term round support
+
+---
+
+### What Changed in the Last Hour
+GER40 is holding near the upper end of its intraday range but off the 24,297 session high, with price action subdued and change near flat (−0.07%). The primary drag on European risk appetite is a sharp US10Y move to 4.595% (+3.47% on the session), compressing equity multiples, while VIX rising to 18.70 (+3.03%) signals renewed hedging demand. Conflicting geopolitical signals — Iran-US negotiation optimism versus Trump's "clock is ticking" warning — are keeping directional conviction low; oil's retreat from 112.03 to 109.32 suggests the market is leaning toward the diplomatic narrative for now.
+
+---
+
+### Bias
+**DRIFT** — price is capped by rising yields and risk-off pressure from US/Asian weakness (S&P500 −0.96%, Nikkei −2.71%), but geopolitical relief on Iran limits downside. Expect consolidation rather than trend extension.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 55% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,298 |
+| R1 | 24,240 |
+| Spot | 24,184 |
+| S1 | 24,000 |
+| S2 | 23,797 |
+
+---
+
+### Triggers
+A sustained break above **24,298** (session high) on volume would neutralise the drift/bearish bias and open a push toward 24,400+; conversely, a clean break below **24,000** activates the bear scenario.
+
+---
+
+### Confidence
+**52/100** — Conflicting macro signals (yield spike vs. Iran relief, soft DXY) and intraday range nearing exhaustion create low-conviction environment; no fresh GER40-specific catalyst in the data window.
+
+---
+

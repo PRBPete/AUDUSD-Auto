@@ -320,3 +320,55 @@ A sustained reclaim above **61,500** would neutralise the bearish bias and shift
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.138
+
+# JPN225 Delta Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% | 24h range: 60,376.98 – 63,235.77
+- Distance from session high: −2,416 pts (−3.82%) | Distance from session low: +443 pts (+0.73%)
+- Price is trading in the lower third of the daily range, near session lows.
+
+---
+
+### What changed in the last hour
+JPN225 has continued to compress near session lows, with no meaningful recovery attempt evident from available data. The dominant driver remains a broad risk-off rotation across Asian equities, corroborated by HSI −1.68% and a concurrent rise in VIX to 18.7 (+3.03%). US10Y climbing to 4.595% — near the top of its 24h range — adds yield pressure that historically weighs on high-multiple Japanese exporters.
+
+---
+
+### Bias
+**FALL** — deteriorating macro backdrop (rising yields, elevated VIX, weak regional peers) with price hugging session lows offers no technical catalyst for recovery within the 1–4 hour window.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,500 |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,800 |
+
+---
+
+### Triggers
+A sustained reclaim above 61,500 — combined with VIX retreating below 18.0 and US10Y pulling back from 4.59% — would neutralise the bearish bias and shift the view to neutral/drift.
+
+---
+
+### Confidence
+**52 / 100** — Single news headline, no intraday granularity below hourly, and gold near highs introduces ambiguity around safe-haven flows that could stabilise rather than accelerate the decline. Confidence is moderate; structural bias is bearish but conviction is tempered by thin data resolution.
+
+---
+

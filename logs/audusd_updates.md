@@ -518,3 +518,55 @@ A sustained break above 0.7165 — particularly on a reversal in US 10-year yiel
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** AUD/USD 0.7161 (-0.77%) · DXY 99.117
+
+# AUD/USD Delta Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- Spot: **0.7161** | 24h change: **-0.77%**
+- Distance from session high: **-15 pips** (0.7176); from session low: **+38 pips** (0.7123)
+- Key resistance cluster near 0.7176–0.7184; support at 0.7123
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has stabilised in the lower half of its daily range as the DXY softened modestly (-0.17%), offering the pair marginal relief without triggering a meaningful recovery. The dominant drag is a sharp rise in US10Y yields (+3.47%, last 4.595%), which continues to undercut risk appetite alongside a VIX print of 18.7 (+3.03%) and broad equity weakness (S&P500 -0.96%, Nikkei -2.71%). Copper's slip to a one-week low (-0.61%) removes a key commodity tailwind for AUD specifically.
+
+---
+
+### Bias
+**FALL** — Risk-off conditions dominate. Elevated yields, weak equities, softer copper, and a VIX pushing toward 19 create an unfavourable backdrop for the high-beta AUD. DXY softness provides a partial offset but is insufficient to shift directional momentum.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7176 |
+| R1 | 0.7155 |
+| Spot | 0.7161 |
+| S1 | 0.7123 |
+| S2 | 0.7100 |
+
+---
+
+### Triggers
+A sustained break above **0.7176** (session high) accompanied by a DXY reversal below 98.90 would neutralise the bearish bias and open a retest of 0.7200.
+
+---
+
+### Confidence
+**58 / 100** — Cross-asset signals (yields, equities, VIX, copper) are coherently bearish for AUD, but a softening DXY and the absence of a fresh negative catalyst introduce meaningful uncertainty over whether spot breaks or holds the 0.7123 floor in the near term. FOMC Minutes due this week add event risk that could reprice quickly.
+
+---
+

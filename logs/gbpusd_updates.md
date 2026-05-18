@@ -316,3 +316,57 @@ A sustained break back above **1.3368** on volume—particularly if US 10Y yield
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** GBP/USD 1.3379 (-0.09%) · DXY 99.129
+
+# GBP/USD Delta Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- Spot: 1.3379 | 24h change: −0.09% | Near top of 24h range (1.3304–1.3383).
+- R1 resistance: 1.3383 (24h high, effectively being tested).
+- S1 support: 1.3304 (24h low, ~75 pips below spot).
+
+---
+
+### What Changed in the Last Hour
+Cable has pressed into the top of its 24-hour range at 1.3383, stalling despite a softer DXY (99.13, −0.16%). The marginal bid appears linked to Iran-US negotiation headlines lifting broader risk sentiment, evidenced by the FTSE spiking off lows. However, the rally is being capped by surging US10Y yields (4.595%, +3.47%), which are reigniting dollar demand at the margin and keeping the upside constrained.
+
+---
+
+### Bias
+**DRIFT** — Cable is caught between a softening dollar and rising US yields; the net effect is near-term consolidation with a slight downside lean as yields dominate.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>1.3383 sustained) | 20% |
+| Drift (1.3320–1.3383) | 50% |
+| Fall (<1.3320) | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3420 |
+| R1 | 1.3383 |
+| Spot | 1.3379 |
+| S1 | 1.3340 |
+| S2 | 1.3304 |
+
+*R2 and S1 are technically inferred pivots; not sourced directly from the data block.*
+
+---
+
+### Triggers
+A clean hourly close above 1.3383 on declining VIX and confirmed DXY follow-through lower would invalidate the drift/fall bias and open the 1.3420 area; conversely, US10Y breaching 4.60% would likely accelerate a move toward S2 at 1.3304.
+
+---
+
+### Confidence
+**52/100** — Conflicting signals (softer DXY vs. rising yields, geopolitical headline noise) produce an ambiguous setup; no UK data releases this session to provide directional catalyst.
+
+---
+

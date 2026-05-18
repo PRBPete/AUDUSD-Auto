@@ -312,3 +312,55 @@ A decisive reclaim of 29,300 on expanding volume would neutralise the bearish bi
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29122.2109 (-1.33%) · DXY 99.138
+
+# NAS100 Delta Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 29,122.21 | **24h change:** −1.33%
+- **Distance from session high (29,678.89):** −556 pts (−1.87%)
+- **Distance from session low (28,993.72):** +128 pts (+0.44%) — trading near the lower third of the range.
+
+---
+
+### What Changed in the Last Hour
+NAS100 has continued to compress near the session low after failing to reclaim mid-range levels, with pre-market tone deteriorating on dual headwinds: US10Y yields surging to 4.595% (+3.47%), a new session high, and Brent crude above $109 despite easing slightly from the $112 intraday peak. VIX has lifted to 18.68 (+2.92%), confirming incremental risk-off positioning ahead of Nvidia earnings — the dominant near-term binary event — while US-Iran headline risk sustains an elevated geopolitical premium.
+
+---
+
+### Bias
+**FALL** — yield spike, elevated VIX, global equity weakness (Nikkei −2.71%, HSI −1.68%), and pre-earnings caution collectively favour further downside or at best sideways churn into the US session open.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,679 (session high) |
+| R1 | 29,350 (intraday pivot / mid-range) |
+| Spot | 29,122 |
+| S1 | 28,994 (session low) |
+| S2 | 28,750 (structural support, round number) |
+
+---
+
+### Triggers
+A sustained reclaim above **29,350** on improving breadth or a sharp reversal in US10Y back below 4.50% would neutralise the bearish bias and open a test of R2.
+
+---
+
+### Confidence
+**58 / 100** — Directional setup is coherent but Nvidia earnings (timing unknown within the session) creates an asymmetric binary override that limits conviction on any sustained directional call.
+
+---
+

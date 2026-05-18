@@ -524,3 +524,55 @@ A clean hourly close above 159.073 would shift bias to **Rise** and open 159.50;
 
 ---
 
+## 2026-05-18 12:00 UTC
+
+**Snapshot:** USD/JPY 158.818 (+0.28%) · DXY 99.119
+
+# USD/JPY Hourly Delta-Update — 2026-05-18 12:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.818 | +0.28% on the session
+- **24h Range:** 158.35 – 159.073 | sitting in upper third of range
+- **Distance from levels:** ~25 pips below session high (159.073); ~47 pips above session low (158.35)
+
+---
+
+### What Changed in the Last Hour
+USD/JPY is holding near session highs despite a modest DXY pullback (-0.17%), suggesting yen-specific weakness is the dominant intraday driver rather than broad dollar strength. US10Y yields have surged +3.47% to 4.595% — near the session high of 4.599% — providing the primary upside anchor for the pair. Nikkei's sharp -2.71% decline points to risk-off pressure building in Japan, which paradoxically keeps yen bid interest limited as equity-linked outflows dominate.
+
+---
+
+### Bias
+**DRIFT** — yield support keeps a floor under the pair, but VIX elevation (18.71, +3.09%) and broad equity selling cap topside conviction near the 159.00 psychological level.
+
+| Scenario | Probability |
+|---|---|
+| Rise (above 159.10+) | 25% |
+| Drift (158.60–159.07) | 50% |
+| Fall (below 158.35) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.35 |
+| R1 | 159.07 |
+| Spot | 158.82 |
+| S1 | 158.35 |
+| S2 | 157.90 |
+
+---
+
+### Triggers
+A sustained break above **159.07** (session high) on volume would invalidate the drift bias and open a run toward 159.35; conversely, a close below **158.35** would shift the skew firmly bearish, likely tied to any sharp reversal in US10Y yields or escalation-driven risk-off yen demand.
+
+---
+
+### Confidence
+**58/100** — Yield support is structurally bullish for the pair, but conflicting signals (DXY softness, elevated VIX, Iran geopolitical risk, FOMC Minutes pending) introduce meaningful directional uncertainty in the near term.
+
+---
+
