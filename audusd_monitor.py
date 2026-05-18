@@ -1,17 +1,16 @@
 """
-AUD/USD hourly forecast monitor.
+Multi-pair FX hourly forecast monitor.
+Covers AUD/USD, USD/JPY, EUR/USD.
 
 Fetches live market data + recent news, calls the Anthropic API with a
-condensed COSTAR prompt, and appends the result to logs/updates.md plus a
-structured row to logs/data.csv.
+condensed COSTAR prompt, and appends the result to per-pair log files.
 
-Designed to run unattended on GitHub Actions during FX market hours.
+Designed to run unattended on GitHub Actions, triggered hourly by cron-job.org.
 """
 
 from __future__ import annotations
 
 import csv
-import json
 import os
 import sys
 import traceback
@@ -30,21 +29,33 @@ MAX_TOKENS = 2000
 
 REPO_ROOT = Path(__file__).resolve().parent
 LOG_DIR = REPO_ROOT / "logs"
-UPDATES_MD = LOG_DIR / "updates.md"
-DATA_CSV = LOG_DIR / "data.csv"
 
-# Tickers we pull from Yahoo Finance.
-# These are all free and don't require an API key.
-TICKERS = {
-    "AUDUSD": "AUDUSD=X",
-    "DXY": "DX-Y.NYB",
-    "US10Y": "^TNX",            # 10-year Treasury yield (×10, so divide by 10 later? No - quoted in %)
-    "US2Y": "^IRX",             # 13-week T-bill — closest free proxy for short-end
-    "GOLD": "GC=F",             # Gold futures
-    "COPPER": "HG=F",           # Copper futures
-    "BRENT": "BZ=F",            # Brent crude
-    "SP500": "^GSPC",
-    "VIX": "^VIX",
+# Pairs to monitor
+PAIRS = {
+    "AUDUSD": {"ticker": "AUDUSD=X", "name": "AUD/USD"},
+    "USDJPY": {"ticker": "USDJPY=X", "name": "USD/JPY"},
+    "EURUSD": {"ticker": "EURUSD=X", "name": "EUR/USD"},
+}
+
+# Shared context tickers (correlated assets)
+CONTEXT_TICKERS = {
+    "DXY":    "DX-Y.NYB",
+    "US10Y":  "^TNX",
+    "US2Y":   "^IRX",
+    "GOLD":   "GC=F",
+    "COPPER": "HG=F",
+    "BRENT":  "BZ=F",
+    "SP500":  "^GSPC",
+    "VIX":    "^VIX",
+    "NIKKEI": "^N225",   # Relevant for USD/JPY
+    "DAX":    "^GDAXI",  # Relevant for EUR/USD
+}
+
+# News sources per pair (yfinance symbols to pull headlines from)
+PAIR_NEWS_SYMBOLS = {
+    "AUDUSD": ["AUDUSD=X", "DX-Y.NYB", "GC=F"],
+    "USDJPY": ["USDJPY=X", "DX-Y.NYB", "^N225"],
+    "EURUSD": ["EURUSD=X", "DX-Y.NYB", "^GDAXI"],
 }
 
 # ---------------------------------------------------------------------------
@@ -55,21 +66,16 @@ def is_fx_market_open(now_utc: datetime | None = None) -> bool:
     """
     FX market is open from Sunday 22:00 UTC to Friday 22:00 UTC.
     Closed: Friday 22:00 UTC through Sunday 22:00 UTC.
-
-    Note: this is a conservative check using standard time.
-    During DST, the actual close shifts to 21:00 UTC, but we accept the
-    extra hour of "open" classification — Claude will see thin liquidity
-    in the data and flag it.
     """
     now_utc = now_utc or datetime.now(timezone.utc)
-    weekday = now_utc.weekday()   # Mon=0 ... Sun=6
+    weekday = now_utc.weekday()  # Mon=0 ... Sun=6
     hour = now_utc.hour
 
-    if weekday == 5:                       # Saturday — always closed
+    if weekday == 5:                    # Saturday — always closed
         return False
-    if weekday == 6 and hour < 22:         # Sunday before 22:00 UTC
+    if weekday == 6 and hour < 22:      # Sunday before 22:00 UTC
         return False
-    if weekday == 4 and hour >= 22:        # Friday after 22:00 UTC
+    if weekday == 4 and hour >= 22:     # Friday after 22:00 UTC
         return False
     return True
 
@@ -78,17 +84,16 @@ def is_fx_market_open(now_utc: datetime | None = None) -> bool:
 # Data fetching
 # ---------------------------------------------------------------------------
 
-def fetch_market_data() -> dict:
-    """Pull current quote and recent context for each ticker."""
+def fetch_market_data(pair_ticker: str) -> dict:
+    """Pull current quote and context for the pair + shared context tickers."""
+    tickers = {"PAIR": pair_ticker, **CONTEXT_TICKERS}
     data: dict[str, dict] = {}
 
-    for name, symbol in TICKERS.items():
+    for name, symbol in tickers.items():
         try:
             ticker = yf.Ticker(symbol)
-            # 2 days of hourly bars gives us session context + prior close
             hist = ticker.history(period="2d", interval="1h")
             if hist.empty:
-                # Fall back to daily if hourly isn't available for this symbol
                 hist = ticker.history(period="5d", interval="1d")
             if hist.empty:
                 data[name] = {"error": "no data"}
@@ -114,20 +119,19 @@ def fetch_market_data() -> dict:
     return data
 
 
-def fetch_news() -> list[dict]:
-    """Pull recent news headlines for AUD/USD and DXY tickers."""
+def fetch_news(news_symbols: list[str]) -> list[dict]:
+    """Pull recent headlines for the given yfinance symbols."""
     headlines: list[dict] = []
     seen_titles: set[str] = set()
     cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
 
-    for symbol in ("AUDUSD=X", "DX-Y.NYB", "GC=F"):
+    for symbol in news_symbols:
         try:
             items = yf.Ticker(symbol).news or []
         except Exception:
             continue
 
         for item in items[:10]:
-            # yfinance news shape varies; handle both old + new schemas
             content = item.get("content", item)
             title = content.get("title") or item.get("title")
             if not title or title in seen_titles:
@@ -159,7 +163,6 @@ def fetch_news() -> list[dict]:
                 "time_utc": pub_dt.strftime("%Y-%m-%d %H:%M"),
             })
 
-    # Newest first, capped
     headlines.sort(key=lambda h: h["time_utc"], reverse=True)
     return headlines[:12]
 
@@ -169,7 +172,7 @@ def fetch_news() -> list[dict]:
 # ---------------------------------------------------------------------------
 
 PROMPT_TEMPLATE = """You are a professional FX strategist producing a condensed
-hourly delta-update on AUD/USD for active traders. This is NOT the full COSTAR
+hourly delta-update on {pair_name} for active traders. This is NOT the full COSTAR
 report — it is a tight tactical refresh.
 
 ## Current market data (live, as of {timestamp_utc} UTC)
@@ -221,15 +224,15 @@ Score 0–100 with a one-line justification.
 """
 
 
-def build_prompt(market_data: dict, news: list[dict], timestamp_utc: str) -> str:
-    # Format market data as a clean block
+def build_prompt(pair_name: str, market_data: dict, news: list[dict], timestamp_utc: str) -> str:
     md_lines = []
     for name, d in market_data.items():
+        label = pair_name if name == "PAIR" else name
         if "error" in d:
-            md_lines.append(f"- {name}: ERROR ({d['error']})")
+            md_lines.append(f"- {label}: ERROR ({d['error']})")
             continue
         md_lines.append(
-            f"- {name} ({d['symbol']}): last={d['last']}, "
+            f"- {label} ({d['symbol']}): last={d['last']}, "
             f"24h range={d['low_24h']}–{d['high_24h']}, "
             f"change={d['change_pct']:+.2f}%"
         )
@@ -245,6 +248,7 @@ def build_prompt(market_data: dict, news: list[dict], timestamp_utc: str) -> str
         news_block = "(no recent headlines retrieved)"
 
     return PROMPT_TEMPLATE.format(
+        pair_name=pair_name,
         timestamp_utc=timestamp_utc,
         market_data_block=market_block,
         news_block=news_block,
@@ -256,7 +260,7 @@ def build_prompt(market_data: dict, news: list[dict], timestamp_utc: str) -> str
 # ---------------------------------------------------------------------------
 
 def call_claude(prompt: str) -> str:
-    client = Anthropic()  # reads ANTHROPIC_API_KEY from env
+    client = Anthropic()
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
@@ -271,21 +275,23 @@ def call_claude(prompt: str) -> str:
 # Logging
 # ---------------------------------------------------------------------------
 
-def append_markdown_log(timestamp_utc: str, market_data: dict, response: str) -> None:
+def append_markdown_log(pair_key: str, pair_name: str, timestamp_utc: str,
+                        market_data: dict, response: str) -> None:
     LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_file = LOG_DIR / f"{pair_key.lower()}_updates.md"
 
-    if not UPDATES_MD.exists():
-        UPDATES_MD.write_text(
-            "# AUD/USD Hourly Forecast Log\n\n"
-            "Automated hourly updates during FX market hours.\n\n"
-            "---\n\n"
+    if not log_file.exists():
+        log_file.write_text(
+            f"# {pair_name} Hourly Forecast Log\n\n"
+            f"Automated hourly updates during FX market hours.\n\n"
+            f"---\n\n"
         )
 
-    aud = market_data.get("AUDUSD", {})
+    pair_data = market_data.get("PAIR", {})
     dxy = market_data.get("DXY", {})
     spot_line = (
-        f"AUD/USD {aud.get('last', 'n/a')} "
-        f"({aud.get('change_pct', 0):+.2f}%) · "
+        f"{pair_name} {pair_data.get('last', 'n/a')} "
+        f"({pair_data.get('change_pct', 0):+.2f}%) · "
         f"DXY {dxy.get('last', 'n/a')}"
     )
 
@@ -296,24 +302,24 @@ def append_markdown_log(timestamp_utc: str, market_data: dict, response: str) ->
         f"---\n\n"
     )
 
-    with UPDATES_MD.open("a", encoding="utf-8") as fh:
+    with log_file.open("a", encoding="utf-8") as fh:
         fh.write(block)
 
 
-def append_csv_row(timestamp_utc: str, market_data: dict, response: str) -> None:
+def append_csv_row(pair_key: str, timestamp_utc: str,
+                   market_data: dict, response: str) -> None:
     LOG_DIR.mkdir(parents=True, exist_ok=True)
+    csv_file = LOG_DIR / f"{pair_key.lower()}_data.csv"
 
     header = [
-        "timestamp_utc",
-        "audusd", "audusd_change_pct",
-        "dxy", "us10y", "gold", "copper", "brent", "vix", "sp500",
-        "bias_guess", "raw_response_chars",
+        "timestamp_utc", "pair", "spot", "change_pct",
+        "dxy", "us10y", "gold", "vix", "sp500",
+        "bias", "raw_response_chars",
     ]
 
-    # Crude regex-free bias extraction
     upper = response.upper()
+    bias = "UNKNOWN"
     if "BIAS" in upper:
-        # Look for RISE/DRIFT/FALL in the first 300 chars after "BIAS"
         idx = upper.find("BIAS")
         window = upper[idx:idx + 400]
         if "FALL" in window:
@@ -322,28 +328,56 @@ def append_csv_row(timestamp_utc: str, market_data: dict, response: str) -> None
             bias = "RISE"
         elif "DRIFT" in window:
             bias = "DRIFT"
-        else:
-            bias = "UNKNOWN"
-    else:
-        bias = "UNKNOWN"
 
     def g(k: str, field: str = "last") -> str:
         return str(market_data.get(k, {}).get(field, ""))
 
     row = [
-        timestamp_utc,
-        g("AUDUSD"), g("AUDUSD", "change_pct"),
-        g("DXY"), g("US10Y"), g("GOLD"),
-        g("COPPER"), g("BRENT"), g("VIX"), g("SP500"),
+        timestamp_utc, pair_key,
+        g("PAIR"), g("PAIR", "change_pct"),
+        g("DXY"), g("US10Y"), g("GOLD"), g("VIX"), g("SP500"),
         bias, len(response),
     ]
 
-    write_header = not DATA_CSV.exists()
-    with DATA_CSV.open("a", newline="", encoding="utf-8") as fh:
+    write_header = not csv_file.exists()
+    with csv_file.open("a", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh)
         if write_header:
             writer.writerow(header)
         writer.writerow(row)
+
+
+# ---------------------------------------------------------------------------
+# Per-pair forecast runner
+# ---------------------------------------------------------------------------
+
+def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> None:
+    pair_name = pair_info["name"]
+    pair_ticker = pair_info["ticker"]
+    news_symbols = PAIR_NEWS_SYMBOLS[pair_key]
+
+    print(f"\n[{timestamp}] === {pair_name} ===")
+
+    print(f"[{timestamp}] Fetching market data...")
+    market_data = fetch_market_data(pair_ticker)
+
+    print(f"[{timestamp}] Fetching news...")
+    news = fetch_news(news_symbols)
+    print(f"[{timestamp}] Got {len(news)} headlines.")
+
+    print(f"[{timestamp}] Calling Claude ({MODEL})...")
+    prompt = build_prompt(pair_name, market_data, news, timestamp)
+    try:
+        response = call_claude(prompt)
+    except Exception as e:
+        print(f"ERROR calling Claude for {pair_name}: {e}", file=sys.stderr)
+        traceback.print_exc()
+        response = f"_API call failed: {type(e).__name__}: {e}_"
+
+    print(f"[{timestamp}] Writing logs...")
+    append_markdown_log(pair_key, pair_name, timestamp, market_data, response)
+    append_csv_row(pair_key, timestamp, market_data, response)
+    print(f"[{timestamp}] {pair_name} done.")
 
 
 # ---------------------------------------------------------------------------
@@ -362,28 +396,10 @@ def main() -> int:
         print("ERROR: ANTHROPIC_API_KEY not set.", file=sys.stderr)
         return 1
 
-    print(f"[{timestamp}] Fetching market data...")
-    market_data = fetch_market_data()
+    for pair_key, pair_info in PAIRS.items():
+        run_pair(pair_key, pair_info, timestamp)
 
-    print(f"[{timestamp}] Fetching news...")
-    news = fetch_news()
-    print(f"[{timestamp}] Got {len(news)} headlines.")
-
-    print(f"[{timestamp}] Calling Claude ({MODEL})...")
-    prompt = build_prompt(market_data, news, timestamp)
-    try:
-        response = call_claude(prompt)
-    except Exception as e:
-        print(f"ERROR calling Claude: {e}", file=sys.stderr)
-        traceback.print_exc()
-        # Still log the failure so we can see gaps in the log
-        response = f"_API call failed: {type(e).__name__}: {e}_"
-
-    print(f"[{timestamp}] Writing logs...")
-    append_markdown_log(timestamp, market_data, response)
-    append_csv_row(timestamp, market_data, response)
-
-    print(f"[{timestamp}] Done.")
+    print(f"\n[{timestamp}] All pairs complete.")
     return 0
 
 
