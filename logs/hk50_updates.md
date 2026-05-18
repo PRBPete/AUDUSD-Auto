@@ -591,3 +591,56 @@ A sustained reclaim above **25,950** — the mid-session resistance confluence �
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.025
+
+# HK50 Delta Update — 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 | **24h change:** −1.68% | trading in lower half of 25,505–26,391 range.
+- **Distance from session high:** −715 pts (−2.72%) | **Distance from session low:** +169 pts (+0.66%).
+
+---
+
+### What Changed in the Last Hour
+HK50 continues to grind toward the lower end of the session range, with selling pressure reinforced by a −2.71% Nikkei print and a −1.68% concurrent decline in the index itself. VIX has lifted to 18.59 (+2.42%), signalling a modest uptick in risk aversion that is weighing on Asia-Pacific equities broadly. No fresh catalysts in the past hour; the dominant driver remains the MT Newswires report citing soft China economic data alongside oil strength dampening sentiment.
+
+---
+
+### Bias
+**FALL** — negative regional momentum, elevated VIX, and proximity to session lows with no visible catalyst for reversal within the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,900 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,300 |
+
+*R1 derived from intraday consolidation zone; S2 is a round-number extension below session low.*
+
+---
+
+### Triggers
+A sustained reclaim above **25,900** on volume would neutralise the bearish bias and shift the view to drift/neutral.
+
+---
+
+### Confidence
+**52 / 100** — Directional lean is supported by regional equity weakness and risk-off signals, but only one news headline is available, macro data is limited to daily prints, and intraday flow/volume data is absent, constraining conviction materially.
+
+---
+

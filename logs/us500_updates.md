@@ -578,3 +578,55 @@ A decisive reclaim of **7,415** on declining VIX and a pullback in US10Y below *
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** US500 (S&P 500) 7385.02 (-0.61%) · DXY 99.027
+
+## US500 Delta-Update | 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,385.02 | 24h change: −0.61%
+- **Distance from session high:** −69.83 pts (7,454.85); from session low: +23.55 pts (7,361.47)
+- **VIX:** 18.61, up +2.53% — elevated but not panic territory; bias tilting cautious.
+
+---
+
+### What Changed in the Last Hour
+US500 is drifting near session lows as Big Tech continues to weigh (NAS100 −1.00%, confirming sector drag) and US10Y yields pressed to 4.595%, near the session high of 4.611%. A reported revised Iran peace proposal introduced a brief bid in equities but failed to sustain — Brent's near-session-high print at $110.96 is sustaining inflation anxiety rather than acting as a risk-on signal. Price action is consolidating in a narrow 25-point range, suggesting indecision rather than capitulation.
+
+---
+
+### Bias
+**DRIFT / FALL** — mildly bearish lean into the close. Yield pressure, Tech underperformance, and VIX uptick argue against recovery without a fresh catalyst. Nvidia earnings anticipation may suppress aggressive selling but limits upside conviction.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 45% |
+| Fall | 35% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,454.85 |
+| R1 | 7,420.00 |
+| Spot | 7,385.02 |
+| S1 | 7,361.47 |
+| S2 | 7,330.00 |
+
+---
+
+### Triggers
+A sustained reclaim above 7,420 — aligning with the mid-session rejection zone — would neutralise the bearish lean and open a retest of the session high at 7,454.85.
+
+---
+
+### Confidence
+**52/100** — Mixed signals: yield pressure and Tech drag are clear negatives, but Iran headline risk and pre-Nvidia positioning introduce two-way uncertainty; no clean directional resolution yet.
+
+---
+

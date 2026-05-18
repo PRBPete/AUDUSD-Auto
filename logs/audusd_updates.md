@@ -778,3 +778,55 @@ A sustained break and close above **0.7187** (24h high) would neutralise the bea
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** AUD/USD 0.7162 (-0.75%) · DXY 99.004
+
+# AUD/USD Delta Update — 17:01 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- Spot: **0.7162**, down 0.75% on the session — softest print of the NY afternoon.
+- Distance from intraday high (0.7187): **25 pips**; from intraday low (0.7123): **39 pips**.
+- DXY holding near session lows (99.00) but US10Y firming at 4.595% caps AUD recovery.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD drifted lower through the NY afternoon despite a soft DXY, with the divergence explained by rising US 10Y yields (+0.68%) weighing on risk appetite broadly. Equities remain under pressure — S&P 500 off 0.68%, Nikkei down 2.71%, VIX elevated at 18.6 — removing the risk-on tailwind AUD typically requires to extend gains. Commodity support is limited: copper and Brent are marginally positive but gold's inability to hold above $4,600 amid rate concerns signals the commodity complex is not providing a meaningful bid.
+
+---
+
+### Bias
+**DRIFT / mild FALL** over the next 1–4 hours. Rising yields, softening equities, and a VIX pushing toward 19 leave the risk environment too fragile for AUD to recover. DXY softness is the sole offset.
+
+| Scenario | Probability |
+|---|---|
+| Rise (above 0.7175) | 20% |
+| Drift (0.7145–0.7175) | 50% |
+| Fall (below 0.7145) | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7187 |
+| R1 | 0.7175 |
+| Spot | 0.7162 |
+| S1 | 0.7145 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break above **0.7175** — ideally on a DXY leg lower through 98.97 — would neutralise the drift/fall bias and open a retest of 0.7187.
+
+---
+
+### Confidence
+**54 / 100** — Cross-asset signals are mixed (soft DXY vs. rising yields and weak equities); no high-impact AUD-specific catalyst in the window, and FOMC Minutes (due later this week) introduce directional uncertainty.
+
+---
+

@@ -785,3 +785,55 @@ A clean break and hold above **159.073** (session high) driven by fresh US yield
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** USD/JPY 158.939 (+0.35%) · DXY 99.005
+
+# USD/JPY Hourly Delta-Update — 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.939 | **24h change:** +0.35% | **24h range:** 158.604–159.073
+- **Distance from resistance:** ~13 pips below session high (159.073)
+- **Distance from support:** ~34 pips above session low (158.604)
+
+---
+
+### What Changed in the Last Hour
+USD/JPY is consolidating near the upper end of its daily range, holding just below the 159.073 session high as competing forces suppress a clean directional break. The DXY is under mild pressure (–0.28%) on reports of a potential US-Iran sanctions deal, which partially offsets the upward pull from rising US10Y yields (+0.68% to 4.595). Nikkei's sharp decline (–2.71%) adds residual JPY safe-haven demand, capping the topside.
+
+---
+
+### Bias
+**DRIFT** — cross-currents between yield support and dollar softness, alongside equity risk-off (VIX +2.48%, Nikkei –2.71%), suggest range-bound price action is the path of least resistance over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.40 |
+| R1 | 159.07 |
+| Spot | 158.939 |
+| S1 | 158.60 |
+| S2 | 158.20 |
+
+---
+
+### Triggers
+A sustained break above 159.073 on renewed DXY strength or hawkish FOMC minutes repricing would neutralise the drift bias and open a bullish continuation toward 159.40; conversely, a close below 158.60 on accelerating risk-off or JPY safe-haven demand shifts bias to FALL.
+
+---
+
+### Confidence
+**52/100** — Mixed macro signals (dollar-negative sanctions news vs. yield-positive rate-hike narrative), elevated VIX, and thin early-week liquidity ahead of Wednesday's FOMC minutes create genuine ambiguity. No single dominant driver is in control at this hour.
+
+---
+

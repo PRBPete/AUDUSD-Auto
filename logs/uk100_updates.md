@@ -581,3 +581,55 @@ A sustained push above 10,340 (R1) on volume would neutralise the drift bias and
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10296.5898 (+0.05%) · DXY 99.023
+
+# UK100 Delta Update — 17:01 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 10,296.59 | +0.05% on the session.
+- Distance from session high (10,375.73): −79 pts; from session low (10,151.45): +145 pts.
+- Holding mid-range; no decisive break of either extreme.
+
+---
+
+### What Changed in the Last Hour
+UK100 is effectively flat over the past hour, consolidating near the upper half of the daily range after an earlier drift higher on Iran–US talks optimism. The dominant cross-asset drag is a rising VIX (+2.48% to 18.60) and a softening S&P 500 (−0.63%) and Nasdaq (−1.04%), which caps upside momentum into the London close. Brent crude's continued strength (+0.58%, $110.96) provides a floor via energy-sector support, partially offsetting consumer-staples weakness from Diageo and Unilever.
+
+---
+
+### Bias
+**DRIFT** — Late London session with Wall Street under pressure and VIX elevated; no catalyst to sustain a push through 10,375. Limited downside given commodity support and calmer Gilt markets.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 55% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,340 |
+| Spot | 10,297 |
+| S1 | 10,240 |
+| S2 | 10,151 |
+
+---
+
+### Triggers
+A sustained S&P 500 recovery above 7,420 combined with VIX retreating below 18.00 would shift bias to **Rise**; conversely, a break below 10,240 on accelerating US equity selling activates the **Fall** scenario.
+
+---
+
+### Confidence
+**52/100** — Late-session low liquidity, divergent signals (commodity strength vs. US equity weakness and elevated VIX), and UK100's minimal net change reduce conviction; no single dominant catalyst is in control.
+
+---
+

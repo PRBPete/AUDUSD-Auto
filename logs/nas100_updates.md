@@ -572,3 +572,57 @@ A decisive hourly close back above 29,100 — reclaiming the mid-session consoli
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 28894.6992 (-1.01%) · DXY 99.024
+
+# NAS100 Delta-Update — 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 28,894.70 | 24h change: **−1.01%**
+- **Distance from session high:** −491.84 pts (29,386.54); from session low: +145.08 pts (28,749.62)
+- **VIX:** 18.60, up +2.48% — elevated but not extreme; trend is compressing risk appetite.
+
+---
+
+### What Changed in the Last Hour
+NAS100 has drifted lower within the bottom third of its 24h range, with Big Tech acting as the primary drag (Barron's, 16:06 UTC). An Iranian revised peace proposal (MT Newswires, 16:48 UTC) provided a brief mixed signal, but Brent sustaining above $110 and US10Y ticking to 4.595% (+0.68%) continue to pressure rate-sensitive growth names. No technical recovery has emerged; price action is grinding, not bouncing.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours. Rising yields, firm oil, Nikkei −2.71%, and HSI −1.68% set a negative global backdrop. VIX elevation and pre-Nvidia earnings anxiety reinforce the downside lean.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,386 |
+| R1 | 29,100 |
+| Spot | 28,895 |
+| S1 | 28,750 |
+| S2 | 28,550 |
+
+*S1 = session low; S2 is a derived extension; R1 is a prior intraday pivot zone.*
+
+---
+
+### Triggers
+A reclaim and hold above **29,100** on meaningful volume would neutralise the bearish bias and shift the probability table toward drift/rise.
+
+---
+
+### Confidence
+**54/100** — Directional signal is moderately clear (yield pressure + tech drag confirmed), but Iran headline risk and approaching Nvidia catalyst introduce binary noise that caps conviction.
+
+---
+

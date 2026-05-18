@@ -786,3 +786,55 @@ A confirmed break above 1.1660 (session high) on sustained DXY weakness below 98
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** EUR/USD 1.1654 (-0.09%) · DXY 99.005
+
+# EUR/USD Hourly Delta-Update — 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.1654 | 24h change: –0.09% | Near top of 1.1612–1.1660 range.
+- **Distance from resistance:** ~0.6 pips below 24h high at 1.1660.
+- **Distance from support:** ~42 pips above session low at 1.1612.
+
+---
+
+### What Changed in the Last Hour
+EUR/USD is consolidating just under the session high of 1.1660, with price action effectively stalling after the early-session USD retreat driven by the Reuters report on a US-Iran sanctions deal. The DXY has slipped to 99.005 — down 0.28% — yet USD selling momentum appears to be fading as US 10Y yields climb to 4.595% (+0.68%), a headwind that is capping further EUR gains. Equity risk sentiment is mixed-to-negative (VIX +2.59%, Nikkei –2.71%, S&P –0.63%), which is not generating additional EUR/USD upside impetus.
+
+---
+
+### Bias
+**DRIFT** — price is pinned near resistance with conflicting drivers; rising US yields argue against sustained EUR strength, while a soft DXY prevents meaningful reversal.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1700 |
+| R1 | 1.1660 |
+| Spot | 1.1654 |
+| S1 | 1.1612 |
+| S2 | 1.1575 |
+
+---
+
+### Triggers
+A clean break and hourly close above **1.1660** (session high) would shift bias to Rise targeting 1.1700; conversely, a drop through **1.1612** on renewed USD strength or risk-off flow flips bias to Fall.
+
+---
+
+### Confidence
+**52/100** — Conflicting macro signals (soft DXY vs. rising US yields, geopolitical noise vs. Iran deal speculation) and proximity to range extremes reduce conviction; FOMC Minutes later this week add event uncertainty.
+
+---
+

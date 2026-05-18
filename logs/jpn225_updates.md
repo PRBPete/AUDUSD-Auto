@@ -582,3 +582,55 @@ A sustained reclaim above 61,800 — roughly the session midpoint — would neut
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.023
+
+# JPN225 Hourly Delta-Update — 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% | Range: 60,376.98–63,235.77
+- Distance from session high (63,235.77): −2,416 pts (−3.82%); distance from session low (60,376.98): +443 pts (+0.73%)
+- Broad context: index sitting near the lower quartile of its 24h range.
+
+---
+
+### What Changed in the Last Hour
+JPN225 has stabilised marginally above the session low of 60,376.98 but remains under significant pressure following a −2.71% session decline. The primary driver is a combination of weaker regional sentiment — HSI down −1.68%, NAS100 −1.00%, S&P 500 −0.60% — alongside rising US10Y yields (+0.68% to 4.595%) compressing equity risk appetite. VIX has climbed to 18.59 (+2.42%), confirming hedging demand is elevated and the sell-off lacks clear near-term exhaustion signals.
+
+---
+
+### Bias
+**FALL** — price is near session lows with no meaningful reversal catalyst; yield pressure and cross-market risk-off alignment sustain downside skew.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 61,800 |
+| R1 | 61,300 |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,900 |
+
+---
+
+### Triggers
+A sustained reclaim above 61,300 — combined with a VIX retreat below 18.00 and stabilisation in NAS100 — would neutralise the bearish bias and shift view to drift/neutral.
+
+---
+
+### Confidence
+**52/100** — Directional alignment across equities, yields, and volatility is clear, but only one news headline is available and intraday liquidity dynamics near the Tokyo close introduce uncertainty around follow-through.
+
+---
+

@@ -578,3 +578,55 @@ A clean hourly close above 1.3423 (24h high) would shift bias to **Rise** target
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** GBP/USD 1.3429 (+0.28%) · DXY 99.021
+
+# GBP/USD Delta Update — 17:01 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 1.3429 | +0.28% on the session, comfortably off the 1.3304 intraday low.
+- Distance from session high: ~21 pips below 1.3450 resistance.
+- Distance from prior pivot / S1 zone: ~29 pips above 1.3400 round-number support.
+
+---
+
+### What Changed in the Last Hour
+GBP/USD has stalled just beneath the 1.3450 session high as the initial USD softness — triggered by the reported US-Iran sanctions deal — fades at the margin. US10Y yields have crept back toward 4.595%, applying a mild brake on further dollar selling, while VIX ticking up to 18.62 (+2.59%) and S&P500 slipping 0.63% suggest risk appetite is softening into the US afternoon. The pair is in consolidation mode, lacking fresh catalysts to extend the move higher.
+
+---
+
+### Bias
+**DRIFT** — momentum is fading near session highs with yields firming, risk sentiment softening, and no new GBP-specific catalyst.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3450 |
+| R1 | 1.3440 |
+| Spot | 1.3429 |
+| S1 | 1.3400 |
+| S2 | 1.3370 |
+
+---
+
+### Triggers
+A clean break and hold above 1.3450 (session high) would neutralise the drift bias and open a short-term bullish leg; conversely, a sustained move back below 1.3400 on rising VIX or a hawkish DXY reversal would shift bias to **FALL**.
+
+---
+
+### Confidence
+**52/100** — Conflicting drivers (dollar soft on geopolitics vs. yields firming on rate-hike bets), FOMC Minutes pending mid-week, and the pair sitting mid-range reduce conviction materially. No UK data in the immediate window.
+
+---
+

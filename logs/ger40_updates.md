@@ -575,3 +575,55 @@ A sustained push above **24,431** (session high) would neutralise the drift/fall
 
 ---
 
+## 2026-05-18 17:01 UTC
+
+**Snapshot:** GER40 (DAX 40) 24246.8906 (+0.19%) · DXY 99.026
+
+# GER40 Delta Update — 2026-05-18 17:01 UTC
+
+---
+
+### Snapshot
+- Spot: 24,246.89 | +0.19% on the day.
+- Distance from session high (24,430.98): −184 pts; from session low (23,797.33): +450 pts.
+- Holding above the midpoint of the 24h range (~24,114), but off intraday peaks.
+
+---
+
+### What Changed in the Last Hour
+GER40 has drifted off its session highs as the US equity open turned negative — S&P 500 −0.62% and NAS100 −1.02% — exerting modest cross-asset drag. VIX ticking up to 18.58 (+2.37%) confirms a mild risk-off shift in late European hours. The Nikkei's sharp −2.71% decline and HSI −1.68% suggest broader equity fatigue, though firmer oil (Brent +0.59%) and copper (+0.24%) are partially offsetting the pressure on cyclically-exposed DAX names.
+
+---
+
+### Bias
+**DRIFT** (slight downside skew) for the next 1–4 hours, reflecting US session weakness, elevated VIX, and proximity to the close of European cash markets.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 50% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,431 |
+| R1 | 24,340 |
+| Spot | 24,247 |
+| S1 | 24,100 |
+| S2 | 23,797 |
+
+---
+
+### Triggers
+A sustained push back above 24,340 on recovering US futures would neutralise the drift/bearish bias and re-open a test of the session high at 24,431.
+
+---
+
+### Confidence
+**52/100** — European cash session is near close, limiting follow-through; US equity weakness is the dominant near-term driver but is not yet severe enough to force a directional break. Middle East risk (Iran-US talks) adds binary uncertainty to oil-sensitive names.
+
+---
+
