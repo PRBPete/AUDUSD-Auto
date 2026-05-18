@@ -523,3 +523,55 @@ A sustained move above 24,431 (session high) would invalidate the drift bias and
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** GER40 (DAX 40) 24246.8906 (+0.19%) · DXY 99.066
+
+# GER40 Delta Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 24,246.89 | **24h change:** +0.19% | **24h range:** 23,797.33–24,430.98
+- **Distance from session high:** −184 pts (~0.75%) | **Distance from session low:** +450 pts (~1.9%)
+- **Key reference:** Prior resistance cluster near 24,400 remains untested; intraday base near 23,800.
+
+---
+
+### What Changed in the Last Hour
+GER40 is consolidating in the upper quarter of its daily range but has faded from the session high of 24,430, consistent with softening US equity momentum (S&P 500 −0.68%, NAS100 −1.06%). VIX has risen +2.92% to 18.68, signalling a modest pickup in hedging demand that is applying late-session pressure. Iran-US talks optimism (per FTSE 100 headlines) provided the morning lift but that catalyst has now been largely priced in.
+
+---
+
+### Bias
+**DRIFT** — the index lacks fresh positive catalysts into the European close; US equity weakness and rising VIX create a mild headwind, but DAX is not breaking down. Expect range-bound to marginally lower price action over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 50% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,431 |
+| R1 | 24,330 |
+| Spot | 24,247 |
+| S1 | 24,100 |
+| S2 | 23,800 |
+
+---
+
+### Triggers
+A sustained push above **24,431** (session high) would neutralise the drift/fall bias and reopen bullish continuation; conversely, a break below **24,100** confirms near-term deterioration aligned with broader US risk-off tone.
+
+---
+
+### Confidence
+**52 / 100** — Cross-asset signals are mixed (supportive oil/copper vs. falling US equities and rising VIX); no DAX-specific headline catalyst in the feed, and the US close dynamic remains an unknown. Moderate confidence only.
+
+---
+

@@ -733,3 +733,55 @@ A sustained break above 159.073 (today's high) driven by a reversal in DXY back 
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** USD/JPY 158.831 (+0.29%) · DXY 99.065
+
+# USD/JPY Delta Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.831 | **24h change:** +0.29% | **24h range:** 158.545–159.073
+- **Distance from R1 (159.073):** ~24 pips (today's high / intraday resistance)
+- **Distance from S1 (158.545):** ~29 pips (today's low / intraday support)
+
+---
+
+### What Changed in the Last Hour
+Price action has been range-bound near 158.83, failing to recapture the 159.073 session high after a Reuters report of a potential US-Iran sanctions deal weighed on the dollar broadly (DXY -0.22%). Notably, this USD softness has not translated into a meaningful USD/JPY decline, as sharply rising US 10Y yields (+0.85% to 4.603%) and a deeply negative Nikkei session (-2.71%) are simultaneously supporting the yen via risk-off flows and capping the pair. The net result is compression, not trend.
+
+---
+
+### Bias
+**DRIFT** for the next 1–4 hours. Competing forces — dollar headwinds from the Iran deal narrative vs. yield support and equities weakness — leave the pair anchored mid-range. No clean directional catalyst is dominant at this hour.
+
+| Scenario | Probability |
+|---|---|
+| **Rise** | 28% |
+| **Drift** | 47% |
+| **Fall** | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.40 |
+| R1 | 159.073 |
+| **Spot** | **158.831** |
+| S1 | 158.545 |
+| S2 | 158.10 |
+
+---
+
+### Triggers
+A clean break and hold above **159.073** (session high) driven by fresh US yield acceleration or equity stabilisation would invalidate the drift bias and re-open a bullish leg toward 159.40; conversely, a confirmed close below **158.545** on renewed risk-off or dollar weakness would shift bias to **FALL**.
+
+---
+
+### Confidence
+**52/100** — Conflicting macro drivers (yields bullish for pair, Iran deal/DXY softness bearish) create genuine ambiguity; FOMC Minutes later this week add event-risk uncertainty to near-term reads.
+
+---
+

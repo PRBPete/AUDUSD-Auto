@@ -520,3 +520,55 @@ A sustained reclaim above 29,200 on meaningful volume would neutralise the beari
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 28875.3457 (-1.07%) · DXY 99.062
+
+# NAS100 Delta-Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 28,875.35 — down 1.07% on the session.
+- **24h Range:** 28,844.06 low / 29,386.54 high; currently trading near session lows.
+- **Key distances:** ~511 pts below session high; ~31 pts above session low; prior round support at 28,800 is close.
+
+---
+
+### What Changed in the Last Hour
+NAS100 extended its selloff into the 16:00 UTC close, pressing toward the session floor at 28,844. The dominant driver is a continued rise in US10Y yields (+0.81% to 4.601%), compressing growth/tech multiples, while VIX lifted to 18.67 (+2.87%), signalling active hedging demand. The Nikkei's sharp -2.71% drop and HSI -1.68% suggest the risk-off impulse has global breadth, reducing the likelihood of a near-term intraday reversal.
+
+---
+
+### Bias
+**FALL** — Yield pressure, elevated VIX, and proximity to session lows with no evident macro catalyst for relief in the next 1–4 hours all tilt the tape lower.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,386 |
+| R1 | 29,100 |
+| Spot | 28,875 |
+| S1 | 28,844 |
+| S2 | 28,650 |
+
+---
+
+### Triggers
+A decisive hourly close back above 29,100 — reclaiming the mid-session consolidation zone — would neutralise the bearish bias and shift the outlook to neutral/drift.
+
+---
+
+### Confidence
+**58 / 100** — Directional signal is reasonably clear (yield spike, risk-off breadth), but session-low proximity introduces mean-reversion risk, and Nvidia/Walmart earnings due this week add unquantified headline risk that could rapidly reprice the tape.
+
+---
+

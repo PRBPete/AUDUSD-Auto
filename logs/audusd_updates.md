@@ -726,3 +726,55 @@ A sustained break above 0.7187 (session high) on confirmed DXY weakness below 98
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** AUD/USD 0.7162 (-0.76%) · DXY 99.068
+
+# AUD/USD Delta Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 0.7162 | 24h change: −0.76% | Within lower third of 0.7123–0.7187 range.
+- **Distance from range high (0.7187):** 25 pips resistance overhead.
+- **Distance from range low (0.7123):** 39 pips to downside support.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has drifted lower into the 16:00 UTC window, pressured by a rising VIX (+3.09% to 18.71) and Nikkei weakness (−2.71%), which is undermining risk appetite across Asia-Pacific proxies. A Reuters report of a US-Iran sanctions deal weighed on the USD modestly (DXY −0.22%), but the offset is being overwhelmed by rising US10Y yields (+0.81% to 4.601%), which compress the AUD's relative appeal. Copper is flat and gold marginally softer, offering the AUD no commodity-sector tailwind at this hour.
+
+---
+
+### Bias
+**FALL** — Risk-off equity tone, elevated VIX, and yield curve pressure (10Y rising, 2Y falling) create a steepening dynamic that historically drags AUD/USD lower in the near term.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7187 |
+| R1 | 0.7175 |
+| Spot | 0.7162 |
+| S1 | 0.7140 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break and close above **0.7187** (24h high) would neutralise the bearish bias, likely driven by a DXY reversal below 98.98 or a material VIX retreat below 17.80.
+
+---
+
+### Confidence
+**58/100** — Directional signals are moderately aligned (risk-off, yield pressure, weak Asian equities), but the conflicting USD headline flow (Iran deal vs. rate-hike prospects) and shallow intraday range introduce meaningful uncertainty within the 1–4 hour window.
+
+---
+

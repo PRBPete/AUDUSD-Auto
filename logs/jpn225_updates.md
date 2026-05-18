@@ -528,3 +528,57 @@ A sustained reclaim above 61,500 — coinciding with stabilisation in US10Y belo
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.072
+
+# JPN225 Delta-Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% | Session range: 60,376.98–63,235.77
+- Distance from session high: −2,416 pts (−3.82%) | Distance from session low: +443 pts (+0.73%)
+- No discrete technical reference levels available in current data; intraday structure used below.
+
+---
+
+### What Changed in the Last Hour
+JPN225 is trading near the lower third of its session range, consistent with broad Asia-Pacific risk-off pressure. HSI is down −1.68% and SP500 futures lean negative (−0.68%), reinforcing the weak tone. No fresh catalyst has emerged in the last hour; selling pressure appears to be continuation rather than a new shock.
+
+---
+
+### Bias
+**FALL** — Price hugging session lows, external macro headwinds (rising US10Y at 4.601%, VIX elevated at 18.67, China-linked pessimism per the MT Newswires headline) offer no near-term recovery catalyst.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 63,236 (session high) |
+| R1 | 61,800 (approx. mid-session resistance) |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,900 (round-number / psychological) |
+
+*Note: R1 and S2 are estimated from intraday structure; no external reference data provided.*
+
+---
+
+### Triggers
+A sustained reclaim above 61,800 — roughly the session midpoint — would neutralise the bearish bias and open a drift-to-rise reassessment.
+
+---
+
+### Confidence
+**48 / 100** — Directional signal is reasonably clear (broad risk-off, negative momentum), but only one news headline is available, no options or futures positioning data is present, and intraday structure relies on session extremes rather than confirmed technical levels.
+
+---
+

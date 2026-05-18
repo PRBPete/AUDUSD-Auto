@@ -526,3 +526,55 @@ A sustained move back above 7,420 — reclaiming the session midpoint alongside 
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7378.8101 (-0.69%) · DXY 99.061
+
+# US500 Delta-Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,378.81 — down **0.69%** on the session.
+- **24h range:** 7,371.75–7,454.85; spot is trading near the **lower 10%** of that range.
+- **Key levels:** ~200 pts below the round 7,600 handle; holding just above intraday lows.
+
+---
+
+### What Changed in the Last Hour
+US500 ground lower through the afternoon, hugging the session floor near 7,371 as US10Y yields pushed to 4.603% (+0.85%), compressing equity multiples. VIX extended its climb to 18.67 (+2.87%), signalling active hedging demand rather than complacency. NAS100 underperformed at -1.07%, consistent with rate-sensitive tech leadership rolling over on the yield spike.
+
+---
+
+### Bias
+**FALL** — yield pressure, elevated VIX, and deteriorating breadth (Nikkei -2.71%, HSI -1.68%) argue for continued near-term softness. Brent above $111 adds a stagflationary headwind.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,454 (session high) |
+| R1 | 7,415 (mid-range / prior consolidation) |
+| Spot | 7,379 |
+| S1 | 7,372 (intraday low) |
+| S2 | 7,340 (round-number / structural support) |
+
+---
+
+### Triggers
+A decisive reclaim of **7,415** on declining VIX and a pullback in US10Y below **4.57%** would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**58 / 100** — Directional case is reasonably clear (yield spike + VIX rise + Asia weakness), but Nvidia/Walmart earnings due this week introduce binary overnight risk that limits near-term conviction, and intraday liquidity thins toward the close.
+
+---
+

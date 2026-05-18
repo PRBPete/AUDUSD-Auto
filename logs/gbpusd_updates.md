@@ -526,3 +526,55 @@ A confirmed close above 1.3403 (24h high) on meaningful volume would neutralise 
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** GBP/USD 1.3417 (+0.19%) · DXY 99.064
+
+# GBP/USD Hourly Delta-Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.3417 | 24h change: +0.19% | Near top of 1.3304–1.3423 range.
+- **Distance from resistance:** ~6 pips below 24h high of 1.3423.
+- **Distance from support:** ~113 pips above 24h low of 1.3304.
+
+---
+
+### What Changed in the Last Hour
+GBP/USD has pressed into the top of its daily range, hugging 1.3420–1.3423 resistance as the DXY extended its softness (-0.22%) on reports of a US-Iran sanctions deal circulating early afternoon. However, rising US10Y yields (+0.85% to 4.603%) and WSJ commentary flagging renewed US rate-hike prospects provide a counterweight, capping further upside. Equity risk sentiment has deteriorated (VIX +2.98%, S&P 500 -0.69%, Nikkei -2.71%), introducing caution for further GBP gains at this level.
+
+---
+
+### Bias
+**DRIFT** — pair is stalling at range highs with conflicting macro signals. Geopolitical dollar softness supports GBP, but rising yields and deteriorating risk appetite limit upside conviction.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 45% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3450 |
+| R1 | 1.3423 |
+| Spot | 1.3417 |
+| S1 | 1.3380 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A clean hourly close above 1.3423 (24h high) would shift bias to **Rise** targeting 1.3450; a reversal below 1.3380 on renewed yield pressure or risk-off flow would activate the **Fall** scenario toward 1.3304.
+
+---
+
+### Confidence
+**52/100** — Conflicting drivers (dollar softness vs. rising yields vs. deteriorating risk appetite) and thin intraday price action near range extremes reduce directional conviction; FOMC minutes later this week add uncertainty.
+
+---
+

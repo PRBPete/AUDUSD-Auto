@@ -734,3 +734,55 @@ A confirmed break and close above 1.1660 (session high) would neutralise the dri
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** EUR/USD 1.165 (-0.13%) · DXY 99.061
+
+## EUR/USD Delta Update — 16:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 1.1650 | 24h change: −0.13% | Mid-range of today's 1.1612–1.1660 band.
+- R1 at 1.1660 (session high/intraday ceiling); S1 at 1.1612 (session low).
+- DXY 99.06, off session high of 99.41 — dollar broadly softer into the close.
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has held a narrow consolidation near 1.1650, with meaningful directional pressure absent in the past hour. The dominant late-session driver is the Reuters report of a prospective US-Iran sanctions deal, which clipped dollar demand and capped DXY below 99.10. Offsetting this, US 10Y yields extended their rise to 4.603% (+0.85%), a headwind for further EUR gains as rate-hike expectations keep USD supported on dips.
+
+---
+
+### Bias
+**DRIFT** — Cross-currents between a softening dollar (Iran deal headlines) and rising US yields create a directionless tug-of-war. The pair is pinned near the top of the session range with no clean catalyst to break either way before the US close.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>1.1665) | 25% |
+| Drift (1.1620–1.1660) | 50% |
+| Fall (<1.1612) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1700 |
+| R1 | 1.1660 |
+| Spot | 1.1650 |
+| S1 | 1.1612 |
+| S2 | 1.1580 |
+
+---
+
+### Triggers
+A confirmed break above 1.1660 (session high) on sustained DXY weakness below 98.98 would neutralise the drift bias and open the 1.1700 handle; conversely, a US 10Y yield push through 4.62% alongside dollar recovery above 99.40 targets S1 at 1.1612.
+
+---
+
+### Confidence
+**52/100** — Conflicting signals (Iran deal vs. yield surge vs. FOMC minutes focus this week) prevent a high-conviction directional read; range-bound drift is the path of least resistance.
+
+---
+

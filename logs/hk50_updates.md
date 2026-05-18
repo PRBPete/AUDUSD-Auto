@@ -539,3 +539,55 @@ A sustained reclaim of **25,950** (R1 / mid-range) on volume would neutralise th
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.068
+
+# HK50 Delta Update — 2026-05-18 16:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 — down **1.68%** on the session.
+- **24h Range:** 25,505.71 – 26,391.02; spot sits **67% below** the session midpoint, near the lower third.
+- **Distance from levels:** ~169 pts above session low; ~716 pts below session high.
+
+---
+
+### What Changed in the Last Hour
+HK50 has continued to bleed lower in line with broad Asian equity weakness, with Nikkei off 2.71% providing regional confirmation of risk-off tone. The single news catalyst — oil and soft China economic data dampening Asian markets — remains the dominant driver. No material reversal attempt is visible; price is consolidating in the lower quartile of the day's range.
+
+---
+
+### Bias
+**FALL** — downside pressure remains intact. Risk-off signals are broad: VIX +2.87%, S&P and Nasdaq both negative, US 10Y yields rising (+0.81%), and China macro headwinds unreleased. DXY softness (-0.22%) offers marginal relief but is insufficient to reverse the tide.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,950 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,250 |
+
+---
+
+### Triggers
+A sustained reclaim above **25,950** — the mid-session resistance confluence — would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**52/100** — Directional alignment across risk assets is clear, but thin news flow (single headline), no intraday granularity, and proximity to session lows where short-covering risk is elevated limit conviction.
+
+---
+

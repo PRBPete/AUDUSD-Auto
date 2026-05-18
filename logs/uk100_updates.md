@@ -529,3 +529,55 @@ A sustained break above **10,375** (session high) on continued Iran–US deal op
 
 ---
 
+## 2026-05-18 16:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10296.5898 (+0.05%) · DXY 99.069
+
+# UK100 Delta-Update — 16:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 10,296.59 | 24h change: +0.05% — effectively flat.
+- Distance from session high (10,375.73): −79 pts; from session low (10,151.45): +145 pts.
+- Holding mid-range, no decisive break of either boundary.
+
+---
+
+### What Changed in the Last Hour
+UK100 has stalled near the upper half of its daily range with negligible net movement (+0.05%), suggesting buyers lack conviction to press toward the session high. The dominant macro headwind is a VIX spike (+2.93% to 18.68) alongside a softening S&P 500 (−0.69%) and NAS100 (−1.08%), signalling risk-off rotation in US equities heading into the New York afternoon. Brent's firm tone (+0.59%, last 110.97) offers partial support to energy-heavy FTSE constituents, limiting downside.
+
+---
+
+### Bias
+**DRIFT** — near-term. US equity weakness and rising VIX cap upside; Brent strength and a softer DXY (−0.22%) partially offset. Expect sideways-to-mildly-softer price action into the close.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 50% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,376 |
+| R1 | 10,340 |
+| Spot | 10,297 |
+| S1 | 10,240 |
+| S2 | 10,151 |
+
+---
+
+### Triggers
+A sustained push above 10,340 (R1) on volume would neutralise the drift bias and open a retest of the 10,376 session high; conversely, a break below 10,240 (S1) confirms the bearish scenario and targets 10,151.
+
+---
+
+### Confidence
+**52/100** — Flat daily change and thin headline flow leave price-action signals weak; US equity softness and VIX uptick tilt the risk skew modestly lower, but energy support and DXY softness introduce meaningful counterbalance, reducing directional conviction.
+
+---
+
