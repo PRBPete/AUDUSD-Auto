@@ -162,3 +162,55 @@ A sustained break back above **1.1640** — reclaiming the mid-range — would n
 
 ---
 
+## 2026-05-18 06:01 UTC
+
+**Snapshot:** EUR/USD 1.1627 (-0.33%) · DXY 99.315
+
+# EUR/USD Hourly Delta-Update — 2026-05-18 06:01 UTC
+
+---
+
+### Snapshot
+- Spot: **1.1627**, down **-0.33%** over 24h.
+- Distance from session high (1.1658): **31 pips**; from session low (1.1612): **15 pips**.
+- DXY holding near 99.315, offering mild residual USD bid against the single currency.
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has drifted lower toward the 1.1612 session base, pressured by a deepening global bond selloff that has pushed US10Y yields to 4.595% — a 3.47% intraday surge and near the top of the 24h range. Equity risk-off (S&P500 -0.96%, Nikkei -2.36%, DAX -1.57%) and a VIX print of 18.42 (+3.19%) reinforce defensive USD demand. No fresh Euro-specific catalyst has emerged to offset this pressure in the last 60 minutes.
+
+---
+
+### Bias
+**FALL** — Rising US yields and broad risk-off flow favour continued USD demand; EUR/USD is pressing the lower half of its range with no immediate relief catalyst.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1658 |
+| R1 | 1.1640 |
+| Spot | 1.1627 |
+| S1 | 1.1612 |
+| S2 | 1.1590 |
+
+---
+
+### Triggers
+A clean break and hourly close **above 1.1640** would neutralise the bearish bias, signalling bond-yield pressure is fading and risk appetite is stabilising.
+
+---
+
+### Confidence
+**52/100** — Directional logic is sound (yield spike + risk-off = USD bid), but the DXY move is modest (+0.03%) and EUR/USD range remains tight at 46 pips, suggesting conviction is limited; a sudden de-escalation on Iran headlines could rapidly reverse the setup.
+
+---
+

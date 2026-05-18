@@ -160,3 +160,55 @@ A sustained move back above 0.7160 — recapturing the midpoint of the 24h range
 
 ---
 
+## 2026-05-18 06:01 UTC
+
+**Snapshot:** AUD/USD 0.7134 (-1.15%) · DXY 99.313
+
+# AUD/USD Hourly Delta-Update — 2026-05-18 06:01 UTC
+
+---
+
+### Snapshot
+- Spot: 0.7134 | 24h change: −1.15% | Near session low (range: 0.7123–0.7182).
+- Distance from R1 (~0.7160): 26 pips offered; distance from S1 (~0.7123): 11 pips bid.
+- US10Y at 4.595% (session high), a key headwind for risk/AUD.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD drifted to session lows as the US10Y yield pushed to 4.595%, its 24h ceiling, deepening the global bond rout flagged by Reuters at 05:52 UTC. Copper −0.91% and equities under pressure (S&P 500 −0.96%, Nikkei −2.35%) confirm broad risk-off flows that weigh directly on the commodity-linked Aussie. The DXY has held steady near 99.31, providing no relief; dollar softness is not a tailwind here.
+
+---
+
+### Bias
+**FALL** — Rising US real rate expectations, commodity weakness (copper, gold slipping to 1.5-month low), and deteriorating equity sentiment sustain downside pressure over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7182 |
+| R1 | 0.7160 |
+| Spot | 0.7134 |
+| S1 | 0.7123 |
+| S2 | 0.7100 |
+
+---
+
+### Triggers
+A sustained break back above 0.7160, accompanied by a US10Y retreat below 4.55% or a meaningful copper recovery, would neutralise the bearish bias and shift the view to drift/neutral.
+
+---
+
+### Confidence
+**62/100** — Directional alignment across yields, equities, and commodities is clear, but the DXY is not accelerating and oil's rise (Brent +0.55%) could partially cap dollar demand; absent fresh catalyst, a floor near 0.7123 may slow the move.
+
+---
+
