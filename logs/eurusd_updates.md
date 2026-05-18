@@ -422,3 +422,55 @@ A sustained break and hourly close above **1.1658** would neutralise the bearish
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** EUR/USD 1.1639 (-0.22%) · DXY 99.156
+
+# EUR/USD Delta Update — 2026-05-18 10:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.1639 | 24h change: −0.22%
+- **24h range:** 1.1612–1.1658; spot sits mid-range, ~27 pips from session high
+- **DXY:** 99.156, holding below 99.41 resistance despite rate-rise narrative
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has edged lower within a tight consolidation band, with no fresh breakout since the early-session high near 1.1658. The dominant driver is the sharp rise in US 10Y yields (+3.47% to 4.595%), which is pressing the pair lower and reinforcing dollar demand even as DXY's absolute gains remain modest. Geopolitical risk premium (Iran tensions, rising Brent) is adding a mild safe-haven bid to the dollar, capping euro recovery attempts.
+
+---
+
+### Bias
+**FALL** — Yield pressure and geopolitical risk tilt the near-term path lower, with 1.1612 session support the immediate target.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1658 |
+| R1 | 1.1645 |
+| Spot | 1.1639 |
+| S1 | 1.1612 |
+| S2 | 1.1590 |
+
+---
+
+### Triggers
+A sustained push back above 1.1658 (session high) would neutralise the bearish bias and open a retest toward the 1.1680–1.1700 zone.
+
+---
+
+### Confidence
+**52/100** — Directional signal is coherent (yield surge + geopolitical risk = USD bid), but DXY gains remain contained and the pair has not yet broken session lows, leaving the setup unconfirmed. No US data releases flagged in the window to provide a clean catalyst.
+
+---
+

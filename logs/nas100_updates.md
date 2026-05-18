@@ -210,3 +210,55 @@ A sustained move back above **29,350** with US10Y pulling below 4.55% would neut
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29122.2109 (-1.33%) · DXY 99.161
+
+# NAS100 Delta Update — 2026-05-18 10:00 UTC
+
+---
+
+### Snapshot
+- Spot: 29,122.21 | 24h change: −1.33%
+- Distance from session high (29,678.89): −556 pts (−1.87%)
+- Distance from session low (28,993.72): +128 pts (+0.44%); index is hugging the lower quartile of the day's range
+
+---
+
+### What Changed in the Last Hour
+NAS100 continues to press toward the session low with no meaningful recovery attempt, trading within roughly 130 points of the intraday base. The dominant driver is a sharp US10Y spike to 4.595% (+3.47% on the session), compressing equity multiples across the board and amplifying the risk-off tone established overnight on US-Iran tensions and an adverse Fed inflation forecast update. VIX at 18.97 (+4.52%) confirms the deterioration in sentiment, while a softer DXY provides no meaningful offset.
+
+---
+
+### Bias
+**FALL** — macro headwinds are stacked: yields at session highs, VIX elevated, global equities uniformly weak (Nikkei −2.71%, HSI −1.68%), and no visible catalyst for reversal in the near term.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,679 |
+| R1 | 29,350 |
+| Spot | 29,122 |
+| S1 | 28,994 |
+| S2 | 28,750 |
+
+---
+
+### Triggers
+A sustained reclaim above 29,350 — particularly if US10Y reverses below 4.52% — would neutralise the bearish bias and open a retest of 29,679.
+
+---
+
+### Confidence
+**52/100** — directional lean is clear but US10Y is at an extreme daily move (+3.47%), creating mean-reversion risk; no intraday volume or order-flow data available to confirm conviction at current support.
+
+---
+

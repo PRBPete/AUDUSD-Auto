@@ -214,3 +214,55 @@ A sustained reclaim above 61,400 on volume, accompanied by a VIX reversal below 
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.161
+
+# JPN225 Delta Update — 2026-05-18 10:00 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71%
+- Distance from session high (63,235.77): −2,416 pts (−3.82%)
+- Distance from session low (60,376.98): +442 pts above; intraday support nearby
+
+---
+
+### What Changed in the Last Hour
+JPN225 continues to trade defensively near session lows, pressured by a sharp rise in US10Y yields (+3.47% to 4.595%), which is squeezing risk appetite across Asian equities. VIX has climbed to 18.97 (+4.52%), confirming a broad deterioration in sentiment rather than isolated Japan-specific selling. The index is lagging the broader global equity selloff — SP500 −0.96%, HSI −1.68%, NAS100 −1.33% — but the magnitude of the Nikkei's decline is amplified by yen sensitivity to the yield move.
+
+---
+
+### Bias
+**FALL** — Yield pressure, elevated VIX, and cross-asset risk-off alignment favour continued downside or at minimum suppressed recovery for the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 61,800 |
+| R1 | 61,200 |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,900 |
+
+---
+
+### Triggers
+A decisive reclaim above 61,200 — particularly if accompanied by US10Y pulling back below 4.55% — would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**48/100** — No news headlines were retrieved, limiting fundamental context; yield and VIX signals are clear but absence of catalyst detail and the proximity to session lows introduce mean-reversion risk. Data appears current and internally consistent.
+
+---
+

@@ -218,3 +218,57 @@ A sustained reclaim above 25,950 — mid-range resistance — would neutralise t
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.161
+
+# HK50 Delta-Update — 10:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 25,675.18 | 24h change: –1.68%
+- Distance from session high (26,391.02): –715 pts (–2.71%)
+- Distance from session low (25,505.71): +170 pts (+0.67%)
+
+---
+
+### What Changed in the Last Hour
+HK50 has surrendered the bulk of its intraday range, pressing toward the lower quarter of the 24h band. The dominant pressure vector is cross-asset risk-off: Nikkei –2.71%, S&P 500 –0.96%, and VIX lifting to 18.97 (+4.52%) collectively signal broad equity distribution. US 10Y yields spiking to 4.595% (+3.47%) — near the top of their daily range — add a secondary headwind via tightening financial conditions and JPY/HKD carry dynamics.
+
+---
+
+### Bias
+**FALL** — momentum is downward, macro backdrop is deterioratory, and price is hugging session lows with no headline catalyst for reversal visible in the data.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,950 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+*R1 derived from mid-range; S1 is the session low; S2 is a rounded structural extension.*
+
+---
+
+### Triggers
+A sustained reclaim above 25,950 — the intraday midpoint — would neutralise the bearish bias and shift the view to drift/neutral.
+
+---
+
+### Confidence
+**48 / 100** — Directional pressure is clear, but zero news headlines retrieved leaves macro catalyst risk unquantified; intraday reversal from oversold session lows cannot be ruled out without confirming flow data.
+
+---
+

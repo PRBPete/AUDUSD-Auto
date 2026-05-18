@@ -216,3 +216,57 @@ A sustained reclaim above 10,280 (R1 / intraday midpoint) would neutralise the b
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10221.4297 (-0.68%) · DXY 99.161
+
+# UK100 Delta Update — 10:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: **10,221.43** | 24h change: **–0.68%**
+- Distance from session high (10,375.73): **–154 pts (–1.5%)**
+- Distance from session low (10,151.45): **+70 pts (+0.7%)**
+
+---
+
+### What Changed in the Last Hour
+UK100 continues to grind lower within the lower third of today's range, consistent with broad risk-off pressure visible across DAX (–0.86%), NAS100 (–1.33%), and Nikkei (–2.71%). VIX has risen +4.52% to 18.97, signalling elevated near-term hedging demand. The primary driver remains geopolitical tension — Trump's Iran warning is sustaining a cautious tone, while a sharply higher US10Y (4.595%, +3.47%) is tightening the discount-rate headwind for equities globally.
+
+---
+
+### Bias
+**FALL** — momentum is negative, rates are rising, and risk assets are broadly offered. No catalyst visible in the next 1–4 hours to reverse the move.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,300 |
+| Spot | 10,221 |
+| S1 | 10,151 |
+| S2 | 10,080 |
+
+*R1 derived from intraday consolidation zone; S2 is a round-number extension below session low.*
+
+---
+
+### Triggers
+A sustained reclaim of **10,300** (R1) on volume would neutralise the bearish bias and shift the outlook to neutral/drift.
+
+---
+
+### Confidence
+**52/100** — Directional alignment across global indices and VIX is supportive of the bearish call, but session liquidity is moderate, Iran headline risk is binary, and the absence of UK-specific macro catalysts limits conviction. Anglo American asset sale is index-neutral on a short-term basis.
+
+---
+

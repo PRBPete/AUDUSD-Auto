@@ -214,3 +214,55 @@ A sustained reclaim above **7,460** (R1, mid-range pivot) would neutralise the b
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7409.1802 (-0.96%) · DXY 99.159
+
+# US500 Delta Update — 2026-05-18 10:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,409.18 — down **0.96%** on the session.
+- **24h Range:** 7,397.50–7,517.12; spot is trading near the **lower quartile** of that range.
+- **Key levels:** ~200 points below the session high; S1 (7,380) is within 30 points.
+
+---
+
+### What Changed in the Last Hour
+US500 extended its slide toward session lows as US10Y yields pushed to 4.595% (+3.47%), the top of the 24h range, compressing equity multiples. VIX climbed to 18.97 (+4.52%), confirming a genuine risk-off rotation rather than a low-volume drift. The move is consistent with the Motley Fool / Fed inflation forecast update flagged this morning and the overnight Brent-over-$110/Iran headline still providing a macro headwind.
+
+---
+
+### Bias
+**FALL** — yield pressure at cycle highs for the session, elevated VIX, and global equity weakness (Nikkei -2.71%, HSI -1.68%, NAS100 -1.33%) all reinforce downside momentum with no obvious near-term catalyst for reversal.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,517 |
+| R1 | 7,460 |
+| Spot | 7,409 |
+| S1 | 7,380 |
+| S2 | 7,340 |
+
+---
+
+### Triggers
+A decisive reversal in US10Y back below 4.52% — or VIX retreating under 17.80 — would neutralise the bearish bias and open a re-test of 7,460 R1.
+
+---
+
+### Confidence
+**62 / 100** — Directional signals are consistent across rates, volatility, and cross-asset risk proxies, but intraday liquidity conditions and no high-tier scheduled data in this window introduce uncertainty; geopolitical headline risk (Iran/oil) could reverse moves abruptly.
+
+---
+

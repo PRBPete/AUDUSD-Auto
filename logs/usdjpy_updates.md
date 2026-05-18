@@ -420,3 +420,55 @@ A clean break and hourly close above **159.10** reopens the topside and invalida
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** USD/JPY 158.929 (+0.35%) · DXY 99.157
+
+# USD/JPY Delta Update — 2026-05-18 10:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.929 | +0.35% on the 24h session.
+- **24h Range:** 158.284 – 159.073; spot is pressing the upper boundary.
+- **Key levels:** 159.073 (session high / immediate resistance); 158.284 (session low / near-term support).
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has edged toward the session high of 159.073 as US10Y yields surged +3.47% to 4.595%, their top of the 24h range, reinforcing the rate-differential bid for the dollar. Simultaneously, the DXY slipped marginally (-0.13%), suggesting the yen is weakening on its own domestic dynamics rather than broad dollar strength alone. Risk sentiment has deteriorated — Nikkei -2.71%, VIX +4.52% to 18.97 — which ordinarily supports JPY safe-haven demand, creating a counterweight that has capped the breakout above 159.073.
+
+---
+
+### Bias
+**DRIFT** — The pair is caught between yield-driven USD support and risk-off safe-haven flows into JPY. A clean directional resolution requires either a 10Y yield push through 4.60% or a material VIX spike above 20.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>159.30 in 1–4h) | 28% |
+| Drift (158.60–159.10) | 47% |
+| Fall (<158.50) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.50 |
+| R1 | 159.073 |
+| Spot | 158.929 |
+| S1 | 158.284 |
+| S2 | 157.80 |
+
+---
+
+### Triggers
+A sustained break and close above **159.073** (session high) would shift bias to Rise; a VIX print above **20.50** or equity acceleration lower invalidates the drift and opens a move toward S1 at 158.284.
+
+---
+
+### Confidence
+**54 / 100** — Competing forces (yield rally vs. risk-off equity selloff) are roughly balanced; no BOJ commentary or US data release in the window to provide a decisive catalyst.
+
+---
+

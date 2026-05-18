@@ -414,3 +414,55 @@ A sustained break and close above **0.7181** (session high) — particularly if 
 
 ---
 
+## 2026-05-18 10:00 UTC
+
+**Snapshot:** AUD/USD 0.7159 (-0.80%) · DXY 99.159
+
+# AUD/USD Delta Update — 2026-05-18 10:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 0.7159 | 24h change: −0.80% | Near lower half of 0.7123–0.7181 range.
+- **Distance from range high:** 22 pips | Distance from range low: 36 pips.
+- **Key pivot:** 0.7150 acting as intraday support; 0.7181 is session resistance.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has softened modestly alongside a broad risk-off shift, with the VIX rising 4.57% to 18.98 and the Nikkei off 2.71%. US 10Y yields pushed to a session high of 4.599%, reinforcing USD demand per the Barron's headline noting Iran war tensions and US rate-rise bets. Copper's −0.79% decline is an incremental headwind for AUD given its commodity-currency correlation.
+
+---
+
+### Bias
+**FALL** — Risk-off positioning, rising US long-end yields, a weaker equity complex, and softening copper collectively pressure AUD/USD toward the lower end of its session range.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7181 |
+| R1 | 0.7170 |
+| Spot | 0.7159 |
+| S1 | 0.7140 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break above **0.7181** (session high) on DXY reversal or a meaningful pullback in US 10Y yields below 4.55% would neutralise the bearish bias.
+
+---
+
+### Confidence
+**58 / 100** — Directional alignment across equities, yields, and copper is coherent, but DXY is only modestly firm (−0.12%), and the absence of fresh macro data or RBA commentary in the last hour limits conviction for an accelerated move lower.
+
+---
+
