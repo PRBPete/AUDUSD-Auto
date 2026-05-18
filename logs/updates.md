@@ -108,3 +108,54 @@ A sustained reclaim above 0.7170 — coinciding with a DXY reversal below 99.00 
 
 ---
 
+## 2026-05-18 02:26 UTC
+
+**Snapshot:** AUD/USD 0.7133 (-1.16%) · DXY 99.347
+
+## AUD/USD Hourly Delta — 02:26 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 0.7133 | 24h change: −1.16% | sitting near session low end of 0.7123–0.7200 range.
+- Distance from R1 (0.7160): −27 pips | Distance from S1 (0.7123): +10 pips.
+
+---
+
+### What Changed in the Last Hour
+The pair has drifted lower into the 02:00 UTC window, pressured by a firming DXY (99.35) as rising oil prices cloud the Fed rate-cut narrative and extend the bond rout — US10Y touched 4.599%, a session high. Gold's 1.53% decline removes a key pro-AUD commodity tailwind, while copper's sharp −2.64% drop further undermines the AUD's terms-of-trade support, leaving the pair exposed near session lows.
+
+---
+
+### Bias
+**FALL** — Commodity complex deterioration (copper, gold), rising US yields, and a firmer dollar collectively sustain downside pressure into early Asia. No domestic catalyst to absorb this flow.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7200 |
+| R1 | 0.7160 |
+| Spot | 0.7133 |
+| S1 | 0.7123 |
+| S2 | 0.7090 |
+
+---
+
+### Triggers
+A sustained break above 0.7160 — particularly if accompanied by a DXY pullback below 99.00 or copper stabilising above 6.30 — would neutralise the bearish bias and open a drift/recovery scenario toward 0.7200.
+
+---
+
+### Confidence
+**52/100** — Directional signals are aligned (USD, yields, commodities all AUD-negative) but thin early-Asia liquidity amplifies noise; no tier-1 AU data due imminently and VIX at 18.42 suggests moderate rather than acute risk-off, limiting conviction on velocity of any move lower.
+
+---
+
