@@ -56,3 +56,55 @@ A sustained reclaim above 61,400 — particularly if US10Y retreats from 4.595% 
 
 ---
 
+## 2026-05-18 07:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.183
+
+# JPN225 Delta Update — 07:00 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71%
+- Distance from session high (63,235.77): −2,416 pts (−3.8%)
+- Distance from session low (60,376.98): +443 pts (+0.7%); support is close
+
+---
+
+### What Changed in the Last Hour
+Price action is consolidating near the lower third of the 24h range, holding just above the session low of 60,376.98 with limited recovery momentum. The dominant driver appears to be broad risk-off rotation: US10Y yields are pressing multi-session highs at 4.595%, compressing equity valuations, while VIX at 18.42 (+1.49%) confirms sustained hedging demand. No news headlines were retrieved to provide a specific catalyst, which reduces conviction on any near-term reversal.
+
+---
+
+### Bias
+**FALL** — bearish pressure persists. Proximity to session lows with no catalyst for reversal, rising US yields, and weak regional peers (HSI −2.07%, S&P 500 −0.96%) sustain downside pressure.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,500 |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,800 |
+
+---
+
+### Triggers
+A sustained hourly close above 61,500 with a pullback in US10Y below 4.55% would neutralise the bearish bias and shift the view to drift/rise.
+
+---
+
+### Confidence
+**42/100** — Bearish structure is clear, but the absence of news headlines, proximity to a key support floor, and possible thin liquidity conditions limit high-conviction positioning; levels are technically derived only.
+
+---
+

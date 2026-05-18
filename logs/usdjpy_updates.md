@@ -264,3 +264,55 @@ A sustained break and **hourly close above 159.073** would invalidate the drift 
 
 ---
 
+## 2026-05-18 07:00 UTC
+
+**Snapshot:** USD/JPY 158.895 (+0.33%) · DXY 99.187
+
+# USD/JPY Delta Update — 07:00 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- **Spot:** 158.895 | **24h change:** +0.33%
+- Distance from session high (159.073): **18 pips below resistance**
+- Distance from session low (158.284): **61 pips above support**
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has drifted toward the top of its 24h range as US 10Y yields pushed to a session high of 4.599% (+3.47%), reinforcing the rate-differential carry bid. However, broad risk-off pressure is intensifying — Nikkei closed -2.71%, S&P 500 down -0.96%, and VIX is up to 18.42 — which introduces competing JPY safe-haven demand and caps further upside. The pair is in a compression zone just beneath the 159.073 high with no clean breakout confirmed.
+
+---
+
+### Bias
+**DRIFT** — yield support is real but equity risk-off and geopolitical noise (Iran headlines, global bond rout) are limiting directional conviction. The pair is coiling rather than trending.
+
+| Scenario | Probability |
+|---|---|
+| Rise (break above 159.10+) | 25% |
+| Drift (158.60–159.10 range) | 50% |
+| Fall (break below 158.28) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.40 |
+| R1 | 159.07 |
+| Spot | 158.895 |
+| S1 | 158.28 |
+| S2 | 157.80 |
+
+---
+
+### Triggers
+A confirmed hourly close above **159.073** would shift bias to Rise targeting 159.40; a break below **158.284** on risk-off acceleration would validate a Fall scenario toward 157.80.
+
+---
+
+### Confidence
+**52/100** — Yield differential nominally supports USD/JPY upside, but conflicting signals (equity selloff, geopolitical risk, DXY softness at 99.187) prevent a high-conviction directional call. Range-bound conditions reduce edge.
+
+---
+

@@ -264,3 +264,55 @@ A break and close above 0.7163 on stabilising US yields or a material DXY revers
 
 ---
 
+## 2026-05-18 07:00 UTC
+
+**Snapshot:** AUD/USD 0.7151 (-0.91%) · DXY 99.193
+
+# AUD/USD Hourly Delta-Update — 2026-05-18 07:00 UTC
+
+---
+
+### Snapshot
+- Spot: 0.7151 | 24h change: −0.91% | Near session low end of 0.7123–0.7181 range.
+- Distance from R1 (0.7181 session high): 30 pips; distance from S1 (0.7123 session low): 28 pips.
+- Pair sitting roughly mid-range but with downside pressure intact.
+
+---
+
+### What Changed in the Last Hour
+The dominant force is a deepening global bond selloff — US10Y printing 4.595%, near the top of its 24h range (+3.47%), amplifying risk-off flows that are dragging AUD lower. Equity markets across Asia (Nikkei −2.71%, HSI −2.04%) and Europe (DAX −1.02%) are under meaningful pressure, reinforcing the defensive dollar bid despite a muted DXY. Copper's softness (−0.57%) additionally removes a key commodity support pillar for AUD.
+
+---
+
+### Bias
+**FALL** — Bond-driven risk aversion, weak equities, and softer copper outweigh the modest oil tailwind. AUD remains vulnerable to a test of session lows near 0.7123.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7181 |
+| R1 | 0.7165 |
+| Spot | 0.7151 |
+| S1 | 0.7123 |
+| S2 | 0.7100 |
+
+---
+
+### Triggers
+A sustained break above 0.7181 (session high) would neutralise the bearish bias and shift near-term momentum neutral-to-bullish.
+
+---
+
+### Confidence
+**58/100** — Directional signals are consistent (risk-off, bond rout, weak equities, soft copper) but DXY reaction is subdued and oil strength adds cross-currency noise; no fresh AUD-specific catalyst to sharpen conviction.
+
+---
+

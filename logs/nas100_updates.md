@@ -54,3 +54,55 @@ A sustained move back above 29,350 — reclaiming the mid-range — would neutra
 
 ---
 
+## 2026-05-18 07:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29122.2109 (-1.33%) · DXY 99.184
+
+# NAS100 Delta Update — 2026-05-18 07:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 29,122.21 | 24h change: −1.33%
+- **24h Range:** 28,993.72 – 29,678.89; trading in the lower third of the session range
+- **Distance from key levels:** ~129pts above session low; ~557pts below session high
+
+---
+
+### What Changed in the Last Hour
+NAS100 is holding near session lows with no meaningful recovery, consistent with broad risk-off pressure reflected across global indices — Nikkei −2.71%, HSI −2.07%, DAX −1.02%. The dominant driver is a sharp US10Y yield spike to 4.595% (+3.47% on the session), compressing equity multiples and reinforcing downside momentum. No counter-catalyst has emerged in the last hour; price action is grinding rather than impulsive.
+
+---
+
+### Bias
+**FALL** — elevated yields, broad global equity weakness, VIX firm at 18.42, and DXY stabilising near 99.18 all argue against a near-term recovery. Session structure shows rejection from highs with no base-building at current levels.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,450 |
+| R1 | 29,280 |
+| Spot | 29,122 |
+| S1 | 28,994 (session low) |
+| S2 | 28,750 |
+
+---
+
+### Triggers
+A sustained reclaim above 29,280 on volume, accompanied by US10Y pulling back below 4.52%, would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**52/100** — Directional lean is supported by multi-asset corroboration (yields, global equities, VIX), but pre-market conditions with limited US session liquidity and absence of a specific macro catalyst (no scheduled data release flagged) reduce precision. News flow is stock-specific and not index-moving.
+
+---
+

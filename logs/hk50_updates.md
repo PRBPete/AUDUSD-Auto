@@ -56,3 +56,57 @@ A sustained reclaim above 25,950 on volume would neutralise the bearish bias and
 
 ---
 
+## 2026-05-18 07:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25571.1699 (-2.07%) · DXY 99.184
+
+# HK50 Delta Update — 07:00 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- **Spot:** 25,571.17 | 24h change: **−2.07%**
+- **Distance from session high (26,391.02):** −819 pts (−3.1%) — well off the peak.
+- **Distance from session low (25,505.71):** +65 pts — trading near the floor of the range.
+
+---
+
+### What Changed in the Last Hour
+HK50 is consolidating near session lows with no meaningful recovery, reflecting broad risk-off pressure visible across Nikkei (−2.71%), DAX (−1.02%), and NAS100 (−1.33%). US10Y yield has pushed to 4.595% — near its session high of 4.599% — tightening the cost-of-capital pressure on rate-sensitive Asian equities. No news headlines are available to attribute a specific catalyst, which limits conviction; the move appears macro/sentiment-driven rather than event-specific.
+
+---
+
+### Bias
+**FALL** — near-term bias is bearish. Proximity to session lows with no bounce, rising US10Y, elevated VIX (18.42, +1.49%), and synchronised global equity weakness all argue against recovery within the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,850 |
+| Spot | 25,571 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+*S1 = session low. S2 is a round-number/technical estimate below the range floor.*
+
+---
+
+### Triggers
+A sustained break back above **25,850** with stabilisation in US10Y below 4.57% would neutralise the bearish bias and shift the view to neutral/drift.
+
+---
+
+### Confidence
+**42/100** — No news headlines available, limiting catalyst identification; data is live but the absence of a specific driver and weekend-proximity liquidity effects reduce analytical confidence materially.
+
+---
+

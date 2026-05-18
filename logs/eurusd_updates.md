@@ -266,3 +266,55 @@ A sustained break above 1.1658 (session high) on declining yields or DXY softnes
 
 ---
 
+## 2026-05-18 07:00 UTC
+
+**Snapshot:** EUR/USD 1.164 (-0.21%) · DXY 99.185
+
+# EUR/USD Delta Update — 07:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 1.1640 | 24h change: −0.21% | 24h range: 1.1612–1.1658
+- **Distance from R1 (1.1658):** 18 pips below session high | **Distance from S1 (1.1612):** 28 pips above session low
+- **DXY:** 99.185, near bottom of its daily range, providing modest EUR support
+
+---
+
+### What Changed in the Last Hour
+Price has drifted quietly in the lower half of the 24h range with no decisive directional break, consistent with early European session consolidation. The dominant macro driver remains the bond market: US10Y yields pushed to a session high of 4.599%, up 3.47%, amplifying rate-hike repricing and capping EUR upside. Equity risk-off across Asia and Europe (Nikkei −2.71%, DAX −1.02%) has kept broad risk appetite subdued without triggering a sharp dollar short-squeeze.
+
+---
+
+### Bias
+**DRIFT** — yield pressure limits EUR upside, but a still-soft DXY and geopolitical risk premium in oil prevent a clean directional breakdown.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 22% |
+| Drift | 51% |
+| Fall | 27% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1658 |
+| R1 | 1.1645 |
+| Spot | 1.1640 |
+| S1 | 1.1625 |
+| S2 | 1.1612 |
+
+---
+
+### Triggers
+A sustained break and hourly close above 1.1658 (session high) would neutralise the drift/bearish lean and open a short-term bullish leg; conversely, a break below 1.1612 on rising US10Y momentum would shift bias to **FALL**.
+
+---
+
+### Confidence
+**48/100** — Cross-asset signals are conflicted: rising yields favour USD strength, but a weak DXY and oil-driven geopolitical risk premium muddy the directional read. No fresh high-impact data catalyst visible in this window.
+
+---
+
