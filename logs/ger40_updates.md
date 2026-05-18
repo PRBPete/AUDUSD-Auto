@@ -264,3 +264,55 @@ A reclaim and hourly close above **24,000** with US10Y pulling back below 4.55% 
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** GER40 (DAX 40) 24017.8691 (-0.75%) · DXY 99.203
+
+# GER40 Hourly Delta-Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 24,017.87 | 24h change: **-0.75%**
+- **Distance from session high:** -280 pts (high: 24,297.95) | from session low: +220 pts (low: 23,797.33)
+- **Key reference:** Trading in the lower half of the 24h range, below the midpoint of ~24,048.
+
+---
+
+### What changed in the last hour
+GER40 has drifted lower within the established session range, pressured by a broad risk-off rotation visible across equities — S&P 500 (-0.96%), Nikkei (-2.71%), and HSI (-1.68%) all trading with notable weakness. The primary driver remains rising US10Y yields (+3.47%, at 4.595%), which compress equity multiples globally, compounded by Trump's Iran warnings injecting geopolitical risk premium. VIX up 5.23% to 19.1 confirms hedging demand is elevated; no meaningful recovery attempt has materialised near-term.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,298 |
+| R1 | 24,160 |
+| Spot | 24,018 |
+| S1 | 23,900 |
+| S2 | 23,797 |
+
+---
+
+### Triggers
+A sustained reclaim above **24,160** (R1, approximate midrange resistance) would neutralise the bearish bias and shift the outlook back to neutral/drift.
+
+---
+
+### Confidence
+**54 / 100** — Directional conviction is moderate: yield and cross-asset signals align bearishly, but thin news flow specific to German/European catalysts and no fresh macro data in this window limits precision; geopolitical headline risk (Iran) introduces binary spike potential in either direction.
+
+---
+

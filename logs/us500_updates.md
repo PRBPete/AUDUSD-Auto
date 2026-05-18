@@ -266,3 +266,55 @@ A decisive reversal in US10Y back below 4.52% — or VIX retreating under 17.80 
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7409.1802 (-0.96%) · DXY 99.198
+
+# US500 Delta-Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+- Spot: 7409.18 | 24h change: −0.96%
+- Distance from session high (7517.12): −108 pts (−1.43%); from session low (7397.50): +11.68 pts
+- Trading near the bottom quartile of the 24h range, below the session midpoint of ~7457.
+
+---
+
+### What Changed in the Last Hour
+US500 has continued to compress toward session lows, with the index hugging the 7397–7415 band. The primary driver remains the US10Y yield pushing to 4.595%—a fresh 24h high—compressing equity multiples across tech and growth (NAS100 −1.33%). VIX has accelerated +5.29% to 19.11, approaching the session high of 19.37, signalling active hedging demand rather than complacency.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours. Yield pressure at the top of the 24h range, VIX expanding, global equity weakness (Nikkei −2.71%, HSI −1.68%), and price proximity to session lows all favour further downside or at minimum a failure to recover meaningfully.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7517 |
+| R1 | 7457 |
+| Spot | 7409 |
+| S1 | 7397 |
+| S2 | 7360 |
+
+---
+
+### Triggers
+A sustained reclaim above 7457 (session midpoint/R1) accompanied by US10Y pulling back below 4.55% would neutralise the bearish bias and open a retest of 7517.
+
+---
+
+### Confidence
+**52/100** — Directional signal is consistent across cross-asset inputs (yields, VIX, global equities), but price is already near session lows leaving limited incremental downside confirmation; a mean-reversion bounce cannot be ruled out given thin news flow in this specific hour.
+
+---
+

@@ -266,3 +266,57 @@ A decisive reclaim above 61,200 — particularly if accompanied by US10Y pulling
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.205
+
+# JPN225 Delta Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 60,819.57 — down **2.71%** on the 24h session.
+- **24h Range:** 60,376.98 low / 63,235.77 high — currently trading near the lower quartile.
+- **Key levels:** ~700 points above session low; ~2,416 points below session high.
+
+---
+
+### What Changed in the Last Hour
+Selling pressure has intensified across Asian equity markets, with JPN225 tracking a broad regional risk-off move. The catalyst is a combination of disappointing Chinese economic data and softer oil demand signals, per MT Newswires, weighing heavily on export-sensitive Japanese names. US10Y yield spiking to 4.595 (+3.47%) and VIX pushing to 19.09 (+5.18%) reinforce the defensive tone, offering no relief for equity longs.
+
+---
+
+### Bias
+**FALL** — deteriorating macro backdrop (rising yields, elevated VIX, HSI -1.68%, NAS100 -1.33%) with price compressed near session lows suggests continued downside pressure in the 1–4 hour window.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,500 |
+| Spot | 60,819 |
+| S1 | 60,377 (session low) |
+| S2 | 59,900 |
+
+*Note: R1/R2 and S2 are derived from round-number/technical proximity; only S1 is directly sourced from the live data block.*
+
+---
+
+### Triggers
+A sustained reclaim above **61,500** would neutralise the bearish bias and shift the near-term view to neutral/drift.
+
+---
+
+### Confidence
+**52/100** — Directional alignment across global equities and macro factors is clear, but the proximity to session lows introduces mean-reversion risk; single news headline limits fundamental granularity.
+
+---
+

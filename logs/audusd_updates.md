@@ -466,3 +466,55 @@ A sustained break above **0.7181** (session high) on DXY reversal or a meaningfu
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** AUD/USD 0.7151 (-0.91%) · DXY 99.199
+
+# AUD/USD Hourly Delta-Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+- Spot: 0.7151, down 0.91% on the 24h session.
+- Distance from session high (0.7181): 30 pips; from session low (0.7123): 28 pips.
+- Sitting near mid-range but with downward momentum intact.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has drifted toward the lower half of its session range as risk-off sentiment broadens, with the VIX pushing to 19.13 (+5.4%) and equity indices under pressure across all major regions. US 10-year yields have surged to 4.595% — near the session high of 4.599% — tightening the yield differential against AUD and reinforcing USD firmness despite a modestly softer DXY. Copper's slide to a one-week low (-0.60%) is an additional headwind specific to the Australian dollar's commodity linkage.
+
+---
+
+### Bias
+**FALL** — Rising US yields, deteriorating global equities, elevated VIX, and commodity weakness (copper, gold) collectively sustain bearish pressure on AUD/USD over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7181 |
+| R1 | 0.7165 |
+| Spot | 0.7151 |
+| S1 | 0.7135 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break above 0.7165 — particularly on a reversal in US 10-year yields or a meaningful VIX retreat — would neutralise the bearish bias and open a retest of 0.7181.
+
+---
+
+### Confidence
+**62/100** — Directional alignment across yields, equities, and commodities is clear, but the DXY is only marginally changed and intraday liquidity conditions mid-session can produce sharp mean-reversion moves; no Australian data catalyst in the window to anchor conviction further.
+
+---
+

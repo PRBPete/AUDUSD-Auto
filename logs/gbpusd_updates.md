@@ -264,3 +264,55 @@ A sustained break above 1.3393 (session high) on DXY continuation lower would ne
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** GBP/USD 1.3351 (-0.30%) · DXY 99.198
+
+# GBP/USD Hourly Delta-Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.3351 | **24h change:** -0.30%
+- **Distance from range high (1.3384):** 33 pips; from range low (1.3304): 47 pips
+- **Key level proximity:** Holding mid-range; no confirmed break of either extreme
+
+---
+
+### What Changed in the Last Hour
+GBP/USD has drifted lower from the session high of 1.3384, consistent with a broad risk-off tone as the VIX pushes toward 19.37 and US 10-year yields press 4.595%—their 24h high. The move is modest but directionally coherent: equities are broadly offered (S&P 500 -0.96%, Nikkei -2.71%), and the DXY, though only marginally firmer, is finding support from Iran-related geopolitical risk and rising rate-hike bets per Barron's reporting. No UK-specific catalyst has emerged in the past hour to challenge sterling.
+
+---
+
+### Bias
+**FALL** over the next 1–4 hours, reflecting USD resilience from elevated yields and risk aversion.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 35% |
+| Fall | 45% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3384 |
+| R1 | 1.3368 |
+| Spot | 1.3351 |
+| S1 | 1.3325 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A sustained break back above **1.3368** on volume—particularly if US 10Y yields reverse intraday—would neutralise the bearish bias and open a retest of 1.3384.
+
+---
+
+### Confidence
+**54 / 100** — Risk-off signals and yield pressure are directionally aligned, but DXY weakness (-0.09%) partially offsets the bearish case, and no high-impact UK or US data event is scheduled to provide a clean catalyst in this window.
+
+---
+

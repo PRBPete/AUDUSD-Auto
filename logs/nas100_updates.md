@@ -262,3 +262,53 @@ A sustained reclaim above 29,350 — particularly if US10Y reverses below 4.52% 
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29122.2109 (-1.33%) · DXY 99.196
+
+# NAS100 Delta-Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+Spot: 29,122.21 | 24h change: −1.33% | Trading near session lows, ~556 pts below 24h high of 29,678.89 | ~128 pts above 24h low of 28,993.72.
+
+---
+
+### What Changed in the Last Hour
+NAS100 has continued to slide toward session lows as US10Y yields pushed to 4.595% (+3.47% on the day), applying sustained pressure on growth/tech valuations. VIX has risen sharply to 19.11 (+5.29%), confirming deteriorating risk appetite rather than orderly consolidation. The Nikkei closed down 2.71% and Hang Seng off 1.68%, establishing a weak global equity handoff that is now feeding through to US futures.
+
+---
+
+### Bias
+**FALL** — Rising long-end yields, elevated VIX, weak global equity leads, and a Brent print above $110 sustaining stagflation concerns collectively tilt near-term risk to the downside.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,450 |
+| R1 | 29,300 |
+| Spot | 29,122 |
+| S1 | 28,994 (24h low) |
+| S2 | 28,750 |
+
+---
+
+### Triggers
+A decisive reclaim of 29,300 on expanding volume would neutralise the bearish bias and open a retest of 29,450–29,680 resistance.
+
+---
+
+### Confidence
+**54/100** — Directional signal is consistent across yield, volatility, and global equity inputs, but intraday liquidity and potential headline reversals (Iran/oil, Fed speakers) introduce meaningful uncertainty; no single dominant catalyst is confirmed.
+
+---
+

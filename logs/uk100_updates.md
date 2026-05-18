@@ -270,3 +270,55 @@ A sustained reclaim of **10,300** (R1) on volume would neutralise the bearish bi
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10219.0898 (-0.70%) · DXY 99.198
+
+# UK100 Delta Update — 11:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 10,219.09 | 24h change: −0.70%
+- Distance from session high: −156pts (10,375.73); from session low: +67pts (10,151.45)
+- Sitting in the lower third of the 24h range, below the midpoint (~10,263)
+
+---
+
+### What Changed in the Last Hour
+UK100 has continued to drift lower in line with broad risk-off pressure, tracking S&P 500 (−0.96%) and NAS100 (−1.33%) weakness as US 10Y yields push to session highs at 4.595% — a 3.47% intraday surge that is compressing equity multiples globally. VIX rising to 19.1 (+5.23%) confirms deteriorating sentiment. No UK-specific catalyst is driving the move; this is macro contagion from US rates and geopolitical tension (Trump/Iran rhetoric per AP headlines).
+
+---
+
+### Bias
+**FALL** — yield spike, elevated VIX, and broad cross-market weakness provide a consistent headwind. No domestic catalyst to reverse the tone in the near term.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,263 |
+| Spot | 10,219 |
+| S1 | 10,151 |
+| S2 | 10,080 |
+
+---
+
+### Triggers
+A reclaim and hold above 10,263 (range midpoint/R1) on meaningful volume would neutralise the bearish bias and open a drift/recovery scenario toward 10,375.
+
+---
+
+### Confidence
+**58/100** — Cross-asset signals are aligned bearishly (yields, VIX, global equities), but the absence of a UK-specific catalyst and relatively contained 24h range limits conviction; a US session open could reprice quickly.
+
+---
+

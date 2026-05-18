@@ -474,3 +474,55 @@ A sustained push back above 1.1658 (session high) would neutralise the bearish b
 
 ---
 
+## 2026-05-18 11:00 UTC
+
+**Snapshot:** EUR/USD 1.1632 (-0.28%) · DXY 99.197
+
+# EUR/USD Delta Update — 2026-05-18 11:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.1632 | 24h change: −0.28% | 24h range: 1.1612–1.1652
+- **Distance from range high (1.1652):** 20 pips | Distance from range low (1.1612):** 20 pips
+- **DXY** 99.197, modestly firmer; **US10Y** at 4.595, pressing session highs (+3.47%)
+
+---
+
+### What changed in the last hour
+EUR/USD is drifting near session lows as US 10-year yields pushed to 4.595% — the top of the 24h range — applying incremental pressure on the pair. Equity risk-off is deepening (VIX +5.34%, S&P500 −0.96%, Nikkei −2.71%), which is providing modest safe-haven dollar support rather than euro demand. No discrete catalyst in the last hour; the move is a slow grind lower driven by the yield and geopolitical (Iran) backdrop.
+
+---
+
+### Bias
+**FALL** — yield pressure and geopolitical risk-off favour continued near-term USD strength.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|------|-------|
+| R2 | 1.1652 |
+| R1 | 1.1640 |
+| Spot | 1.1632 |
+| S1 | 1.1612 |
+| S2 | 1.1590 |
+
+---
+
+### Triggers
+A decisive break back above 1.1652 (24h high) — particularly on a DXY reversal below 99.09 — would neutralise the bearish bias and open a drift/rise scenario toward 1.1670+.
+
+---
+
+### Confidence
+**52/100** — Directional conviction is moderate; yield dynamics and geopolitical headline risk are clear bearish drivers, but EUR/USD has so far held the 1.1612 floor, and DXY gains remain contained, capping downside confidence. Thin intraday range limits signal clarity.
+
+---
+
