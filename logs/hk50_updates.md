@@ -110,3 +110,57 @@ A sustained break back above **25,850** with stabilisation in US10Y below 4.57% 
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25621.3105 (-1.88%) · DXY 99.212
+
+# HK50 Delta-Update — 08:00 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- Spot: 25,621.31 | –1.88% on the 24h session.
+- Distance from session high (26,391.02): –769 pts (–2.9%); from session low (25,505.71): +116 pts (+0.5%).
+- Nearest resistance cluster: ~25,800–25,900 (mid-session consolidation zone); nearest support: 25,505 (session floor).
+
+---
+
+### What Changed in the Last Hour
+HK50 is trading in the lower quartile of its 24h range, hugging the session low with limited recovery. The broader risk-off tone is reinforced by Nikkei –2.71% and S&P 500 –0.96%, with VIX surging +6.12% to 19.26 — signalling a material intraday pickup in hedging demand. US10Y yield pressing 4.595% (near session high) adds further headwind to rate-sensitive HK equities; no meaningful bounce has materialised in the past hour.
+
+---
+
+### Bias
+**FALL** — bearish lean for the next 1–4 hours given proximity to session lows, rising VIX, and broad regional equity weakness.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,800 |
+| Spot | 25,621 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+*S2 is a round-number / psychological level not directly in the data block; flagged as estimated.*
+
+---
+
+### Triggers
+A sustained hourly close above 25,800 would neutralise the bearish bias and open a drift-to-range-mid scenario; conversely, a clean break below 25,505 (session low) confirms the next leg down toward S2.
+
+---
+
+### Confidence
+**52/100** — Directional alignment across VIX, Nikkei, and US yields is clear, but absence of news headlines and no sub-hourly tick data limits precision on timing and magnitude of any continuation move.
+
+---
+

@@ -316,3 +316,49 @@ A sustained break above 0.7181 (session high) would neutralise the bearish bias 
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** AUD/USD 0.7155 (-0.85%) · DXY 99.212
+
+### Snapshot
+- Spot: 0.7155 | 24h change: −0.85% | ~0.0026 below 24h high (0.7181), ~0.0032 above 24h low (0.7123).
+
+---
+
+### What changed in the last hour
+AUD/USD has continued to drift lower as the global bond rout intensifies, with US10Y yields pressing 4.595% — a dominant headwind for risk-sensitive currencies. Equity indices (S&P 500 −0.96%, Nikkei −2.71%) are compounding the risk-off tone, lifting VIX to 19.26 (+6.12%). Copper softening (−0.71%) removes a key commodity support pillar for AUD.
+
+---
+
+### Bias
+**FALL** — Rising US real yields, broad equity weakness, elevated VIX, and copper softness collectively suppress AUD demand. DXY dip is modest and unlikely to provide meaningful offset.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7181 |
+| R1 | 0.7168 |
+| Spot | 0.7155 |
+| S1 | 0.7123 |
+| S2 | 0.7100 |
+
+---
+
+### Triggers
+A sustained break above 0.7181 (24h high) on a DXY reversal lower or a stabilisation in US10Y yields would neutralise the bearish bias.
+
+---
+
+### Confidence
+**62/100** — Directional alignment across yields, equities, and copper is clear, but the DXY's muted reaction to the bond rout introduces uncertainty; intraday liquidity conditions (early UTC session) may exaggerate moves.
+
+---
+

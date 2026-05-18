@@ -318,3 +318,55 @@ A sustained break and hourly close above 1.1658 (session high) would neutralise 
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** EUR/USD 1.1636 (-0.24%) · DXY 99.209
+
+# EUR/USD Delta Update — 08:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 1.1636 | 24h change: −0.24% | 24h range: 1.1612–1.1658
+- **Distance from R1 (1.1658):** +22 pips overhead; **distance from S1 (1.1612):** −24 pips below
+- **DXY** 99.209, modestly soft; **US10Y** at 4.595, pressing session highs (+3.47%)
+
+---
+
+### What Changed in the Last Hour
+EUR/USD is drifting lower near the bottom third of its daily range as the global bond rout reasserts itself — US10Y yields have surged nearly 16 bps on the day, tightening the ceiling for the pair. Equity markets across Asia and Europe are under broad pressure (Nikkei −2.71%, DAX −1.43%), driving mild risk-off flows that are capping euro demand despite a soft DXY. The dominant intraday driver is the yield-inflation narrative, reinforced by Reuters headlines flagging deepening bond stress and rising oil.
+
+---
+
+### Bias
+**DRIFT → mild FALL** over the next 1–4 hours. Rising US yields and deteriorating risk sentiment provide a headwind; the DXY softness offers only partial offset.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 45% |
+| Fall | 35% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1658 |
+| R1 | 1.1645 |
+| Spot | 1.1636 |
+| S1 | 1.1620 |
+| S2 | 1.1612 |
+
+---
+
+### Triggers
+A sustained break and hourly close **above 1.1658** would neutralise the bearish lean and open a retest of the 1.1680 area; conversely, a move **below 1.1612** on elevated volume confirms downside continuation.
+
+---
+
+### Confidence
+**52/100** — Directional signal is coherent (yield surge + risk-off) but DXY weakness creates cross-current; no intraday EUR/USD volume or order-flow data available to anchor conviction further.
+
+---
+

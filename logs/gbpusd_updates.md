@@ -108,3 +108,55 @@ A sustained break and close **above 1.3393** (session high) would neutralise the
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** GBP/USD 1.3356 (-0.26%) · DXY 99.21
+
+# GBP/USD Hourly Delta-Update — 2026-05-18 08:00 UTC
+
+---
+
+### Snapshot
+- Spot: 1.3356 | 24h change: −0.26% | 24h range: 1.3304–1.3393.
+- Distance from session high: −37 pips | Distance from session low: +52 pips.
+- DXY 99.21, holding below 99.41 resistance; US10Y at 4.595, near session ceiling.
+
+---
+
+### What changed in the last hour
+GBP/USD has drifted lower within a narrowing intraday range as US10Y yields pushed to a fresh session high of 4.599%, exerting modest dollar-supportive pressure despite a soft DXY. Equity markets are broadly offered — S&P 500 down 0.96%, Nikkei −2.71%, DAX −1.44% — with VIX jumping 6.17% to 19.27, signalling a risk-off rotation that typically penalises GBP on the crosses. The Deutsche Bank EUR/GBP bullish call (10:10 UTC yesterday) adds a mild sterling headwind via cross-rate pressure.
+
+---
+
+### Bias
+**DRIFT** (with modest downside lean) over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>1.3380) | 20% |
+| Drift (1.3320–1.3375) | 50% |
+| Fall (<1.3320) | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3393 |
+| R1 | 1.3375 |
+| Spot | 1.3356 |
+| S1 | 1.3325 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A sustained break and hourly close above 1.3380 (R1 confluence with session midpoint) would neutralise the downside lean and reopen a run toward 1.3393; conversely, a DXY reversal back below 99.00 would invalidate any bearish scenario entirely.
+
+---
+
+### Confidence
+**52/100** — Cross-asset signals are coherent (rising yields + risk-off = mild GBP headwind) but DXY momentum is weak and intraday range is compressed; no high-impact UK or US data catalyst is flagged in the window to generate a conviction move.
+
+---
+

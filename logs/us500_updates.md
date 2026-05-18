@@ -110,3 +110,55 @@ A reclaim and hold above 7,460 on meaningful volume would neutralise the bearish
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7409.1802 (-0.96%) · DXY 99.209
+
+# US500 Delta-Update — 2026-05-18 08:00 UTC
+
+---
+
+### Snapshot
+- Spot: 7,409.18 | 24h change: −0.96% | trading near session low end of 7,397.5–7,517.12 range.
+- Distance from R1 (~7,460): −51 pts | Distance from S1 (~7,360): +49 pts.
+- VIX at 19.27, up +6.17% intraday — elevated and pressing toward session high (19.37).
+
+---
+
+### What changed in the last hour
+Price has compressed toward the lower third of the 24h range with no meaningful recovery attempt, while VIX pushed to its session peak of 19.37, confirming active hedging pressure. The US 10Y yield climbed sharply to 4.595% (+3.47%), sitting at its session high, amplifying discount-rate headwinds for equities. Global indices (Nikkei −2.71%, HSI −1.86%, DAX −1.46%) offer no constructive lead; risk-off tone is broad and consistent.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours. Rising yields at the session extreme, a VIX near its intraday ceiling, uniform global equity weakness, and price pinned near the session low collectively tilt near-term risk to the downside.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,517 |
+| R1 | 7,460 |
+| Spot | 7,409 |
+| S1 | 7,360 |
+| S2 | 7,300 |
+
+---
+
+### Triggers
+A sustained recovery above 7,460 (R1) accompanied by VIX retreating below 18.50 and US10Y pulling back from 4.595% would neutralise the bearish bias.
+
+---
+
+### Confidence
+**52/100** — Directional signal is coherent across yield, volatility and global equity inputs, but the absence of macro catalyst headlines specific to US500 in the last hour and a relatively thin pre-market data environment limit conviction.
+
+---
+

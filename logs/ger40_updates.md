@@ -108,3 +108,55 @@ A sustained reclaim above **24,100** (R1) on volume would neutralise the bearish
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** GER40 (DAX 40) 23848.6797 (-1.45%) · DXY 99.21
+
+# GER40 Hourly Delta-Update — 2026-05-18 08:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 23,848.68 — down **1.45%** over 24h.
+- **24h Range:** 23,797.33 low / 24,297.95 high; currently trading near session lows.
+- **Key distances:** ~51pts above 24h low; ~449pts below 24h high; ~150pts below round 24,000 handle.
+
+---
+
+### What Changed in the Last Hour
+European equities extended losses into the 08:00 UTC open, with GER40 pressing toward the 23,800 support zone as inflation anxiety dominates sentiment. US10Y yields spiking +3.47% to 4.595% — near the session high of 4.599% — are amplifying rate-sensitive pressure across risk assets globally. VIX rising +6.17% to 19.27 confirms deteriorating risk appetite, consistent with broad selling seen in Nikkei (−2.71%), HSI (−1.88%), and S&P 500 (−0.96%).
+
+---
+
+### Bias
+**FALL** — Yield spike, elevated VIX, global equity weakness, and proximity to session lows point to further downside pressure in the 1–4 hour window.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 20% |
+| Fall | 65% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,100 |
+| R1 | 23,950 |
+| Spot | 23,849 |
+| S1 | 23,797 |
+| S2 | 23,650 |
+
+---
+
+### Triggers
+A sustained recovery above **23,950** on volume would neutralise the bearish bias and shift the near-term outlook back to neutral/drift.
+
+---
+
+### Confidence
+**58/100** — Directional signals are aligned (yields, VIX, cross-asset weakness), but the absence of a specific German macro catalyst or ECB commentary this hour limits conviction; price is also compressing near a short-term support cluster which raises mean-reversion risk.
+
+---
+

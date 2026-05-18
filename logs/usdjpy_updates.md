@@ -316,3 +316,55 @@ A confirmed hourly close above **159.073** would shift bias to Rise targeting 15
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** USD/JPY 158.885 (+0.32%) · DXY 99.207
+
+# USD/JPY Hourly Delta-Update — 2026-05-18 08:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.885 | **24h change:** +0.32%
+- **Distance from range high (159.073):** 18.8 pips — pressing resistance.
+- **Distance from range low (158.284):** 60.1 pips — meaningful intraday floor intact.
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has edged toward the top of its 24h range as US10Y yields surged +3.47% to 4.595, reinforcing the carry bid for the dollar leg. However, the move is conflicted: DXY slipped marginally (-0.08%) while global equities sold off sharply (Nikkei -2.71%, S&P 500 -0.96%), lifting VIX to 19.26 (+6.12%). The risk-off equity tone and Nikkei weakness are restraining yen supply, capping the topside despite the yield tailwind.
+
+---
+
+### Bias
+**DRIFT** — Cross-currents between a bullish yield differential and risk-off equity pressure create a near-term equilibrium. A clean directional break requires either a VIX retreat or a decisive 10Y yield extension above 4.60%.
+
+| Scenario | Probability |
+|---|---|
+| Rise (above 159.07) | 28% |
+| Drift (158.60–159.07) | 47% |
+| Fall (below 158.60) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.50 |
+| R1 | 159.07 |
+| Spot | 158.885 |
+| S1 | 158.60 |
+| S2 | 158.28 |
+
+---
+
+### Triggers
+A sustained break above **159.073** (range high) driven by further 10Y yield expansion would invalidate the drift bias and open a short-term bullish continuation; conversely, a VIX spike above 20.50 or equity cascade would favour a retest of S1.
+
+---
+
+### Confidence
+**54/100** — Competing drivers (yield bullish vs. risk-off equities) are roughly balanced; no dominant catalyst has resolved in the past hour, limiting conviction in either direction.
+
+---
+

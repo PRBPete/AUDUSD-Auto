@@ -109,3 +109,57 @@ A sustained reclaim above **10,270** would neutralise the bearish bias and open 
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10182.6201 (-1.06%) · DXY 99.207
+
+# UK100 Delta-Update — 08:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 10,182.62 | 24h change: −1.06% | 24h range: 10,151.45–10,375.73
+- Distance from session high: −193 pts (−1.86%); distance from session low: +31 pts (+0.31%)
+- VIX at 19.27 (+6.17%) confirms elevated risk-off pressure across equities.
+
+---
+
+### What Changed in the Last Hour
+UK100 is pressing the lower boundary of its 24h range, trading just 31 points above the session low of 10,151.45, consistent with broad European equity weakness flagged in Reuters at 07:11 UTC. The inflation-worry narrative is reinforced by US10Y yields spiking to 4.595% (+3.47% on the day), tightening financial conditions globally. DAX (−1.46%) and HSI (−1.86%) confirm the selling is broad-based rather than FTSE-specific.
+
+---
+
+### Bias
+**FALL** — bearish continuation bias for the next 1–4 hours. Rising long-end yields, elevated VIX, and cross-market equity selling leave little near-term catalyst for a recovery. Copper weakness (−0.64%) adds headwinds for the materials-heavy FTSE 100 composition.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375.73 |
+| R1 | 10,280.00 |
+| Spot | 10,182.62 |
+| S1 | 10,151.45 |
+| S2 | 10,100.00 |
+
+*S2 is estimated structural support; S1 is the observed session low from live data.*
+
+---
+
+### Triggers
+A reclaim and hold above 10,280 on meaningful volume would neutralise the bearish bias and open a drift-to-rise scenario targeting the session high.
+
+---
+
+### Confidence
+**52/100** — Directional signal is clear but US session has not yet opened; yield and VIX moves could reverse on US data releases, limiting conviction. No FTSE-specific macro catalyst in the newsfeed to anchor a precise intraday target.
+
+---
+

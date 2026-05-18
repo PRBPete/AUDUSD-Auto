@@ -108,3 +108,57 @@ A sustained hourly close above 61,500 with a pullback in US10Y below 4.55% would
 
 ---
 
+## 2026-05-18 08:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.213
+
+# JPN225 Delta Update — 2026-05-18 08:00 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% — one of the sharper single-session declines in recent context.
+- Distance from 24h high (63,235.77): −2,416 pts (−3.82%); distance from 24h low (60,376.98): +443 pts (+0.73%).
+- No major structural support level has been confirmed within the data block; spot sits near the lower quarter of the 24h range.
+
+---
+
+### What changed in the last hour
+Price action has compressed near the base of the 24h range, with spot holding just above 60,376 — a thin cushion of roughly 440 points. The macro backdrop is uniformly risk-off: VIX has surged +6.06% to 19.25, US10Y has pushed to 4.595 (+3.47%), and all major equity indices (SPX −0.96%, NAS100 −1.33%, DAX −1.44%, HSI −1.87%) are declining in concert. No news headlines are available to identify a discrete catalyst, which modestly reduces conviction on timing.
+
+---
+
+### Bias
+**FALL** — broad risk-off alignment across rates, equities, and volatility leaves the path of least resistance lower.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,500 |
+| Spot | 60,820 |
+| S1 | 60,377 (24h low) |
+| S2 | 59,800 |
+
+*Note: R1/R2 and S2 are derived from round-number/session structure; no independent technical data supplied.*
+
+---
+
+### Triggers
+A sustained reclaim above 61,500 accompanied by VIX reverting below 18.00 and US10Y pulling back from 4.59 would neutralise the bearish bias and shift the lean to drift/recovery.
+
+---
+
+### Confidence
+**42 / 100** — directional alignment is clear and multi-market confirmed, but the absence of news headlines, no prior session close reference, and reliance on inferred support levels limit precision materially.
+
+---
+
