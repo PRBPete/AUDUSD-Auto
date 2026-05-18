@@ -56,3 +56,55 @@ A sustained reclaim above **0.7155** — requiring a meaningful reversal in eith
 
 ---
 
+## 2026-05-18 04:00 UTC
+
+**Snapshot:** AUD/USD 0.7137 (-1.10%) · DXY 99.318
+
+# AUD/USD Delta Update — 2026-05-18 04:00 UTC
+
+---
+
+### Snapshot
+- Spot: 0.7137 | 24h change: −1.10% | pressing toward session low of 0.7123.
+- Distance from R1 (0.7160): −23 pips | Distance from S1 (0.7120): +17 pips.
+- 24h high of 0.7198 now well overhead; momentum is clearly lower.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has continued to drift lower in early Asian trade, weighed by a concurrent bond rout pushing US10Y to 4.595% (+3.47%), which is compressing risk appetite and supporting the dollar. The Reuters headline confirming "dollar firms as oil climbs, bond rout saps risk appetite" aligns directly with the price action, with VIX nudging up to 18.42 and Nikkei down 2.60%. Copper's −0.91% decline adds an additional AUD-specific headwind given its commodity-currency correlation.
+
+---
+
+### Bias
+**FALL** — Broad risk-off tone, USD firmness, deteriorating commodity complex (copper lower, gold slipping), and elevated US yields all argue for continued near-term AUD weakness.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7198 |
+| R1 | 0.7160 |
+| Spot | 0.7137 |
+| S1 | 0.7120 |
+| S2 | 0.7100 |
+
+---
+
+### Triggers
+A decisive hourly close above 0.7160 — coupled with a reversal in US10Y or a VIX retreat below 17.50 — would neutralise the bearish bias and shift the view to drift/neutral.
+
+---
+
+### Confidence
+**58/100** — Directional alignment across USD, yields, equities, and copper is consistent, but the absence of a specific AUD catalyst (no RBA data, no AU-specific news) and relatively thin early-Asia liquidity introduce meaningful uncertainty around depth and timing of any further move.
+
+---
+
