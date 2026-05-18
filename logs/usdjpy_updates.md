@@ -108,3 +108,55 @@ A sustained break and hourly close above **159.10** would invalidate the drift b
 
 ---
 
+## 2026-05-18 05:00 UTC
+
+**Snapshot:** USD/JPY 158.991 (+0.39%) · DXY 99.327
+
+# USD/JPY Delta Update — 2026-05-18 05:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.991 | **24h change:** +0.39%
+- **Distance from range high (159.073):** ~8 pips — price is pressing the ceiling.
+- **Distance from range low (158.284):** ~71 pips of downside buffer before intraday support.
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has pushed to within 8 pips of its 24-hour high at 159.073, driven by a sharp move in US 10-year yields which are up 3.47% on the session and sitting at 4.595% — near the top of their daily range. The yield surge is the dominant force overriding risk-off pressure from equity weakness (Nikkei -2.40%, S&P500 -0.96%) and VIX climbing to 18.42. Dollar firmness on the DXY (+0.04%) remains modest, suggesting the JPY leg is where the real movement is occurring.
+
+---
+
+### Bias
+**DRIFT** — The pair is pinned near range highs with yields stretched and equities under pressure. A clean break of 159.073 is possible but requires fresh catalysts; absent those, consolidation or shallow retracement is the base case over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>159.15+) | 25% |
+| Drift (158.75–159.07) | 50% |
+| Fall (<158.70) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.50 |
+| R1 | 159.073 |
+| Spot | 158.991 |
+| S1 | 158.50 |
+| S2 | 158.284 |
+
+---
+
+### Triggers
+A sustained break and hourly close above **159.073** invalidates the drift bias and reopens a run toward 159.50; conversely, a slip below **158.70** on renewed equity-driven risk-off would shift bias to FALL.
+
+---
+
+### Confidence
+**58/100** — Yield-driven USD/JPY lift is structurally coherent, but proximity to range highs, equity stress, and geopolitical uncertainty (Iran/oil headlines) create meaningful two-way risk; no Tokyo session catalysts visible in the data to resolve direction cleanly.
+
+---
+

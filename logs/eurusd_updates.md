@@ -110,3 +110,55 @@ A sustained reclaim above 1.1640 on declining yield pressure or a VIX reversal b
 
 ---
 
+## 2026-05-18 05:00 UTC
+
+**Snapshot:** EUR/USD 1.1624 (-0.35%) · DXY 99.324
+
+# EUR/USD Hourly Delta-Update — 2026-05-18 05:00 UTC
+
+---
+
+### Snapshot
+- Spot: **1.1624**, down 0.35% on the session.
+- 24h range: 1.1612–1.1658; spot is trading in the lower third, ~12 pips above the session low.
+- Key levels: 1.1658 (session high / near-term resistance); 1.1612 (session low / immediate support).
+
+---
+
+### What Changed in the Last Hour
+EUR/USD drifted to session lows as US10Y yields surged to 4.595% (+3.47%), a dominant intraday driver compressing the pair. The dollar has firmed modestly (DXY +0.04%), consistent with the Reuters headline citing oil-driven bond market stress and deteriorating risk appetite. Equity weakness — S&P 500 -0.96%, Nikkei -2.34%, DAX -1.57% — alongside a VIX print of 18.42 (+3.19%) reinforces a mild flight-to-dollar environment in early European hours.
+
+---
+
+### Bias
+**FALL** — yield-driven USD support and broad risk-off positioning maintain modest downside pressure on EUR/USD over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1658 |
+| R1 | 1.1640 |
+| Spot | 1.1624 |
+| S1 | 1.1612 |
+| S2 | 1.1595 |
+
+---
+
+### Triggers
+A sustained break back above **1.1640** — reclaiming the mid-range — would neutralise the bearish bias and shift the outlook to neutral/drift, particularly if US10Y yields pull back from the 4.595% intraday high.
+
+---
+
+### Confidence
+**52/100** — Directional signal is coherent (yield spike + risk-off + DXY firm), but moves are incremental and DXY range is extremely tight (99.251–99.373), suggesting low conviction momentum; early European liquidity thin.
+
+---
+
