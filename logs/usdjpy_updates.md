@@ -576,3 +576,55 @@ A sustained break above **159.07** (session high) on volume would invalidate the
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** USD/JPY 158.681 (+0.19%) · DXY 99.017
+
+# USD/JPY Tactical Delta — 13:00 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- **Spot:** 158.681 | +0.19% on the session.
+- **24h Range:** 158.504–159.073; spot trades mid-range, ~18 pips from session low, ~39 pips from session high.
+- **Key levels:** Holding above 158.50 support; 159.00 round-number resistance unbroken.
+
+---
+
+### What Changed in the Last Hour
+USD/JPY is grinding marginally higher despite broad DXY softness (–0.27%), suggesting modest JPY-specific selling or residual carry demand rather than dollar strength. The dominant macro drag is a risk-off tilt — Nikkei –2.71%, S&P –0.96%, VIX elevated at 18.33 — which would ordinarily pressure USD/JPY lower but the move is being cushioned by US10Y holding firm at 4.568%. Oil's sharp pullback (Brent –2.57%) adds a deflationary undercurrent that marginally favors JPY on reduced inflationary pressure, but the effect has been limited so far.
+
+---
+
+### Bias
+**DRIFT** — conflicting forces (weak risk sentiment vs. firm US yields) create a tug-of-war with no clean directional edge in the near term.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>159.00) | 22% |
+| Drift (158.40–159.00) | 55% |
+| Fall (<158.40) | 23% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.073 |
+| R1 | 159.00 |
+| Spot | 158.681 |
+| S1 | 158.504 |
+| S2 | 158.20 |
+
+---
+
+### Triggers
+A sustained break above **159.073** (session high) would shift bias to Rise; a breach of **158.504** on volume with continued Nikkei/equities deterioration would neutralise the drift and open a Fall scenario toward 158.20.
+
+---
+
+### Confidence
+**48/100** — Cross-asset signals are contradictory (weak DXY vs. firm yields vs. risk-off equities), FOMC Minutes this week add event risk, and price action remains mid-range with no decisive catalyst yet.
+
+---
+

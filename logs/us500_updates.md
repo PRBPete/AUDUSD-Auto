@@ -370,3 +370,55 @@ A decisive reclaim above **7,460** on strong volume — particularly on a dovish
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7409.1802 (-0.96%) · DXY 99.034
+
+# US500 Delta-Update — 2026-05-18 13:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,409.18 | 24h change: –0.96% | Session range: 7,397.5–7,517.1
+- **Distance from session high:** –107.9 pts (–1.44%) | From session low: +11.7 pts (+0.16%)
+- **VIX:** 18.35, +1.10% — elevated but not panic territory; approaching the lower edge of stress zone.
+
+---
+
+### What Changed in the Last Hour
+US500 is trading near session lows, having surrendered the 7,500 handle earlier in the session amid broad risk-off pressure. The primary driver remains escalating US-Iran tensions following new drone incidents in the Middle East, which has pushed Brent crude off its $112 peak but kept geopolitical risk premium bid. NAS100 is underperforming (–1.33%), dragging the broader index, while Nvidia earnings anticipation is adding to pre-event uncertainty rather than providing support.
+
+---
+
+### Bias
+**FALL** — for the next 1–4 hours. Price is pinned near session lows, geopolitical headlines remain active, yields are ticking higher (10Y at 4.568%), and the index lacks a catalyst to recover without a de-escalation signal or Nvidia pre-announcement surprise.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,517 |
+| R1 | 7,460 |
+| Spot | 7,409 |
+| S1 | 7,397 |
+| S2 | 7,350 |
+
+---
+
+### Triggers
+A sustained reclaim above 7,460 — roughly the midpoint of today's range — combined with de-escalation headlines from the Middle East would neutralise the bearish bias and reopen a test of 7,517.
+
+---
+
+### Confidence
+**52/100** — Directional lean is supported by price structure and macro flow, but live geopolitical developments and the proximity of a high-impact earnings event (Nvidia) introduce substantial binary risk that limits conviction.
+
+---
+

@@ -382,3 +382,55 @@ A sustained reclaim above **25,900** would neutralise the bearish bias and shift
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.04
+
+# HK50 Delta Update — 2026-05-18 13:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 | 24h change: **−1.68%**
+- Distance from session high (26,391.02): **−715 pts (−2.71%)**
+- Distance from session low (25,505.71): **+169 pts (+0.66%)** — trading near the lower third of the day's range.
+
+---
+
+### What Changed in the Last Hour
+HK50 continues to trade under pressure, consolidating near session lows with no meaningful recovery attempt. The dominant driver remains dual-sided macro weakness: Nikkei −2.71% signals broad Asia ex-China selling pressure, while Brent's sharp −2.25% drop and soft copper (−0.10%) undermine commodity-linked sentiment. S&P 500 futures (−0.96%) and a firmer VIX (18.37, +1.21%) confirm risk-off is not abating at the regional close.
+
+---
+
+### Bias
+**FALL** — bearish momentum persists with no bullish catalyst present. VIX elevated, equities broadly offered, and oil weakness adds macro drag.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 26,000 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+---
+
+### Triggers
+A sustained reclaim of **26,000** on a closing basis would neutralise the bearish bias and shift the view to neutral/drift; a break below **25,506** (session low) opens a test of **25,200**.
+
+---
+
+### Confidence
+**58 / 100** — Directional signal is clear (risk-off, Asia-wide selling), but only one news headline is available for the window, limiting event-driven conviction; gold's resilience (near session highs, +0.41%) introduces a mild offsetting signal that constrains confidence in the downside scenario.
+
+---
+

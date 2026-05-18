@@ -368,3 +368,54 @@ A sustained break above **24,298** (session high) on volume would neutralise the
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** GER40 (DAX 40) 24354.6895 (+0.64%) · DXY 99.041
+
+# GER40 Delta Update — 2026-05-18 13:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 24,354.69 | +0.64% on the session | printing at the top of the 24h range (23,797–24,354).
+- **Distance from key levels:** ~350 pts above Friday's 24,000 round number; ~250 pts below the 24,600 structural resistance zone.
+
+---
+
+### What Changed in the Last Hour
+GER40 has pushed to session highs, tagging 24,354 with the 24h range ceiling acting as the current cap. The move comes despite notable weakness in US equity futures (S&P 500 –0.96%, NAS100 –1.33%) and a sharp Nikkei sell-off (–2.71%), suggesting DAX is being selectively supported — likely by EUR-positive DXY softness (99.04, –0.24%) and firmer commodity-linked industrial names. No fresh European macro catalysts are evident from the available news flow.
+
+---
+
+### Bias
+**DRIFT** — DAX is extended at range highs against a deteriorating global risk backdrop. Upside momentum exists but faces headwinds from US equity weakness and elevated VIX (18.35, +1.10%). Expect consolidation or mild fade rather than a clean continuation.
+
+| Scenario | Probability |
+|---|---|
+| Rise (break >24,400) | 20% |
+| Drift (24,150–24,380) | 50% |
+| Fall (<24,150) | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,600 |
+| R1 | 24,400 |
+| Spot | 24,354 |
+| S1 | 24,150 |
+| S2 | 23,950 |
+
+---
+
+### Triggers
+A sustained break above **24,400** with US futures stabilising would invalidate the drift/fade bias and open a run toward 24,600; conversely, a print below **24,150** confirms the US-led risk-off impulse is spilling over.
+
+---
+
+### Confidence
+**48/100** — DAX is diverging from US and Asian equity weakness without a clear local catalyst; thin news flow and proximity to range highs create an ambiguous setup with limited directional conviction.
+
+---
+

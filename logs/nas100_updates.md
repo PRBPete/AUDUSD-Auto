@@ -364,3 +364,55 @@ A sustained reclaim above **29,350** on improving breadth or a sharp reversal in
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29122.2109 (-1.33%) · DXY 99.042
+
+# NAS100 Delta Update — 2026-05-18 13:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 29,122.21 | 24h change: −1.33%
+- **24h Range:** 28,993.72 – 29,678.89; spot trading in lower third of range
+- **Distance from levels:** ~128 pts above session low; ~557 pts below session high
+
+---
+
+### What Changed in the Last Hour
+NAS100 has continued to drift lower through the morning session, with pre-bell weakness driven by escalating US-Iran tensions and new drone incidents in the Middle East keeping risk appetite suppressed. VIX has ticked up to 18.35 (+1.10%) and Brent, though off the overnight $112 peak, remains elevated near $107.68, sustaining the geopolitical risk premium. Nikkei's sharp -2.71% decline confirms broad Asia-Pacific risk-off spillover into the US open.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours. Iran tensions show no sign of de-escalation, US10Y holding near 4.568% compresses equity multiples, and Nvidia earnings (pending) create asymmetric uncertainty rather than immediate upside support.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,679 |
+| R1 | 29,350 |
+| Spot | 29,122 |
+| S1 | 28,994 |
+| S2 | 28,750 |
+
+---
+
+### Triggers
+A decisive reclaim above 29,350 — particularly on a de-escalation headline from the Middle East or a strong Nvidia pre-announcement — would neutralise the bearish bias and shift the view to drift/rise.
+
+---
+
+### Confidence
+**52/100** — Directional lean is clear (risk-off, geopolitical overhang, weak Asia session), but Nvidia earnings risk and potential headline reversal on Iran negotiations introduce significant binary uncertainty that caps conviction.
+
+---
+

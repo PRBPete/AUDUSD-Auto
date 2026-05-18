@@ -578,3 +578,55 @@ A clean hourly close above **1.1652** shifts bias to Rise targeting 1.1680; a br
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** EUR/USD 1.1658 (-0.06%) · DXY 99.031
+
+# EUR/USD Delta Update — 13:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 1.1658 | 24h change: −0.06% | 24h range: 1.1612–1.1660
+- **DXY:** 99.031, down 0.25% on the session, near lower end of 24h range
+- **Key levels:** Spot pressing against 24h range high (1.1660); S1 cluster near 1.1612
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has stalled just beneath the top of its 24h range at 1.1660, with price action consolidating rather than extending. The DXY slid further (-0.25%) as US yields retreated from intraday highs — the 10Y at 4.569 and the 2Y at 3.59 — compressing the short-end somewhat, offering mild EUR support. Risk sentiment remains fragile: Nikkei down 2.71%, S&P 500 off 0.96%, and VIX ticking up to 18.36, limiting the EUR's upside ambitions as safe-haven demand partially offsets dollar weakness.
+
+---
+
+### Bias
+**DRIFT** — EUR/USD is range-bound and lacks a clean catalyst to break 1.1660 resistance in the near term. Geopolitical tension (Iran headlines), rising oil (Brent despite today's -2.49% correction still elevated), and a jittery equity backdrop constrain directional momentum.
+
+| Scenario | Probability |
+|---|---|
+| **Rise** (break above 1.1660) | 25% |
+| **Drift** (1.1620–1.1660) | 50% |
+| **Fall** (break below 1.1620) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1700 |
+| R1 | 1.1660 |
+| Spot | 1.1658 |
+| S1 | 1.1620 |
+| S2 | 1.1612 |
+
+---
+
+### Triggers
+A sustained hourly close above **1.1660** would neutralise the drift bias and open a bullish push toward 1.1700; conversely, a break below **1.1612** reinstates bearish pressure toward 1.1580.
+
+---
+
+### Confidence
+**52/100** — Conflicting signals (weak DXY vs. risk-off equity/VIX environment; Iran geopolitical noise unresolved) produce a low-conviction read; FOMC Minutes this week add uncertainty overhang.
+
+---
+

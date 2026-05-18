@@ -374,3 +374,55 @@ A sustained reclaim above **10,310** on volume — confirmed by a stabilisation 
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10294.6904 (+0.03%) · DXY 99.037
+
+# UK100 Delta-Update — 13:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 10,294.69 | 24h change: +0.03% — effectively flat.
+- Distance from session high (10,375.73): ~81 pts; from session low (10,151.45): ~143 pts.
+- Holding above midrange but well off the intraday peak set earlier in the session.
+
+---
+
+### What Changed in the Last Hour
+UK100 has stalled near the upper third of its daily range with no meaningful directional follow-through. The primary drag is risk-off pressure imported from Wall Street — S&P 500 -0.96%, Nasdaq -1.33%, and Nikkei -2.71% — alongside a VIX uptick to 18.35 (+1.10%), signalling renewed caution. Brent's sharp drop (-2.28% to 107.81) is a headwind for energy-heavy FTSE constituents, partially offset by gold's advance (+0.48%) supporting miners; the net effect is a flat tape.
+
+---
+
+### Bias
+**DRIFT** — with a mild downside skew given deteriorating US and Asian risk sentiment and energy sector pressure.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 45% |
+| Fall | 35% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,330 |
+| Spot | 10,295 |
+| S1 | 10,240 |
+| S2 | 10,151 |
+
+---
+
+### Triggers
+A sustained push above 10,375 (session high) would neutralise the drift/bearish bias and open a retest of 10,420; conversely, a break below 10,240 confirms downside momentum toward 10,151 session support.
+
+---
+
+### Confidence
+**48/100** — Flat price action with cross-asset signals pulling in opposite directions (gold bullish, oil and US equities bearish); low domestic news flow and thin headline catalyst make conviction limited.
+
+---
+

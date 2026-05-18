@@ -370,3 +370,55 @@ A clean hourly close above 1.3383 on declining VIX and confirmed DXY follow-thro
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** GBP/USD 1.34 (+0.07%) · DXY 99.034
+
+# GBP/USD Delta Update — 2026-05-18 13:00 UTC
+
+---
+
+### Snapshot
+- Spot: 1.3400 | 24h change: +0.07% | Sitting at the top of the 24h range (1.3304–1.3403).
+- Distance from resistance: ~0 pips to range high at 1.3403; ~96 pips to range low support.
+- DXY at 99.034, down 0.25% — mild USD softness providing the floor for cable's session bid.
+
+---
+
+### What Changed in the Last Hour
+GBP/USD has stalled at 1.3400–1.3403, the top of the 24h range, with no clean breakout materialising. The primary driver is a modest but broadly consistent dollar softness tied to retreating rate-hike expectations and pre-FOMC Minutes positioning, as flagged by Reuters and MT Newswires this morning. Risk sentiment has deteriorated slightly — VIX up 1.16%, S&P 500 off 0.96%, Nikkei down 2.71% — creating a mild cross-current that limits aggressive GBP upside from here.
+
+---
+
+### Bias
+**DRIFT** — Cable is capped at range highs with risk-off equity flows and elevated US10Y at 4.568% providing headwinds. Near-term path of least resistance is consolidation to minor retracement.
+
+| Scenario | Probability |
+|---|---|
+| Rise (break above 1.3403+) | 20% |
+| Drift (1.3360–1.3403 range) | 55% |
+| Fall (retrace toward 1.3340) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3450 |
+| R1 | 1.3403 |
+| Spot | 1.3400 |
+| S1 | 1.3360 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A sustained hourly close above 1.3403 on expanding volume, or a DXY break below 98.98, would invalidate the drift bias and open a move toward 1.3450.
+
+---
+
+### Confidence
+**52/100** — Cable is pinned at range extremes with mixed macro signals; geopolitical noise (Iran tensions, oil slide of 2.33%) adds uncertainty, and FOMC Minutes later this week may reprice the USD leg materially.
+
+---
+

@@ -570,3 +570,55 @@ A sustained break above **0.7176** (session high) accompanied by a DXY reversal 
 
 ---
 
+## 2026-05-18 13:00 UTC
+
+**Snapshot:** AUD/USD 0.7181 (-0.49%) · DXY 99.01
+
+# AUD/USD Delta Update — 13:00 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: **0.7181** | 24h change: **−0.49%**
+- Distance from session high (0.7187): **6 pips beneath**
+- Distance from session low (0.7123): **58 pips above**
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has ground up to test the session high of 0.7187, recovering from earlier weakness as DXY slipped to 99.01 on soft dollar sentiment ahead of Wednesday's FOMC Minutes. The move lacks strong conviction — S&P 500 is down 0.96%, Nikkei off 2.71%, and VIX has ticked up to 18.36, indicating risk-off conditions that cap meaningful AUD upside. Gold near session highs (4,576) and copper firm (6.303) provide modest commodity-currency support, though Brent's sharp −2.61% decline removes a growth-proxy tailwind.
+
+---
+
+### Bias
+**DRIFT** — The pair is pinned near the session high with competing forces: a soft dollar offers a floor, but deteriorating equity risk appetite and elevated US 10Y yields (4.568%) limit topside momentum.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise (break > 0.7187, extend to 0.7200+) | 20% |
+| Drift (0.7155–0.7187 range) | 55% |
+| Fall (retest 0.7123–0.7140) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7210 |
+| R1 | 0.7187 |
+| Spot | 0.7181 |
+| S1 | 0.7150 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A clean hourly close **above 0.7187** neutralises the drift/bearish lean and opens R2 at 0.7210; conversely, a break **below 0.7150** with renewed equity selling would accelerate a retest of session lows at 0.7123.
+
+---
+
+### Confidence
+**48/100** — Conflicting signals (soft DXY vs. risk-off equities, firm gold vs. weak Brent) produce a low-conviction range environment; FOMC Minutes event risk later in the week further suppresses directional clarity.
+
+---
+
