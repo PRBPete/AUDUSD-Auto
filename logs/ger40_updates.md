@@ -627,3 +627,55 @@ A sustained push back above 24,340 on recovering US futures would neutralise the
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** GER40 (DAX 40) 24246.8906 (+0.19%) · DXY 99.023
+
+# GER40 Delta Update — 18 May 2026 | 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: 24,246.89 | +0.19% on the session.
+- Distance from intraday high (24,430.98): −184 pts; from intraday low (23,797.33): +450 pts.
+- Near-term pivot zone ~24,200 acting as immediate support.
+
+---
+
+### What changed in the last hour
+GER40 has faded off session highs, consolidating in the upper quarter of today's range with momentum losing conviction into the European close. The softening came alongside a late-session S&P 500 drift lower (−0.68%) and a VIX nudge to 18.28 (+0.72%), signalling mild risk-off rotation in US hours that is capping German equity upside. Nikkei's sharp −2.71% and HSI's −1.68% declines reflect broader Asia-led caution that continues to weigh on sentiment at the margin.
+
+---
+
+### Bias
+**DRIFT** — with a mild downside lean into the early Asian handoff given US equity softness, elevated oil (Brent +0.43% at 110.79 — Middle East risk premium intact), and rising US10Y (4.597%).
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 50% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,431 |
+| R1 | 24,340 |
+| Spot | 24,247 |
+| S1 | 24,200 |
+| S2 | 23,797 |
+
+---
+
+### Triggers
+A sustained break above 24,340 on volume — reclaiming the session's upper consolidation zone — would neutralise the drift/bearish lean and reopen a test of the 24,431 intraday high.
+
+---
+
+### Confidence
+**52/100** — European cash session is effectively closed; price action is now hostage to thin after-hours flow and US equity direction. Rising US10Y and softening risk appetite in US/Asia add a slight bearish tilt, but the DXY decline (−0.26%) and firm copper provide an offsetting macro buffer. Low-liquidity conditions reduce signal reliability.
+
+---
+

@@ -626,3 +626,55 @@ A reclaim and hold above **29,100** on meaningful volume would neutralise the be
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 28860.6309 (-1.12%) · DXY 99.019
+
+# NAS100 Delta Update — 2026-05-18 18:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 28,860.63 | 24h change: −1.12%
+- **Distance from 24h high:** −525.9 pts (−1.79%) below 29,386.54
+- **Distance from 24h low:** +111.0 pts (+0.39%) above 28,749.62
+
+---
+
+### What Changed in the Last Hour
+NAS100 has stabilised in the lower quarter of its 24h range, with mixed US equity action following Iran's revised peace proposal providing a modest crude tailwind but limited tech relief. The 10Y yield holding near session highs at 4.597% continues to pressure growth multiples, while the VIX at 18.3 — off its intraday high of 19.44 — suggests some near-term fear has been partially unwound. Price action is indecisive; no meaningful directional catalyst has emerged in the past hour.
+
+---
+
+### Bias
+**DRIFT** — near-term. Rate pressure from elevated 10Y yields, a weak Nikkei (−2.71%) and HSI (−1.68%) signal global risk-off spillover, while a softer DXY (−0.27%) and stabilising VIX offer partial offsets. Absent a fresh catalyst, consolidation near current levels is the base case into the close.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 22% |
+| Drift | 48% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,386 |
+| R1 | 29,050 |
+| Spot | 28,861 |
+| S1 | 28,750 |
+| S2 | 28,500 |
+
+---
+
+### Triggers
+A sustained reclaim above **29,050** would neutralise the bearish drift and open a re-test of 29,386; conversely, a break below **28,749** (24h low) shifts bias firmly to **FALL**.
+
+---
+
+### Confidence
+**52 / 100** — Mixed macro signals (yield pressure vs. softer DXY), low-volume late-session conditions, and pending high-impact catalysts (Nvidia earnings this week) limit conviction; price action is consolidating without a clear directional edge.
+
+---
+

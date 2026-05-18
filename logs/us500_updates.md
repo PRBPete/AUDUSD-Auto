@@ -630,3 +630,55 @@ A sustained reclaim above 7,420 — aligning with the mid-session rejection zone
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** US500 (S&P 500) 7380.1401 (-0.67%) · DXY 99.019
+
+# US500 Delta Update — 2026-05-18 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: **7,380.14** | 24h change: **–0.67%**
+- Distance from session high (7,454.85): **–74.7 pts (-1.0%)**
+- Distance from session low (7,361.47): **+18.7 pts (+0.25%)**
+
+---
+
+### What Changed in the Last Hour
+US500 has drifted toward the lower end of its session range, down roughly 0.67% on the day, with NAS100 underperforming at –1.09%. The dominant near-term driver is a softening risk tone: US10Y yields pushed to 4.597% (+0.72%), compressing equity multiples, while VIX ticked up to 18.29. A reported revised Iranian peace proposal has partially supported crude (Brent +0.40% at $110.76) and kept the tape from a sharper breakdown, but the headline bid is fading.
+
+---
+
+### Bias
+**DRIFT → lean FALL** over the next 1–4 hours. Rising long-end yields, elevated VIX, weak Asian session (Nikkei –2.71%, HSI –1.68%), and index proximity to session lows all point to continued selling pressure into the US close. No meaningful positive catalyst has emerged.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise | 20% |
+| Drift | 35% |
+| Fall | 45% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,454 |
+| R1 | 7,415 |
+| Spot | 7,380 |
+| S1 | 7,361 |
+| S2 | 7,320 |
+
+---
+
+### Triggers
+A confirmed reclaim of **7,415** on a closing 15-min bar would neutralise the bearish lean and shift bias to neutral/drift; conversely, a break below **7,361** (session low) opens the path toward S2 at 7,320.
+
+---
+
+### Confidence
+**52 / 100** — Macro setup is bearish (yields, VIX, weak Asia), but the Iran headline introduces binary geopolitical noise that limits directional conviction near the close.
+
+---
+

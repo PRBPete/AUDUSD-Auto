@@ -644,3 +644,54 @@ A sustained reclaim above **25,900** on volume would neutralise the bearish bias
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.025
+
+# HK50 Delta Update — 2026-05-18 18:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 | **24h change:** −1.68% | well off the session high of 26,391.02
+- **Distance from R1 (~26,000):** ~325 pts below | **Distance from S1 (~25,500):** ~175 pts above
+
+---
+
+### What Changed in the Last Hour
+HK50 has drifted in the lower third of its 24h range with no material recovery attempt, consistent with broad Asian weakness led by Nikkei (−2.71%). The dominant pressure remains macro: US10Y rising to 4.597% tightens the discount rate narrative, while S&P 500 and NAS100 both closed negative, removing any positive hand-off. No fresh catalysts have emerged in the last hour to shift the tone.
+
+---
+
+### Bias
+**FALL** — bearish momentum intact, no credible bounce signal present.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 30% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 26,000 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+---
+
+### Triggers
+A sustained reclaim above 26,000 — the prior intraday consolidation zone — would neutralise the bearish bias and open a re-test of 26,391.
+
+---
+
+### Confidence
+**52/100** — Directional bias is clear (weak price action, negative regional leads, rising US yields), but thin late-session liquidity and a single news catalyst in the data window limit conviction; no intraday momentum data or order-flow confirmation available.
+
+---
+

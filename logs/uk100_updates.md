@@ -633,3 +633,55 @@ A sustained S&P 500 recovery above 7,420 combined with VIX retreating below 18.0
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10296.5898 (+0.05%) · DXY 99.019
+
+# UK100 Delta Update — 18 May 2026 | 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: 10,296.6 | +0.05% on the session, effectively flat into late London.
+- Distance from range high (10,375.7): 79 points; from range low (10,151.5): 145 points.
+- Sitting mid-to-upper range, modestly above the session midpoint (~10,263).
+
+---
+
+### What Changed in the Last Hour
+UK100 has held a narrow consolidation band near session highs with no meaningful directional follow-through. The primary driver remains the calmer bond environment noted in the 16:13 PA Media headline, partially offset by a softening S&P 500 (−0.68%) and NAS100 (−1.11%) pulling risk appetite. Brent's continued rise (+0.43%, $110.79) provides a modest tailwind for the energy-heavy FTSE composition, partially countering the drag from Diageo and Unilever weakness.
+
+---
+
+### Bias
+**DRIFT** — limited catalyst to break higher into the close; US equity weakness and rising VIX (18.29, +0.77%) cap upside, while Brent and a soft DXY provide a floor.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 22% |
+| Drift | 52% |
+| Fall | 26% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,340 |
+| Spot | 10,297 |
+| S1 | 10,245 |
+| S2 | 10,151 |
+
+---
+
+### Triggers
+A sustained break above 10,375 (session high) on meaningful volume would neutralise the drift bias and open a short-term bullish leg; conversely, S&P 500 accelerating below 7,361 (its session low) would likely drag UK100 through S1 and shift bias to **FALL**.
+
+---
+
+### Confidence
+**48/100** — Late London/early US session with diverging cross-asset signals (Brent bullish, US equities bearish, bonds mixed); low conviction without a clear directional catalyst. Nikkei's sharp −2.71% decline and HSI weakness add residual overnight risk to watch.
+
+---
+

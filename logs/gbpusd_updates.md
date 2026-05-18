@@ -630,3 +630,55 @@ A clean break and hold above 1.3450 (session high) would neutralise the drift bi
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** GBP/USD 1.342 (+0.22%) · DXY 99.021
+
+# GBP/USD Hourly Delta-Update — 18 May 2026 | 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: 1.3420 | +0.22% on the day, trading in the upper third of the 24h range (1.3304–1.3450).
+- R1 resistance at 1.3450 (intraday high) remains untested and close overhead.
+- S1 support at 1.3380 held through the European session; S2 at 1.3304 (session low) is well clear.
+
+---
+
+### What Changed in the Last Hour
+Price action has been relatively subdued in the past hour, consolidating near 1.3420 with no meaningful breakout attempt. The dominant driver remains the USD retreat narrative — Reuters reported a potential US-Iran sanctions deal at 14:48 UTC, which weighed on the dollar and provided a structural tailwind for GBP/USD through the afternoon. However, rising US 10Y yields (+0.77% to 4.599%) and the WSJ flagging renewed US rate-hike prospects are capping the pair's upside, creating a push-pull dynamic near session highs.
+
+---
+
+### Bias
+**DRIFT** — Consolidation is the most probable near-term outcome given competing forces: a soft dollar versus rising yields and fading risk appetite (S&P 500 -0.64%, VIX 18.29, Nikkei -2.71%).
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3450 |
+| R1 | 1.3435 |
+| Spot | 1.3420 |
+| S1 | 1.3380 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A sustained break above 1.3450 (session high) would shift bias to Rise; a break below 1.3380 on volume — particularly if US yields push through 4.611% — would invalidate the drift view and open S2.
+
+---
+
+### Confidence
+**52/100** — Mixed macro signals (dollar weakness vs. yield pressure, risk-off equity tone) produce low directional conviction; FOMC Minutes later this week add uncertainty to any near-term USD repricing.
+
+---
+

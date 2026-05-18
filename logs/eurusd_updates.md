@@ -838,3 +838,55 @@ A clean break and hourly close above **1.1660** (session high) would shift bias 
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** EUR/USD 1.1651 (-0.12%) · DXY 99.02
+
+# EUR/USD Delta Update — 18 May 2026 | 18:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.1651 | 24h change: −0.12% | 24h range: 1.1612–1.1660
+- **Distance from range high:** −9 pips | **Distance from range low:** +39 pips
+- **DXY:** 99.02, down 0.26% on session — mild USD headwind supportive of EUR
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has settled near the top of its intraday range after the 14:48 UTC Reuters report on a prospective US-Iran sanctions deal pressured the dollar lower. Price has since consolidated tightly between 1.1645–1.1660, with no fresh catalyst breaking the stalemate. Rising US10Y yields (+0.77% to 4.599%) and WSJ commentary flagging renewed US rate-hike prospects are capping upside, creating a competing drag on the pair.
+
+---
+
+### Bias
+**DRIFT** — conflicting forces (softer DXY vs. rising US yields and geopolitical uncertainty) leave the pair in a holding pattern ahead of FOMC Minutes later this week.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>1.1670) | 25% |
+| Drift (1.1620–1.1670) | 52% |
+| Fall (<1.1620) | 23% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1700 |
+| R1 | 1.1660 |
+| Spot | 1.1651 |
+| S1 | 1.1612 |
+| S2 | 1.1575 |
+
+---
+
+### Triggers
+A clean hourly close above 1.1660 (session high) would shift bias to Rise; a break below 1.1612 on renewed USD strength or hawkish Fed commentary neutralises the drift and activates the bearish scenario.
+
+---
+
+### Confidence
+**52/100** — Directional signals are genuinely mixed: dollar softness and Iran deal headlines pull EUR higher, while surging long-end yields and rate-hike speculation pull in the opposite direction; FOMC Minutes risk ahead limits conviction.
+
+---
+

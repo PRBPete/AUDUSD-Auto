@@ -837,3 +837,55 @@ A sustained break above 159.073 on renewed DXY strength or hawkish FOMC minutes 
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** USD/JPY 158.93 (+0.35%) · DXY 99.025
+
+# USD/JPY Hourly Delta-Update — 18 May 2026 | 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: 158.93 | +0.35% on the session.
+- Distance from intraday high 159.073: ~14 pips; from session low 158.604: ~33 pips.
+- Key psychological level 159.00 is unbroken overhead; 158.60 is near-term structural support.
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has consolidated in the upper quarter of its daily range, holding near 158.90–158.93 without a clean break above 159.00. The dominant driver remains the US10Y yield firming to 4.599% (+0.77%), sustaining carry-trade support for the pair even as DXY softened slightly (-0.26%) on the US-Iran sanctions deal headline. Nikkei's sharp -2.71% decline signals domestic risk-off pressure that could temper further yen weakness near-term.
+
+---
+
+### Bias
+**DRIFT** — The pair is caught between rising US yields (bullish USD/JPY) and Nikkei-led risk-off sentiment (supportive of JPY). A clean directional break above 159.00 or below 158.60 is needed to establish the next leg.
+
+| Scenario | Probability |
+|---|---|
+| Rise (break >159.00, extend toward 159.40) | 28% |
+| Drift (range 158.60–159.00) | 47% |
+| Fall (break <158.60, test 158.20) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.40 |
+| R1 | 159.07 (session high) |
+| Spot | 158.93 |
+| S1 | 158.60 (session low) |
+| S2 | 158.20 |
+
+---
+
+### Triggers
+A sustained break and hourly close above 159.07 would neutralise the drift bias and open a bullish run toward 159.40; conversely, a close below 158.60 shifts bias to FALL and exposes 158.20.
+
+---
+
+### Confidence
+**52/100** — Conflicting signals (rising US yields vs. softer DXY, risk-off Nikkei, geopolitical noise from Iran) limit conviction; no FOMC minutes yet to anchor rate expectations directionally.
+
+---
+

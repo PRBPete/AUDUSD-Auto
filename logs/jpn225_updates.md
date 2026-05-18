@@ -634,3 +634,57 @@ A sustained reclaim above 61,300 — combined with a VIX retreat below 18.00 and
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.026
+
+# JPN225 Delta Update — 2026-05-18 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% | Session range: 60,376.98 – 63,235.77
+- Distance from R1 (~61,500 est.): ~680pts below | Distance from S1 (~60,400 est.): ~420pts above session low
+- Nikkei is pressing near the lower third of today's range, having shed significant ground from the 63,235 high.
+
+---
+
+### What Changed in the Last Hour
+JPN225 remains under sustained pressure with no meaningful intraday recovery evident, consolidating near 60,819 after failing to reclaim mid-range levels. The primary driver continues to be broad Asian equity weakness, compounded by soft China economic sentiment and rising US10Y yields (4.597%, +0.72%) weighing on risk appetite. HSI's −1.68% decline and NAS100's −1.12% loss confirm the regional and global risk-off tone underpinning the sell-off.
+
+---
+
+### Bias
+**FALL** — Macro headwinds (elevated US yields, weak China data signal, VIX at 18.28 and elevated) dominate. No catalysts for reversal are visible in the current data set.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,500 |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,800 |
+
+*Note: R1/R2 and S2 are structurally estimated; S1 is anchored to confirmed session low.*
+
+---
+
+### Triggers
+A sustained reclaim above 61,500 on volume would neutralise the bearish bias and shift the outlook to neutral-drift.
+
+---
+
+### Confidence
+**52/100** — Directional signal is clear (risk-off, yields rising, China drag), but absence of intraday volume data and thin news flow in the last hour limits precision; levels below S1 are extrapolated without intraday structure confirmation.
+
+---
+

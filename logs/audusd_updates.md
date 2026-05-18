@@ -830,3 +830,55 @@ A sustained break above **0.7175** — ideally on a DXY leg lower through 98.97 
 
 ---
 
+## 2026-05-18 18:01 UTC
+
+**Snapshot:** AUD/USD 0.7166 (-0.70%) · DXY 99.025
+
+# AUD/USD Delta Update — 18 May 2026 | 18:01 UTC
+
+---
+
+### Snapshot
+- Spot: 0.7166 | 24h change: −0.70%
+- Distance from session high (0.7187): 21 pips below; from session low (0.7123): 43 pips above
+- Nearest resistance cluster: 0.7184–0.7187; nearest support: 0.7140–0.7145
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has edged off intraday lows but remains under modest pressure as US 10Y yields push toward 4.60%, offsetting the softer DXY (99.025, −0.26%). The dollar's earlier retreat was attributed to a reported US-Iran sanctions deal (Reuters, 14:48 UTC), though competing WSJ commentary flagging renewed US rate-hike prospects is capping any AUD recovery. Risk sentiment is softening — Nikkei −2.71%, HSI −1.68%, and S&P 500 −0.59% — limiting topside appetite for the commodity-linked AUD despite copper and Brent holding small gains.
+
+---
+
+### Bias
+**DRIFT** — conflicting cross-currents (weaker DXY vs. rising yields and soft equities) produce no clean directional edge over the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 45% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7187 |
+| R1 | 0.7175 |
+| Spot | 0.7166 |
+| S1 | 0.7145 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break above 0.7187 (session high) would neutralise the cautious lean and open a test of 0.7200; a failure below 0.7145 on renewed equity selling or a DXY reversal above 99.40 would shift bias firmly to **FALL**.
+
+---
+
+### Confidence
+**48/100** — Cross-asset signals are contradictory (soft DXY bullish, rising 10Y and weak equities bearish for AUD), and intraday liquidity thins into the US afternoon session; FOMC Minutes focus this week adds headline risk that limits conviction.
+
+---
+
