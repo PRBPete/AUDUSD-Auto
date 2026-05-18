@@ -434,3 +434,54 @@ A sustained reclaim of **26,000** on a closing basis would neutralise the bearis
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.02
+
+# HK50 Delta Update — 2026-05-18 14:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 25,675.18 | **24h change:** −1.68% | trading in lower half of 25,505–26,391 range.
+- **Distance from session high:** −715 pts (−2.71%) | **Distance from session low:** +169 pts (+0.66%).
+
+---
+
+### What Changed in the Last Hour
+HK50 has stabilised near session lows as selling pressure from Asian equity weakness persists, with Nikkei down a sharp −2.71% providing the dominant regional drag. Brent crude's −2.34% decline adds a commodity-sector headwind, while a mild VIX uptick to 18.75 (+3.31%) signals incrementally risk-off positioning in US markets. No meaningful recovery attempt is evident; price action is grinding sideways near 25,675 with thin upside conviction.
+
+---
+
+### Bias
+**FALL** — Negative regional contagion (Nikkei), rising VIX, softening crude, and elevated US 10Y yields (4.574%) collectively suppress risk appetite. DAX/FTSE resilience provides marginal offset but insufficient to reverse Asia-led selling.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 26,050 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+---
+
+### Triggers
+A sustained reclaim above **26,050** with Nikkei stabilisation and VIX retreating below 18.00 would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**52/100** — Directional lean is supported by multi-asset risk-off signals, but thin intraday news flow and proximity to session lows introduce mean-reversion risk; no fresh China macro catalyst is confirmed in the data window.
+
+---
+

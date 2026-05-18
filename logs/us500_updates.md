@@ -422,3 +422,55 @@ A sustained reclaim above 7,460 — roughly the midpoint of today's range — co
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** US500 (S&P 500) 7415.8901 (-0.19%) · DXY 99.027
+
+# US500 Delta Update — 14:01 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- **Spot:** 7,415.89 — down 0.19% on the session.
+- **24h Range:** 7,394.11 – 7,454.85; spot sits in the lower third of that range.
+- **Key levels:** ~100 pts below the range high; ~22 pts above the session low.
+
+---
+
+### What Changed in the Last Hour
+US500 has drifted modestly lower after stock futures briefly turned positive pre-open per Barron's (13:16 UTC), failing to hold that bounce. The dominant pressure stems from a 3.53% VIX spike to 18.79 alongside rising US10Y yields (+0.24% to 4.575%), which are compressing equity multiples. Brent's sharp -2.45% drop on Iran news is a mixed signal — relieving energy inflation but reflecting geopolitical uncertainty that is keeping risk appetite cautious.
+
+---
+
+### Bias
+**DRIFT** — The failed morning rally attempt, elevated and rising VIX, and sticky long-end yields argue against a clean directional break in either direction over the next 1–4 hours. Nvidia and Walmart earnings pending are keeping sellers from pressing aggressively.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|------|-------|
+| R2 | 7,454.85 |
+| R1 | 7,435.00 |
+| Spot | 7,415.89 |
+| S1 | 7,394.11 |
+| S2 | 7,370.00 |
+
+---
+
+### Triggers
+A sustained break above **7,435** (intraday resistance / upper range midpoint) on volume would neutralise the drift bias and open a retest of 7,454.85; conversely, a close below **7,394** activates a bearish leg toward 7,370.
+
+---
+
+### Confidence
+**52/100** — Conflicting cross-asset signals (gold near highs, oil collapsing, VIX rising but not spiking), plus two high-impact earnings releases imminent (Nvidia, Walmart), create a wide outcome distribution that limits tactical conviction.
+
+---
+

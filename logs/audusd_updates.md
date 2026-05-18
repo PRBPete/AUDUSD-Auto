@@ -622,3 +622,55 @@ A clean hourly close **above 0.7187** neutralises the drift/bearish lean and ope
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** AUD/USD 0.7176 (-0.56%) · DXY 99.016
+
+# AUD/USD Delta Update — 14:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 0.7176 | 24h change: −0.56% | Off session high 0.7187 by 11 pips.
+- Key resistance cluster: 0.7184–0.7187 (intraday high / round-number cap).
+- Key support: 0.7123 (session low); 0.7150 mid-range pivot.
+
+---
+
+### What changed in the last hour
+AUD/USD has drifted modestly lower from the 0.7187 session high, consistent with a mild DXY stabilisation after early dollar softness. The VIX has ticked up 3.3% to 18.75 and the Nikkei is down 2.71%, suggesting a light risk-off tone that limits AUD upside despite gold near session highs (4580) and copper holding firm. No fresh macro catalyst has emerged in the past hour; the move is technically corrective rather than trend-driven.
+
+---
+
+### Bias
+**DRIFT** — sideways-to-softer over the next 1–4 hours. Commodity support (gold, copper) prevents an outright breakdown, but rising US 10Y yields (+0.24% to 4.575%), elevated VIX, and Asian equity weakness (Nikkei −2.71%, HSI −1.68%) cap any recovery attempt. FOMC minutes focus this week adds caution.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 45% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7187 |
+| R1 | 0.7178 |
+| Spot | 0.7176 |
+| S1 | 0.7150 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A clean break and hold above **0.7187** (session high) neutralises the drift/bearish bias and opens a retest of the 0.7200 psychological level; conversely, a break below **0.7150** confirms downside momentum toward 0.7123.
+
+---
+
+### Confidence
+**58/100** — Commodity backdrop is supportive but cross-asset risk-off signals (VIX, Asian equities, elevated US yields) create conflicting pressure; no high-impact data prints in the immediate window to resolve the tension.
+
+---
+

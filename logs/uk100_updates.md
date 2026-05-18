@@ -426,3 +426,54 @@ A sustained push above 10,375 (session high) would neutralise the drift/bearish 
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10317.8604 (+0.26%) · DXY 99.013
+
+# UK100 Delta Update — 14:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+Spot: **10,317.86** | +0.26% on the day.
+Distance from session high (10,375.73): **57.9 pts below**; distance from session low (10,151.45): **166.4 pts above**.
+
+---
+
+### What Changed in the Last Hour
+UK100 is holding near the upper quarter of its session range but has stalled short of the intraday peak, consistent with fading momentum into the European afternoon. The primary cross-asset drag is a sharply lower Brent (-2.43%), which pressures energy-heavy FTSE constituents, while a rising VIX (+3.36%) and negative US equity tone (S&P -0.22%, Naz -0.45%) introduce caution. Offsetting support comes from gold near session highs and a softer DXY (-0.27%), providing a modest tailwind for commodity-linked miners.
+
+---
+
+### Bias
+**DRIFT** — The index lacks a clear catalyst to push through resistance near the session high, while energy sector headwinds and deteriorating US risk sentiment cap upside. No imminent collapse given miner support, but the risk-reward favours consolidation.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375 |
+| R1 | 10,345 |
+| Spot | 10,318 |
+| S1 | 10,270 |
+| S2 | 10,200 |
+
+---
+
+### Triggers
+A clean break and close above **10,375** (session high / R2) would invalidate the drift bias and open a bullish continuation; conversely, a drop through **10,270** on volume would shift bias to **FALL**, particularly if VIX extends above 19.50.
+
+---
+
+### Confidence
+**52 / 100** — Cross-asset signals are mixed (energy negative, miners positive, US equities soft); no macro event catalyst in the news flow and limited price action data within the specific last hour window reduces conviction.
+
+---
+

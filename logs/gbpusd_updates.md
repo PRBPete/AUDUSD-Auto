@@ -422,3 +422,55 @@ A sustained hourly close above 1.3403 on expanding volume, or a DXY break below 
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** GBP/USD 1.3393 (+0.01%) · DXY 99.018
+
+# GBP/USD Delta Update — 14:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+Spot: 1.3393 | 24h change: +0.01% — effectively flat.
+Distance from session high (1.3403): 10 pips; distance from session low (1.3304): 89 pips.
+Pair is pressing the upper boundary of the 24h range with minimal conviction.
+
+---
+
+### What changed in the last hour
+GBP/USD has crept toward the session high of 1.3403 as DXY softened further (-0.27% on the day), providing mild tailwind for sterling. The dollar's intraday retreat aligns with headlines pointing to investor unease around elevated US10Y yields (4.577%) and geopolitical risk (Iran tensions, oil volatility), which are tempering rate-rise-driven dollar demand. VIX rising +3.42% to 18.77 and Brent's sharp -2.45% drop introduce a modest risk-off undercurrent that limits aggressive GBP upside.
+
+---
+
+### Bias
+**DRIFT** — The pair sits at range resistance with conflicting forces: a softer dollar is constructive, but rising yields, elevated VIX, and risk-off equity flows (Nikkei -2.71%, HSI -1.68%) cap momentum. FOMC Minutes this week add caution.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 50% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3430 |
+| R1 | 1.3403 |
+| Spot | 1.3393 |
+| S1 | 1.3350 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A sustained break and close above 1.3403 (session high) would shift bias to **Rise** and open 1.3430; conversely, a move back below 1.3350 on dollar recovery or VIX spike neutralises the constructive lean and targets 1.3304.
+
+---
+
+### Confidence
+**52/100** — Range is tight (99 pips), macro signals are cross-cutting (soft DXY vs. rising yields and VIX), and no high-impact GBP-specific catalyst has printed this session; directional resolution likely awaits FOMC Minutes or a geopolitical escalation headline.
+
+---
+

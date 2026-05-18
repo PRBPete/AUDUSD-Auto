@@ -424,3 +424,55 @@ A sustained reclaim above 61,400 — particularly on a reversal in HSI or a VIX 
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.021
+
+# JPN225 Delta-Update — 2026-05-18 14:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 60,819.57 | **24h change:** −2.71%
+- Distance from session high (63,235.77): −2,416 pts (−3.82%)
+- Distance from session low (60,376.98): +443 pts (+0.73%)
+
+---
+
+### What Changed in the Last Hour
+JPN225 is holding just above the session floor with no meaningful recovery, consistent with broad Asian risk-off flow flagged by HSI's −1.68% decline and weak oil undermining resource-linked names. VIX has pushed to 18.69 (+2.98%), confirming elevated hedging demand that is capping any intraday bounce. No fresh catalyst has emerged to reverse the drift lower; price is compressing near the lower quarter of the daily range.
+
+---
+
+### Bias
+**FALL** — Near-term bias is downward. Rising US10Y (4.574%), a firmer VIX, and continued HSI weakness provide no supportive backdrop. The AI-driven upside headline (67,000 target) is a medium-term narrative with no immediate price catalyst.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,400 |
+| Spot | 60,820 |
+| S1 | 60,377 (session low) |
+| S2 | 59,800 |
+
+---
+
+### Triggers
+A sustained reclaim above 61,400 on meaningful volume, or a sharp reversal in VIX below 17.80, would neutralise the bearish bias and open a retest of 62,000.
+
+---
+
+### Confidence
+**52 / 100** — Directional read is supported by cross-asset signals (VIX, HSI, oil weakness), but the compression near the session low introduces mean-reversion risk, and no granular intraday order-flow data is available to sharpen conviction.
+
+---
+

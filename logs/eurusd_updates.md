@@ -630,3 +630,55 @@ A sustained hourly close above **1.1660** would neutralise the drift bias and op
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** EUR/USD 1.1655 (-0.08%) · DXY 99.016
+
+# EUR/USD Delta Update — 14:01 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 1.1655 | 24h change: −0.08% | Range: 1.1612–1.1660
+- **Distance from R1 (1.1660):** ~5 pips — testing session ceiling
+- **Distance from S1 (1.1612):** ~43 pips — intraday base intact
+
+---
+
+### What Changed in the Last Hour
+EUR/USD has stalled within a 5-pip band just below the session high of 1.1660, with no meaningful breakout despite continued DXY softness (99.016, −0.27%). The dominant intra-hour driver is a tug-of-war between a weaker dollar — pressured by geopolitical uncertainty and pre-FOMC caution — and rising US10Y yields (+0.35% to 4.58%), which are capping EUR upside. VIX climbing to 18.77 (+3.42%) adds a mild risk-off undertone that limits aggressive EUR buying.
+
+---
+
+### Bias
+**DRIFT** — EUR/USD is pinned against near-term resistance with conflicting forces (soft DXY vs. rising yields + elevated VIX). No clean directional catalyst until FOMC Minutes later this week.
+
+| Scenario | Probability |
+|---|---|
+| Rise (break >1.1665) | 25% |
+| Drift (1.1620–1.1660) | 52% |
+| Fall (<1.1612) | 23% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1700 |
+| R1 | 1.1660 |
+| Spot | 1.1655 |
+| S1 | 1.1612 |
+| S2 | 1.1570 |
+
+---
+
+### Triggers
+A sustained hourly close above **1.1660** shifts bias to Rise targeting 1.1700; a break below **1.1612** with DXY recovery above 99.40 invalidates the drift and opens S2.
+
+---
+
+### Confidence
+**52 / 100** — Cross-asset signals are contradictory (weak DXY supportive, rising yields and VIX restrictive; Nikkei/HSI selling adds noise), and the pair is wedged at session highs with no fresh macro catalyst in the immediate window.
+
+---
+

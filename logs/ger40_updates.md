@@ -419,3 +419,55 @@ A sustained break above **24,400** with US futures stabilising would invalidate 
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** GER40 (DAX 40) 24366.4902 (+0.69%) · DXY 99.017
+
+# GER40 Hourly Delta-Update — 2026-05-18 14:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 24,366.49 | +0.69% on the 24h session | 24h range: 23,797.33–24,381.84
+- **Distance from session high:** ~15 pts below 24,381.84 — testing topside resistance
+- **Distance from session low:** ~569 pts above 23,797.33 — significant intraday base established
+
+---
+
+### What changed in the last hour
+GER40 is pressing against the upper boundary of its 24h range, trading within 16 points of the session high at 24,381.84, suggesting a near-term breakout attempt is in progress. The move is occurring despite a rising VIX (+3.31% to 18.75), a weaker Nikkei (−2.71%) and HSI (−1.68%), and a softening S&P 500 (−0.20%), indicating relative European strength rather than broad risk-on momentum. Supportive inputs include a weaker DXY (99.02, −0.27%) and firm copper (+0.22%), though the Brent crude sell-off (−2.43%) tempers energy-sector conviction.
+
+---
+
+### Bias
+**DRIFT** — GER40 is topside-heavy against session resistance with mixed global risk sentiment limiting clean breakout momentum.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 28% |
+| Drift | 47% |
+| Fall | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,450 |
+| R1 | 24,382 |
+| Spot | 24,366 |
+| S1 | 24,200 |
+| S2 | 23,980 |
+
+---
+
+### Triggers
+A clean hourly close above 24,382 (session high) with VIX retreating below 18.00 would invalidate the drift bias and open a bullish extension toward 24,450+; conversely, a break below 24,200 re-engages downside toward 23,980.
+
+---
+
+### Confidence
+**52/100** — DAX is showing relative strength but is pressing a hard session ceiling into conflicting global signals (VIX elevated, Asia sold off, US futures soft); no directional catalyst from available news flow.
+
+---
+

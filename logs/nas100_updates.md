@@ -416,3 +416,55 @@ A decisive reclaim above 29,350 — particularly on a de-escalation headline fro
 
 ---
 
+## 2026-05-18 14:01 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29060.9238 (-0.44%) · DXY 99.016
+
+# NAS100 Delta Update — 2026-05-18 14:01 UTC
+
+---
+
+### Snapshot
+- **Spot:** 29,060.92 | 24h change: −0.44%
+- **24h Range:** 28,993.72 – 29,386.54; spot sits in the lower third of that range
+- **Key distance:** ~67 pts above session low (28,993); ~326 pts below session high (29,386)
+
+---
+
+### What Changed in the Last Hour
+NAS100 drifted lower through the early New York open as VIX extended to 18.81 (+3.64%), signalling a modest pickup in hedging demand. Oil's sharp reversal (Brent −2.45%, pulling back from above $110 on Iran-related developments) offered some macro relief, but rising US10Y yields (4.575%, +0.24%) are capping the risk-on response. Price remains pinned near the session low, with no meaningful recovery attempt evident.
+
+---
+
+### Bias
+**DRIFT** — the path of least resistance is sideways-to-lower into mid-afternoon, pending the Nvidia and Walmart earnings catalysts later this week. Yield pressure and an elevated VIX argue against a sustained bid, while Brent's drop prevents an outright flush.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 22% |
+| Drift | 48% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,386 |
+| R1 | 29,220 |
+| Spot | 29,061 |
+| S1 | 28,994 |
+| S2 | 28,820 |
+
+---
+
+### Triggers
+A decisive reclaim above 29,220 on volume would neutralise the bearish drift bias and open a retest of 29,386; conversely, a clean break below 28,993 (session low) confirms accelerating downside toward S2.
+
+---
+
+### Confidence
+**52/100** — Mixed signals: oil relief is constructive but rising yields, elevated VIX, and a soft Asian session (Nikkei −2.71%, HSI −1.68%) maintain downside skew; no high-impact catalyst within this hourly window to sharpen conviction.
+
+---
+
