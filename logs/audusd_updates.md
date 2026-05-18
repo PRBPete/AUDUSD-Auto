@@ -212,3 +212,55 @@ A sustained break back above 0.7160, accompanied by a US10Y retreat below 4.55% 
 
 ---
 
+## 2026-05-18 06:25 UTC
+
+**Snapshot:** AUD/USD 0.7146 (-0.98%) · DXY 99.24
+
+# AUD/USD Delta Update — 06:25 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 0.7146 | 24h change: −0.98% | Near session low end of 0.7123–0.7181 range.
+- Distance from 24h high: −35 pips | Distance from 24h low: +23 pips.
+- Pair is trading in the lower third of the daily range under pressure.
+
+---
+
+### What Changed in the Last Hour
+AUD/USD continued drifting lower as the global bond selloff intensified, with US10Y yields spiking to 4.595% (+3.47%), raising rate-hike expectations and pressuring risk-sensitive currencies. Equity markets are broadly down — Nikkei −2.69%, HSI −2.14%, S&P500 −0.96% — reinforcing a risk-off tone that is structurally negative for AUD. Copper's −0.94% slide further undermines the commodity-linked Aussie, while the DXY holds firm near session lows at 99.24, providing limited offset.
+
+---
+
+### Bias
+**FALL** — Risk-off environment, rising US yields, weak commodity complex, and global equity weakness collectively maintain downside pressure on AUD/USD for the next 1–4 hours.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7181 |
+| R1 | 0.7163 |
+| Spot | 0.7146 |
+| S1 | 0.7130 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A break and close above 0.7163 on stabilising US yields or a material DXY reversal lower would neutralise the bearish bias and open a retest of 0.7181.
+
+---
+
+### Confidence
+**62 / 100** — Directional alignment across yields, equities, and commodities is clear, but DXY weakness at session lows and thin early-Asian liquidity conditions introduce noise and limit conviction on timing and magnitude of any further leg lower.
+
+---
+

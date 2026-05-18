@@ -212,3 +212,55 @@ A sustained break and hourly close above 159.07 shifts bias to **RISE**; a rever
 
 ---
 
+## 2026-05-18 06:25 UTC
+
+**Snapshot:** USD/JPY 158.868 (+0.31%) · DXY 99.239
+
+# USD/JPY Delta Update — 06:25 UTC | 2026-05-18
+
+---
+
+### Snapshot
+- **Spot:** 158.868 | +0.31% on the 24h session.
+- **24h Range:** 158.284–159.073; spot is trading near the upper third of that range.
+- **Key levels:** 159.073 (session high / immediate resistance); 158.284 (session low / near-term support floor).
+
+---
+
+### What Changed in the Last Hour
+USD/JPY has edged higher alongside a sharp bond market selloff, with US10Y yields spiking +3.47% to 4.595% — the dominant intraday driver. The rate differential impulse is supporting the pair despite DXY being essentially flat (-0.04%), suggesting the move is JPY-side weakness rather than broad dollar strength. Equity risk-off (Nikkei -2.71%, S&P -0.96%, VIX +3.19%) is providing a partial offset, capping the topside near session highs.
+
+---
+
+### Bias
+**DRIFT** — yield-driven upside pressure is real but equity risk-off and geopolitical uncertainty (Iran/oil headlines) are limiting conviction for a clean breakout above 159.073.
+
+| Scenario | Probability |
+|---|---|
+| Rise (break >159.07) | 28% |
+| Drift (158.60–159.07) | 47% |
+| Fall (<158.60) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.40 |
+| R1 | 159.073 |
+| Spot | 158.868 |
+| S1 | 158.284 |
+| S2 | 157.90 |
+
+---
+
+### Triggers
+A sustained break and **hourly close above 159.073** would invalidate the drift bias and open a near-term run toward 159.40; conversely, a drop below 158.60 on renewed risk-off flow would shift bias to **FALL**.
+
+---
+
+### Confidence
+**52/100** — Cross-asset signals are conflicting (rising yields bullish, equity selloff and geopolitical risk bearish), and the DXY is offering no directional confirmation; environment favours range-trade over trend positioning.
+
+---
+

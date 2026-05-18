@@ -214,3 +214,55 @@ A clean break and hourly close **above 1.1640** would neutralise the bearish bia
 
 ---
 
+## 2026-05-18 06:25 UTC
+
+**Snapshot:** EUR/USD 1.1635 (-0.26%) · DXY 99.236
+
+# EUR/USD Delta Update — 06:25 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 1.1635 | 24h change: −0.26% | 24h range: 1.1612–1.1658
+- Distance from session high (1.1658): −23 pips; from session low (1.1612): +23 pips
+- DXY at 99.236, pressing session lows despite bond rout — modest USD headwind
+
+---
+
+### What Changed in the Last Hour
+The dominant move is a sharp repricing in US10Y yields, which surged +3.47% to 4.595 — near the session high of 4.599 — amplifying the global bond selloff narrative. Equities are broadly offered (S&P 500 −0.96%, Nikkei −2.72%), pushing VIX up to 18.42 (+3.19%), which is compressing risk appetite and creating competing pressures on EUR/USD: rising US yields favour USD, but equity risk-off softens the DXY via safe-haven fragmentation. EUR/USD is hugging mid-range with no decisive break in either direction over the last hour.
+
+---
+
+### Bias
+**DRIFT** — competing forces (yield-driven USD support vs. risk-off equity pressure) are broadly offsetting, keeping EUR/USD range-bound near 1.1635 in the near term.
+
+| Scenario | Probability |
+|---|---|
+| Rise (>1.1658) | 25% |
+| Drift (1.1612–1.1658) | 50% |
+| Fall (<1.1612) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1680 |
+| R1 | 1.1658 |
+| Spot | 1.1635 |
+| S1 | 1.1612 |
+| S2 | 1.1585 |
+
+---
+
+### Triggers
+A sustained break above 1.1658 (session high) on declining yields or DXY softness below 99.00 would neutralise the drift/bearish lean and open a retest of 1.1680; conversely, a US10Y push through 4.60% alongside DXY recovery above 99.41 would shift bias to **FALL**.
+
+---
+
+### Confidence
+**52/100** — Conflicting cross-asset signals (rising yields vs. soft DXY, heavy equities) reduce directional conviction; no fresh macro catalyst confirmed within the last hour.
+
+---
+
