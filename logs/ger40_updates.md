@@ -160,3 +160,55 @@ A sustained recovery above **23,950** on volume would neutralise the bearish bia
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** GER40 (DAX 40) 23976.1094 (-0.92%) · DXY 99.101
+
+# GER40 Delta-Update — 09:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 23,976 | 24h change: −0.92% | Trading in lower half of 23,797–24,298 range.
+- **Distance from R1 (24,100):** ~124 pts below; distance from S1 (23,800): ~176 pts above.
+- **Session low proximity:** ~179 pts above 24h floor; momentum skewed to downside.
+
+---
+
+### What Changed in the Last Hour
+GER40 has drifted lower through the 24,000 handle as broad European equity weakness intensifies, consistent with the Reuters inflation-concern headline from 07:11 UTC. VIX pushing toward 19.37 session highs and a sharp US10Y move to 4.595% (+3.47%) are compressing risk appetite across the board, with the Nikkei off 2.71% and Hang Seng down 1.68% setting a negative handover. No material DAX-specific catalyst in the last 60 minutes; the move is macro-driven.
+
+---
+
+### Bias
+**FALL** — Inflation anxiety, rising long-end US yields, elevated VIX, and broad global equity selling create a hostile near-term environment. A weak US open is likely to add further pressure.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 24,298 |
+| R1 | 24,100 |
+| Spot | 23,976 |
+| S1 | 23,797 |
+| S2 | 23,600 |
+
+---
+
+### Triggers
+A sustained reclaim of **24,100** on meaningful volume would neutralise the bearish bias and shift the view to neutral/drift.
+
+---
+
+### Confidence
+**58/100** — Directional alignment across macro inputs (yields, VIX, global indices) is clear, but intraday European session volatility and potential geopolitical headline risk (Trump/Iran) introduce meaningful uncertainty around timing and depth of any further leg lower.
+
+---
+

@@ -160,3 +160,55 @@ A sustained break and hourly close above 1.3380 (R1 confluence with session midp
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** GBP/USD 1.3377 (-0.11%) · DXY 99.099
+
+# GBP/USD Hourly Delta-Update — 09:00 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 1.3377 | 24h change: −0.11%
+- **Distance from session high:** −16 pips (1.3393) | from session low: +73 pips (1.3304)
+- **DXY** pressing the lower bound of its range (99.09), providing partial GBP support.
+
+---
+
+### What Changed in the Last Hour
+GBP/USD is consolidating near the top of the Asian session range as a soft DXY (−0.19%) offset pressure from rising US 10Y yields (+3.47% to 4.595%), which are close to the session ceiling. Equity weakness is broad — Nikkei −2.71%, HSI −1.68%, S&P futures −0.96% — and VIX is climbing (+4.24% to 18.92), reflecting risk-off that limits sterling's upside. The dominant near-term driver remains the Iran geopolitical premium in oil and the global bond rout deepening rate-hike bets.
+
+---
+
+### Bias
+**DRIFT** (modest bearish lean) for the next 1–4 hours. Rising long-end US yields and deteriorating risk appetite cap GBP, but a weak DXY prevents a clean breakdown. The pair is likely to chop within a compressed range.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 25% |
+| Drift | 45% |
+| Fall | 30% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.3393 |
+| R1 | 1.3385 |
+| Spot | 1.3377 |
+| S1 | 1.3340 |
+| S2 | 1.3304 |
+
+---
+
+### Triggers
+A clean hourly close above 1.3393 (session high) would neutralise the bearish lean and open a test toward 1.3420; conversely, a break below 1.3340 on accelerating equity selling or a DXY reversal back above 99.40 would confirm the downside scenario.
+
+---
+
+### Confidence
+**52/100** — Competing forces (weak DXY vs. rising yields + risk-off) are roughly balanced, and the absence of UK-specific tier-1 data this hour reduces directional conviction. Geopolitical headline risk adds further noise.
+
+---
+

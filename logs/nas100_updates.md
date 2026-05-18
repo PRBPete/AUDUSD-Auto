@@ -158,3 +158,55 @@ A sustained reclaim above **29,280** (R1), paired with US10Y pulling back below 
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** NAS100 (NASDAQ 100) 29122.2109 (-1.33%) · DXY 99.096
+
+# NAS100 Delta Update — 2026-05-18 09:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 29,122.21 | 24h change: −1.33%
+- **Distance from session high (29,678.89):** −556 pts (−1.87%)
+- **Distance from session low (28,993.72):** +128 pts (+0.44%); spot is compressing near the lower third of the daily range.
+
+---
+
+### What Changed in the Last Hour
+NAS100 has drifted toward the base of its 24h range as US10Y yields push to session highs at 4.595% (+3.47%), tightening the equity risk premium and weighing on growth/tech multiples. VIX has accelerated to 18.92 (+4.24%), confirming the demand for protection rather than dip-buying at this level. The dominant driver is the Fed's revised inflation forecast flagged this morning (Motley Fool, 08:26 UTC), reinforcing a higher-for-longer rate narrative alongside persistent US-Iran tension keeping Brent elevated near $110.
+
+---
+
+### Bias
+**FALL** for the next 1–4 hours. Yield pressure, a strengthening VIX, and negative global equity sympathy (Nikkei −2.71%, HSI −1.68%) leave no near-term catalyst for recovery.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 29,679 (session high) |
+| R1 | 29,350 (intraday pivot / mid-range) |
+| Spot | 29,122 |
+| S1 | 28,994 (session low) |
+| S2 | 28,800 (round-number / prior structure) |
+
+---
+
+### Triggers
+A sustained move back above **29,350** with US10Y pulling below 4.55% would neutralise the bearish bias and open a retest of the upper range.
+
+---
+
+### Confidence
+**52/100** — Directional signal is clear (yield spike + VIX rise + global red), but intraday liquidity at the US cash open (14:30 UTC) could introduce sharp mean-reversion noise; no intraday sub-hourly tick data available to fine-tune entry precision.
+
+---
+

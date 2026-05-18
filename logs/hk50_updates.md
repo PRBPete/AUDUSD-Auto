@@ -164,3 +164,57 @@ A sustained hourly close above 25,800 would neutralise the bearish bias and open
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** HK50 (Hang Seng) 25675.1797 (-1.68%) · DXY 99.102
+
+# HK50 Delta-Update — 09:00 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 25,675.18 — down 1.68% over 24h.
+- Distance from session high (26,391.02): −715 pts; from session low (25,505.71): +169 pts.
+- Index is pressing the lower quarter of its 24h range, elevated VIX (+4.30%) adding headwind.
+
+---
+
+### What Changed in the Last Hour
+Price action has continued to compress toward the session floor near 25,505, with no meaningful recovery attempt. The dominant driver is broad risk-off across Asia-Pacific — Nikkei off 2.71%, S&P 500 futures softer at −0.96% — amplified by a sharp US10Y move to 4.595% (+3.47%), which tightens the valuation discount on HK equities. No macro catalyst has emerged in the last hour to shift the tone.
+
+---
+
+### Bias
+**FALL** — near-term momentum remains to the downside. Rates pressure, weak regional equity tape, and VIX elevation near 18.93 (range high 19.37) leave little structural support for a bounce within the 1–4h window.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 26,391 |
+| R1 | 25,950 |
+| Spot | 25,675 |
+| S1 | 25,506 |
+| S2 | 25,200 |
+
+*S2 is a round-number/technical estimate below session low; no intraday print supports it yet.*
+
+---
+
+### Triggers
+A sustained reclaim above 25,950 — mid-range resistance — would neutralise the bearish bias and open a drift-to-rise reassessment.
+
+---
+
+### Confidence
+**48/100** — No news headlines retrieved limits fundamental context; confidence rests entirely on cross-asset price signals, which are coherently bearish but lack a confirmed catalyst. Weekend/data-gap risk acknowledged.
+
+---
+

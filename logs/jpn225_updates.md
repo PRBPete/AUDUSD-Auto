@@ -162,3 +162,55 @@ A sustained reclaim above 61,500 accompanied by VIX reverting below 18.00 and US
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** JPN225 (Nikkei 225) 60819.5703 (-2.71%) · DXY 99.105
+
+# JPN225 Delta Update — 09:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: 60,819.57 | 24h change: −2.71% | A sharp intraday reversal from the 63,235 session high.
+- Distance from session low (60,376): +442 pts; distance from session high (63,235): −2,416 pts.
+- No defined prior daily close provided; treating 63,235 as near-term resistance ceiling.
+
+---
+
+### What Changed in the Last Hour
+JPN225 is holding the lower half of its 24h range, trading near session lows after a significant sell-off of roughly 2,700 points from the intraday peak. The dominant driver appears to be broad risk-off rotation: the S&P 500 is down 0.96%, NAS100 off 1.33%, and VIX has risen 4.35% to 18.94, signalling elevated short-term fear. US 10Y yields pressing a 24h high of 4.599% adds rate-pressure headwinds to equity valuations globally, and the HSI decline of 1.68% reinforces regional weakness with no clear floor established yet.
+
+---
+
+### Bias
+**FALL** — Risk-off tone is broad, yield pressure is acute, and price sits near the lower third of the 24h range with no news catalyst for reversal visible.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 18% |
+| Drift | 27% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 62,000 |
+| R1 | 61,400 |
+| Spot | 60,819 |
+| S1 | 60,377 |
+| S2 | 59,900 |
+
+---
+
+### Triggers
+A sustained reclaim above 61,400 on volume, accompanied by a VIX reversal below 18.00 and US10Y pulling back from the 4.595–4.599 ceiling, would neutralise the bearish bias.
+
+---
+
+### Confidence
+**42/100** — No news headlines available to confirm the macro driver; confidence is limited by data gap. Price action and cross-asset signals align bearishly, but absent a clear fundamental catalyst, the sell-off narrative carries structural uncertainty.
+
+---
+

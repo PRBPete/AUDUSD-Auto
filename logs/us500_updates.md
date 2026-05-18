@@ -162,3 +162,55 @@ A sustained recovery above 7,460 (R1) accompanied by VIX retreating below 18.50 
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** US500 (S&P 500) 7409.1802 (-0.96%) · DXY 99.094
+
+# US500 Delta-Update — 2026-05-18 09:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 7,409.18 — down **−0.96%** over 24h.
+- **24h Range:** 7,397.50 low / 7,517.12 high; spot is trading near the session floor.
+- **Key levels:** ~200 pts below the 24h high; holding just above 7,397 intraday support.
+
+---
+
+### What Changed in the Last Hour
+Selling pressure accelerated into the European open, with US500 futures pressing toward the lower bound of the 24h range (7,397.50) as the 10Y yield surged to 4.595% (+3.47%), compressing equity valuations. VIX spiked to 18.91 (+4.19%), signalling a meaningful uptick in near-term hedging demand. The primary driver is a dual headwind: a Moody's-style bond rout narrative (WSJ "Bond Rout" recap) combined with a worsening Fed inflation forecast (Motley Fool, 08:26 UTC) that is repricing rate-cut expectations lower.
+
+---
+
+### Bias
+**FALL** — deteriorating macro backdrop (yields at session highs, VIX elevated, global equities broadly lower) with spot pinned near intraday lows.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 7,517 |
+| R1 | 7,460 |
+| Spot | 7,409 |
+| S1 | 7,397 |
+| S2 | 7,360 |
+
+---
+
+### Triggers
+A sustained reclaim above **7,460** (R1, mid-range pivot) would neutralise the bearish bias and shift the view to Drift/Rise.
+
+---
+
+### Confidence
+**62 / 100** — Directional signals are aligned (yields, VIX, global equity weakness, negative news flow), but proximity to S1 (7,397) introduces mean-reversion risk at a technically watched level; no intraday volume data available to confirm breakdown conviction.
+
+---
+

@@ -163,3 +163,56 @@ A reclaim and hold above 10,280 on meaningful volume would neutralise the bearis
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** UK100 (FTSE 100) 10210.2402 (-0.79%) · DXY 99.1
+
+# UK100 Delta Update — 09:00 UTC, 18 May 2026
+
+---
+
+### Snapshot
+- **Spot:** 10,210.24 | **24h change:** -0.79% | **24h range:** 10,151.45–10,375.73
+- **Distance from session high:** -165.49 pts (-1.60%) | **Distance from session low:** +58.79 pts (+0.58%)
+
+---
+
+### What changed in the last hour
+UK100 has drifted toward the lower end of its 24h range as European equity sentiment deteriorates broadly, with DAX -0.92% and Reuters citing inflation concerns as the primary drag. US10Y has pushed to session highs near 4.599%, amplifying rate-sensitivity pressure on equity multiples. No significant UK-specific catalyst has emerged this hour; the Anglo American coal mine disposal (£2.9bn) is mildly sector-positive for mining but insufficient to offset macro headwinds.
+
+---
+
+### Bias
+**FALL** — Rising US long-end yields, elevated VIX (18.93, +4.30%), broad global equity weakness (Nikkei -2.71%, HSI -1.68%, S&P -0.96%), and inflation anxiety point to continued near-term selling pressure.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 15% |
+| Drift | 25% |
+| Fall | 60% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 10,375.73 |
+| R1 | 10,280.00 |
+| Spot | 10,210.24 |
+| S1 | 10,151.45 |
+| S2 | 10,100.00 |
+
+*S2 is a round-number structural level not derived from session data; all others anchored to session range.*
+
+---
+
+### Triggers
+A sustained reclaim above 10,280 (R1 / intraday midpoint) would neutralise the bearish bias and shift the view to drift/neutral.
+
+---
+
+### Confidence
+**58/100** — Directional alignment across global indices, yields, and VIX supports the bearish lean, but intraday liquidity conditions in early London hours and the absence of a hard UK macro catalyst introduce meaningful uncertainty.
+
+---
+

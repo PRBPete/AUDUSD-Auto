@@ -368,3 +368,55 @@ A sustained break above **159.073** (range high) driven by further 10Y yield exp
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** USD/JPY 158.838 (+0.29%) · DXY 99.097
+
+# USD/JPY Hourly Delta-Update — 2026-05-18 09:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 158.838 | **24h change:** +0.29% | **24h range:** 158.284–159.073
+- **Distance from resistance:** 0.235 pts below session high (159.073); R1 ~159.10
+- **Distance from support:** 0.554 pts above session low (158.284); S1 ~158.30
+
+---
+
+### What Changed in the Last Hour
+USD/JPY is grinding near the upper end of its daily range as the US 10Y yield tags a fresh session high of 4.599%, reinforcing carry demand for the dollar. The Nikkei's sharp -2.71% sell-off has not triggered offsetting JPY safe-haven flows, suggesting yen weakness is being dominated by the yield differential narrative. DXY softness (-0.19%) is a modest headwind, capping a clean break above 159.10 for now.
+
+---
+
+### Bias
+**DRIFT** — yield support is constructive but DXY drag and elevated VIX (18.92, +4.24%) limit conviction for a sustained topside push. Geopolitical risk (Iran tensions, oil elevated at $110) introduces tail risk that could flip JPY bid abruptly.
+
+| Scenario | Probability |
+|----------|-------------|
+| Rise (>159.10 sustained) | 25% |
+| Drift (158.60–159.10) | 50% |
+| Fall (<158.30) | 25% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 159.40 |
+| R1 | 159.07 |
+| Spot | 158.838 |
+| S1 | 158.28 |
+| S2 | 157.90 |
+
+---
+
+### Triggers
+A clean break and hourly close above **159.10** reopens the topside and invalidates the drift bias; conversely, a break below **158.28** on a risk-off catalyst (Iran escalation, equity cascade) would shift bias to **FALL**.
+
+---
+
+### Confidence
+**52/100** — Mixed signal environment: yield support is bullish for the pair but DXY softness, VIX uptick, and unquantified geopolitical tail risk from Iran/oil introduce meaningful uncertainty over the 1–4 hour window.
+
+---
+

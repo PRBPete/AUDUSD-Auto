@@ -362,3 +362,55 @@ A sustained break above 0.7181 (24h high) on a DXY reversal lower or a stabilisa
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** AUD/USD 0.7161 (-0.77%) · DXY 99.107
+
+# AUD/USD Delta Update — 09:00 UTC | 18 May 2026
+
+---
+
+### Snapshot
+- Spot: **0.7161**, down 0.77% over 24 hours.
+- Distance from resistance: 20 pips to session high (0.7181); 23 pips to round number 0.7184.
+- Distance from support: 38 pips to session low (0.7123).
+
+---
+
+### What Changed in the Last Hour
+AUD/USD has drifted lower in the past hour, pressured by a sharp spike in US 10-year yields (+3.47% to 4.595%), which is approaching the session ceiling and reinforcing USD demand despite the DXY's marginal softness (-0.18%). Equity risk-off is broadening — Nikkei -2.71%, HSI -1.68%, S&P 500 -0.96%, and VIX rising to 18.93 — removing a key support pillar for the AUD. Copper's -0.52% decline adds an additional commodity-side headwind for the Australian dollar.
+
+---
+
+### Bias
+**FALL** over the next 1–4 hours. Rising US long-end yields, broad risk-off in equities, and softening base metals collectively outweigh the marginally weaker DXY. Gold's resilience provides a limited offset but insufficient to reverse AUD pressure.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 25% |
+| Fall | 55% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 0.7181 |
+| R1 | 0.7170 |
+| Spot | 0.7161 |
+| S1 | 0.7140 |
+| S2 | 0.7123 |
+
+---
+
+### Triggers
+A sustained break and close above **0.7181** (session high) — particularly if US 10-year yields reverse materially below 4.57% — would neutralise the bearish bias and open a drift-to-rise scenario.
+
+---
+
+### Confidence
+**62 / 100** — Signal alignment is reasonably clear (yields, equities, copper all bearish AUD), but DXY weakness and gold's relative firmness introduce cross-current noise; no RBA or major US data catalyst is present in the window to sharpen conviction.
+
+---
+

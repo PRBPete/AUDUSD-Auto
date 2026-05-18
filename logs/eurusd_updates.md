@@ -370,3 +370,55 @@ A sustained break and hourly close **above 1.1658** would neutralise the bearish
 
 ---
 
+## 2026-05-18 09:00 UTC
+
+**Snapshot:** EUR/USD 1.1646 (-0.16%) · DXY 99.098
+
+# EUR/USD Delta Update — 2026-05-18 09:00 UTC
+
+---
+
+### Snapshot
+- **Spot:** 1.1646 | 24h change: −0.16% | 24h range: 1.1612–1.1658
+- **Distance from range high (1.1658):** 12 pips — near session ceiling
+- **Distance from range low (1.1612):** 34 pips — meaningful downside buffer intact
+
+---
+
+### What Changed in the Last Hour
+EUR/USD is consolidating just below the 24h high of 1.1658, with the pair failing to sustain any upside despite a softer DXY (−0.19% at 99.098). The dominant driver is a sharp US10Y yield spike — up 3.47% to 4.595, near the session high of 4.599 — which is compressing the case for further EUR gains and reinforcing the WSJ warning that rising long-dated yields are a structural headwind for the euro. Risk-off sentiment is broadening, with Nikkei −2.71%, VIX +4.24%, and Iran tensions underpinning oil and safe-haven flows.
+
+---
+
+### Bias
+**FALL** — Rising US yields, geopolitical risk premium for the dollar, and EUR/USD's inability to clear 1.1658 all point toward near-term softness.
+
+| Scenario | Probability |
+|---|---|
+| Rise | 20% |
+| Drift | 30% |
+| Fall | 50% |
+
+---
+
+### Levels
+| Type | Level |
+|---|---|
+| R2 | 1.1680 |
+| R1 | 1.1658 |
+| Spot | 1.1646 |
+| S1 | 1.1620 |
+| S2 | 1.1612 |
+
+---
+
+### Triggers
+A sustained break and hourly close above **1.1658** would neutralise the bearish bias and shift focus toward 1.1680; equally, any de-escalation in Iran rhetoric easing oil/yield pressure would flip the drift probability higher at the expense of the fall scenario.
+
+---
+
+### Confidence
+**58 / 100** — Directional signal is reasonably clear (yield spike + risk-off + DXY resilience), but geopolitical headline risk is binary and could rapidly reverse the setup; intraday liquidity conditions add uncertainty.
+
+---
+
