@@ -4,7 +4,8 @@ on:
   workflow_dispatch:             # Triggered externally by cron-job.org every hour
 
 permissions:
-  contents: read                 # Read-only — no longer committing logs
+  contents: read
+  actions: write                 # Needed to delete old workflow runs
 
 concurrency:
   group: forecast-${{ github.ref }}
@@ -37,3 +38,14 @@ jobs:
           GMAIL_APP_PASSWORD:  ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO:            ${{ secrets.EMAIL_TO }}
         run: python audusd_monitor.py
+
+      - name: Delete workflow runs older than 4 hours
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CUTOFF=$(date -u -d '4 hours ago' '+%Y-%m-%dT%H:%M:%SZ')
+          echo "Deleting runs created before $CUTOFF"
+          gh api "repos/${{ github.repository }}/actions/runs" --paginate \
+            --jq ".workflow_runs[] | select(.created_at < \"$CUTOFF\") | .id" \
+            | xargs -r -I{} gh api --method DELETE "repos/${{ github.repository }}/actions/runs/{}"
+          echo "Cleanup done."
