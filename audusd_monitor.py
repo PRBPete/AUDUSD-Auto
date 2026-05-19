@@ -211,8 +211,9 @@ unless the section is explicitly a table.
 meaningfully changed, say so clearly.
 
 ### Bias
-State directional bias: **RISE / DRIFT / FALL** for the next 1–4 hours.
-Include scenario probabilities in a small table (Rise / Drift / Fall, summing
+State the chosen direction on its own line in bold, exactly one of:
+**RISE** | **DRIFT** | **FALL**
+Then include scenario probabilities in a small table (Rise / Drift / Fall, summing
 to 100%).
 
 ### Levels
@@ -291,16 +292,39 @@ def call_claude(prompt: str) -> str:
 # ---------------------------------------------------------------------------
 
 def extract_bias(response: str) -> str:
-    upper = response.upper()
-    if "BIAS" in upper:
-        idx = upper.find("BIAS")
-        window = upper[idx:idx + 400]
-        if "FALL" in window:
-            return "FALL"
-        if "RISE" in window:
-            return "RISE"
-        if "DRIFT" in window:
-            return "DRIFT"
+    """
+    Extract the stated bias from Claude's response.
+
+    Strategy:
+    1. Isolate the ### Bias section to avoid false matches in the probability table.
+    2. Within that section, prefer a **bolded** direction (e.g. **RISE**) —
+       that's how Claude marks the chosen direction.
+    3. Fall back to the first bare occurrence of RISE/DRIFT/FALL in the section.
+    4. Last resort: any bolded occurrence anywhere in the full response.
+    """
+    import re
+
+    # Step 1: extract the Bias section
+    section_match = re.search(
+        r"###\s*Bias(.*?)(?=###|\Z)", response, re.IGNORECASE | re.DOTALL
+    )
+    section = section_match.group(1) if section_match else response
+
+    # Step 2: bolded direction inside the section — most reliable signal
+    bold_match = re.search(r"\*\*(RISE|DRIFT|FALL)\*\*", section, re.IGNORECASE)
+    if bold_match:
+        return bold_match.group(1).upper()
+
+    # Step 3: first bare word in the section (ignores table rows by being first)
+    bare_match = re.search(r"\b(RISE|DRIFT|FALL)\b", section, re.IGNORECASE)
+    if bare_match:
+        return bare_match.group(1).upper()
+
+    # Step 4: any bolded direction anywhere in the full response
+    bold_any = re.search(r"\*\*(RISE|DRIFT|FALL)\*\*", response, re.IGNORECASE)
+    if bold_any:
+        return bold_any.group(1).upper()
+
     return "—"
 
 
