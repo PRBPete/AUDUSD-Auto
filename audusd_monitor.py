@@ -3,7 +3,8 @@ Multi-instrument hourly forecast monitor.
 Covers FX pairs and global indices.
 
 Fetches live market data + recent news, calls the Anthropic API with a
-condensed COSTAR prompt, then emails a consolidated report.
+condensed COSTAR prompt, publishes a full HTML report to GitHub Pages,
+and emails a summary table with a link to the report.
 
 Designed to run unattended on GitHub Actions, triggered hourly by cron-job.org.
 """
@@ -11,12 +12,14 @@ Designed to run unattended on GitHub Actions, triggered hourly by cron-job.org.
 from __future__ import annotations
 
 import os
+import re
 import smtplib
 import sys
 import traceback
 from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from pathlib import Path
 
 import yfinance as yf
 from anthropic import Anthropic
@@ -25,8 +28,12 @@ from anthropic import Anthropic
 # Config
 # ---------------------------------------------------------------------------
 
-MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 2000
+MODEL       = "claude-sonnet-4-6"
+MAX_TOKENS  = 2000
+PAGES_URL   = "https://prbpete.github.io/AUDUSD-Auto"
+
+REPO_ROOT = Path(__file__).resolve().parent
+DOCS_DIR  = REPO_ROOT / "docs"
 
 # Instruments to monitor
 PAIRS = {
@@ -75,6 +82,13 @@ PAIR_NEWS_SYMBOLS = {
     "JPN225": ["^N225", "USDJPY=X", "^HSI"],
 }
 
+BIAS_COLOUR = {
+    "RISE":  "#1a7f37",  # green
+    "FALL":  "#cf222e",  # red
+    "DRIFT": "#9a6700",  # amber
+    "—":     "#57606a",  # grey
+}
+
 # ---------------------------------------------------------------------------
 # Market hours check
 # ---------------------------------------------------------------------------
@@ -83,13 +97,13 @@ def is_fx_market_open(now_utc: datetime | None = None) -> bool:
     """FX market is open Sunday 22:00 UTC to Friday 22:00 UTC."""
     now_utc = now_utc or datetime.now(timezone.utc)
     weekday = now_utc.weekday()  # Mon=0 ... Sun=6
-    hour = now_utc.hour
+    hour    = now_utc.hour
 
-    if weekday == 5:                    # Saturday — always closed
+    if weekday == 5:                 # Saturday — always closed
         return False
-    if weekday == 6 and hour < 22:      # Sunday before 22:00 UTC
+    if weekday == 6 and hour < 22:   # Sunday before 22:00 UTC
         return False
-    if weekday == 4 and hour >= 22:     # Friday after 22:00 UTC
+    if weekday == 4 and hour >= 22:  # Friday after 22:00 UTC
         return False
     return True
 
@@ -116,16 +130,16 @@ def fetch_market_data(pair_ticker: str) -> dict:
 
             last_close = float(hist["Close"].iloc[-1])
             prev_close = float(hist["Close"].iloc[0])
-            high_24h = float(hist["High"].iloc[-min(24, len(hist)):].max())
-            low_24h = float(hist["Low"].iloc[-min(24, len(hist)):].min())
+            high_24h   = float(hist["High"].iloc[-min(24, len(hist)):].max())
+            low_24h    = float(hist["Low"].iloc[-min(24, len(hist)):].min())
             change_pct = (last_close - prev_close) / prev_close * 100
 
             data[name] = {
-                "symbol": symbol,
-                "last": round(last_close, 4),
+                "symbol":     symbol,
+                "last":       round(last_close, 4),
                 "prev_close": round(prev_close, 4),
-                "high_24h": round(high_24h, 4),
-                "low_24h": round(low_24h, 4),
+                "high_24h":   round(high_24h, 4),
+                "low_24h":    round(low_24h, 4),
                 "change_pct": round(change_pct, 2),
             }
         except Exception as e:
@@ -148,7 +162,7 @@ def fetch_news(news_symbols: list[str]) -> list[dict]:
 
         for item in items[:10]:
             content = item.get("content", item)
-            title = content.get("title") or item.get("title")
+            title   = content.get("title") or item.get("title")
             if not title or title in seen_titles:
                 continue
 
@@ -173,9 +187,9 @@ def fetch_news(news_symbols: list[str]) -> list[dict]:
                 else item.get("publisher", "")
             )
             headlines.append({
-                "title": title,
+                "title":     title,
                 "publisher": publisher or "",
-                "time_utc": pub_dt.strftime("%Y-%m-%d %H:%M"),
+                "time_utc":  pub_dt.strftime("%Y-%m-%d %H:%M"),
             })
 
     headlines.sort(key=lambda h: h["time_utc"], reverse=True)
@@ -253,16 +267,10 @@ def build_prompt(pair_name: str, market_data: dict, news: list[dict], timestamp_
             f"change={d['change_pct']:+.2f}%"
         )
     market_block = "\n".join(md_lines)
-
-    if news:
-        news_lines = [
-            f"- [{h['time_utc']} UTC | {h['publisher']}] {h['title']}"
-            for h in news
-        ]
-        news_block = "\n".join(news_lines)
-    else:
-        news_block = "(no recent headlines retrieved)"
-
+    news_block = (
+        "\n".join(f"- [{h['time_utc']} UTC | {h['publisher']}] {h['title']}" for h in news)
+        if news else "(no recent headlines retrieved)"
+    )
     return PROMPT_TEMPLATE.format(
         pair_name=pair_name,
         timestamp_utc=timestamp_utc,
@@ -288,39 +296,25 @@ def call_claude(prompt: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Bias extraction helper
+# Bias extraction
 # ---------------------------------------------------------------------------
 
 def extract_bias(response: str) -> str:
     """
-    Extract the stated bias from Claude's response.
-
-    Strategy:
-    1. Isolate the ### Bias section to avoid false matches in the probability table.
-    2. Within that section, prefer a **bolded** direction (e.g. **RISE**) —
-       that's how Claude marks the chosen direction.
-    3. Fall back to the first bare occurrence of RISE/DRIFT/FALL in the section.
-    4. Last resort: any bolded occurrence anywhere in the full response.
+    Isolate the ### Bias section then look for the bolded direction Claude writes.
+    Falls back progressively to avoid false matches from the probability table.
     """
-    import re
-
-    # Step 1: extract the Bias section
-    section_match = re.search(
-        r"###\s*Bias(.*?)(?=###|\Z)", response, re.IGNORECASE | re.DOTALL
-    )
+    section_match = re.search(r"###\s*Bias(.*?)(?=###|\Z)", response, re.IGNORECASE | re.DOTALL)
     section = section_match.group(1) if section_match else response
 
-    # Step 2: bolded direction inside the section — most reliable signal
-    bold_match = re.search(r"\*\*(RISE|DRIFT|FALL)\*\*", section, re.IGNORECASE)
-    if bold_match:
-        return bold_match.group(1).upper()
+    bold = re.search(r"\*\*(RISE|DRIFT|FALL)\*\*", section, re.IGNORECASE)
+    if bold:
+        return bold.group(1).upper()
 
-    # Step 3: first bare word in the section (ignores table rows by being first)
-    bare_match = re.search(r"\b(RISE|DRIFT|FALL)\b", section, re.IGNORECASE)
-    if bare_match:
-        return bare_match.group(1).upper()
+    bare = re.search(r"\b(RISE|DRIFT|FALL)\b", section, re.IGNORECASE)
+    if bare:
+        return bare.group(1).upper()
 
-    # Step 4: any bolded direction anywhere in the full response
     bold_any = re.search(r"\*\*(RISE|DRIFT|FALL)\*\*", response, re.IGNORECASE)
     if bold_any:
         return bold_any.group(1).upper()
@@ -328,43 +322,60 @@ def extract_bias(response: str) -> str:
     return "—"
 
 
-BIAS_COLOUR = {
-    "RISE":  "#1a7f37",  # green
-    "FALL":  "#cf222e",  # red
-    "DRIFT": "#9a6700",  # amber
-    "—":     "#57606a",  # grey
-}
+# ---------------------------------------------------------------------------
+# Shared markdown → HTML converter
+# ---------------------------------------------------------------------------
+
+def markdown_to_html(text: str) -> str:
+    """Convert the subset of markdown Claude produces into basic HTML."""
+    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    for level, tag in [("### ", "h4"), ("## ", "h3"), ("# ", "h2")]:
+        text = "\n".join(
+            f"<{tag}>{line[len(level):]}</{tag}>" if line.startswith(level) else line
+            for line in text.split("\n")
+        )
+    text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"\|(.+)\|", lambda m: "<tr>" + "".join(
+        f"<td style='padding:4px 8px;border:1px solid #d0d7de'>{c.strip()}</td>"
+        for c in m.group(1).split("|")
+    ) + "</tr>", text)
+    text = re.sub(
+        r"(<tr>.*?</tr>\n?)+",
+        lambda m: f"<table style='border-collapse:collapse;margin:8px 0'>{m.group()}</table>",
+        text, flags=re.DOTALL,
+    )
+    return text.replace("\n", "<br>")
 
 
 # ---------------------------------------------------------------------------
-# Email builder
+# Summary table (shared by both the email and the pages report)
 # ---------------------------------------------------------------------------
 
-def build_email_html(timestamp: str, results: list[dict]) -> str:
-    """Build a clean HTML email with a summary table + full forecasts + nav anchors."""
-    import re
-
-    # --- Summary table (instrument name links down to its section) ---
+def build_summary_table(results: list[dict], link_prefix: str = "#") -> str:
+    """
+    link_prefix="#"           → anchors within the same page (GitHub Pages report)
+    link_prefix="https://..." → full URL to GitHub Pages report with anchor (email)
+    """
     rows = ""
     for r in results:
         anchor = r["key"].lower()
-        bias = r["bias"]
+        bias   = r["bias"]
         colour = BIAS_COLOUR.get(bias, "#57606a")
-        spot = r["market_data"].get("PAIR", {}).get("last", "n/a")
-        chg  = r["market_data"].get("PAIR", {}).get("change_pct", 0)
+        spot   = r["market_data"].get("PAIR", {}).get("last", "n/a")
+        chg    = r["market_data"].get("PAIR", {}).get("change_pct", 0)
         chg_str = f"{chg:+.2f}%" if isinstance(chg, float) else "n/a"
+        href   = f"{link_prefix}{anchor}"
         rows += (
             f"<tr>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>"
-            f"<a href='#{anchor}' style='color:#0969da;text-decoration:none;font-weight:bold'>{r['name']}</a></td>"
+            f"<a href='{href}' style='color:#0969da;text-decoration:none;font-weight:bold'>{r['name']}</a></td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{spot}</td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{chg_str}</td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8;"
             f"color:{colour};font-weight:bold'>{bias}</td>"
             f"</tr>"
         )
-
-    summary_table = f"""
+    return f"""
     <table style='border-collapse:collapse;width:100%;margin-bottom:32px;font-size:14px'>
       <thead>
         <tr style='background:#f6f8fa'>
@@ -375,66 +386,127 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
         </tr>
       </thead>
       <tbody>{rows}</tbody>
-    </table>
-    """
+    </table>"""
 
-    # --- Full forecasts (each section has an id anchor + back-to-top link) ---
-    forecasts_html = ""
+
+# ---------------------------------------------------------------------------
+# GitHub Pages full report builder
+# ---------------------------------------------------------------------------
+
+def build_report_html(timestamp: str, results: list[dict]) -> str:
+    """Full standalone HTML page published to GitHub Pages."""
+    summary = build_summary_table(results, link_prefix="#")
+
+    forecasts = ""
     for r in results:
         anchor = r["key"].lower()
-
-        # Convert markdown-ish text to basic HTML
-        body = r["response"]
-        body = body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        # Headers
-        for level, tag in [("### ", "h4"), ("## ", "h3"), ("# ", "h2")]:
-            lines = body.split("\n")
-            body = "\n".join(
-                f"<{tag}>{line[len(level):]}</{tag}>" if line.startswith(level) else line
-                for line in lines
-            )
-        # Bold
-        body = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", body)
-        # Tables
-        body = re.sub(r"\|(.+)\|", lambda m: "<tr>" + "".join(
-            f"<td style='padding:4px 8px;border:1px solid #d0d7de'>{c.strip()}</td>"
-            for c in m.group(1).split("|")
-        ) + "</tr>", body)
-        body = re.sub(r"(<tr>.*?</tr>\n?)+", lambda m: f"<table style='border-collapse:collapse;margin:8px 0'>{m.group()}</table>", body, flags=re.DOTALL)
-        body = body.replace("\n", "<br>")
-
-        bias = r["bias"]
+        bias   = r["bias"]
         colour = BIAS_COLOUR.get(bias, "#57606a")
-        forecasts_html += f"""
-        <div id='{anchor}' style='margin-bottom:40px;border-left:4px solid {colour};padding-left:16px'>
-          <h3 style='margin:0 0 8px;color:#24292f'>{r['name']}
+        body   = markdown_to_html(r["response"])
+        forecasts += f"""
+        <section id='{anchor}' style='margin-bottom:40px;border-left:4px solid {colour};padding-left:16px'>
+          <h3 style='margin:0 0 8px;color:#24292f'>
+            {r['name']}
             <span style='font-size:13px;font-weight:normal;color:{colour};margin-left:8px'>{bias}</span>
           </h3>
-          <div style='font-size:14px;line-height:1.6;color:#24292f'>{body}</div>
-          <div style='margin-top:14px'>
+          <div style='font-size:14px;line-height:1.7;color:#24292f'>{body}</div>
+          <p style='margin:14px 0 0'>
             <a href='#top' style='font-size:12px;color:#57606a;text-decoration:none'>&#8593; Back to top</a>
-          </div>
-        </div>
-        <hr style='border:none;border-top:1px solid #e1e4e8;margin:0 0 40px'>
-        """
+          </p>
+        </section>
+        <hr style='border:none;border-top:1px solid #e1e4e8;margin:0 0 40px'>"""
 
-    return f"""
-    <!DOCTYPE html>
-    <html>
-    <body style='font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-                 max-width:800px;margin:0 auto;padding:24px;color:#24292f'>
-      <div id='top'>
-        <h2 style='margin:0 0 4px'>Hourly Market Forecast</h2>
-        <p style='margin:0 0 24px;color:#57606a;font-size:14px'>{timestamp} UTC &nbsp;·&nbsp; 10 instruments</p>
-      </div>
-      {summary_table}
-      {forecasts_html}
-      <p style='font-size:12px;color:#57606a;margin-top:32px'>
-        Automated by Claude {MODEL} via GitHub Actions
-      </p>
-    </body>
-    </html>
+    return f"""<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Market Forecast — {timestamp} UTC</title>
+  <style>
+    body {{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 860px; margin: 0 auto; padding: 24px 16px; color: #24292f;
+    }}
+    h4 {{ margin: 18px 0 6px; color: #24292f; }}
+    table {{ border-collapse: collapse; margin: 8px 0; }}
+  </style>
+</head>
+<body>
+  <div id='top'>
+    <h2 style='margin:0 0 4px'>Hourly Market Forecast</h2>
+    <p style='margin:0 0 24px;color:#57606a;font-size:14px'>{timestamp} UTC &nbsp;·&nbsp; 10 instruments</p>
+  </div>
+  {summary}
+  {forecasts}
+  <p style='font-size:12px;color:#57606a;margin-top:32px'>
+    Automated by Claude {MODEL} via GitHub Actions
+  </p>
+</body>
+</html>"""
+
+
+# ---------------------------------------------------------------------------
+# Email builder (summary table + link only)
+# ---------------------------------------------------------------------------
+
+def build_email_html(timestamp: str, results: list[dict], report_url: str) -> str:
+    """Slim email: summary table with links into the GitHub Pages report + one CTA button."""
+    summary = build_summary_table(results, link_prefix=f"{report_url}#")
+
+    return f"""<!DOCTYPE html>
+<html>
+<body style='font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+             max-width:800px;margin:0 auto;padding:24px;color:#24292f'>
+  <h2 style='margin:0 0 4px'>Hourly Market Forecast</h2>
+  <p style='margin:0 0 24px;color:#57606a;font-size:14px'>{timestamp} UTC &nbsp;·&nbsp; 10 instruments</p>
+  {summary}
+  <p style='margin:24px 0 0'>
+    <a href='{report_url}' style='
+      display:inline-block;padding:10px 20px;background:#0969da;color:#fff;
+      text-decoration:none;border-radius:6px;font-size:14px;font-weight:600'>
+      View full report &#8594;
+    </a>
+  </p>
+  <p style='font-size:12px;color:#57606a;margin-top:32px'>
+    Automated by Claude {MODEL} via GitHub Actions &nbsp;·&nbsp;
+    Report available for 4 hours
+  </p>
+</body>
+</html>"""
+
+
+# ---------------------------------------------------------------------------
+# GitHub Pages file management
+# ---------------------------------------------------------------------------
+
+def save_report_and_cleanup(timestamp: str, html: str) -> str:
     """
+    Save the full report to docs/ and delete files older than 4 hours.
+    Returns the URL of the timestamped report.
+    """
+    DOCS_DIR.mkdir(exist_ok=True)
+
+    # Timestamped file: report_2026-05-19_14-00.html
+    filename    = f"report_{timestamp.replace(':', '-').replace(' ', '_')}.html"
+    report_path = DOCS_DIR / filename
+    report_path.write_text(html, encoding="utf-8")
+
+    # index.html always points to the latest report
+    (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
+
+    # Delete timestamped reports older than 4 hours
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=4)
+    for f in DOCS_DIR.glob("report_*.html"):
+        try:
+            dt_str = f.stem[len("report_"):]          # e.g. 2026-05-19_14-00
+            dt = datetime.strptime(dt_str, "%Y-%m-%d_%H-%M").replace(tzinfo=timezone.utc)
+            if dt < cutoff:
+                f.unlink()
+                print(f"Deleted old report: {f.name}")
+        except Exception:
+            pass  # skip files that don't match the naming pattern
+
+    return f"{PAGES_URL}/{filename}"
 
 
 # ---------------------------------------------------------------------------
@@ -442,14 +514,14 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
 # ---------------------------------------------------------------------------
 
 def send_email(subject: str, html_body: str) -> None:
-    gmail_user = os.environ["GMAIL_USER"]
+    gmail_user     = os.environ["GMAIL_USER"]
     gmail_password = os.environ["GMAIL_APP_PASSWORD"]
-    email_to = os.environ["EMAIL_TO"]
+    email_to       = os.environ["EMAIL_TO"]
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = gmail_user
-    msg["To"] = email_to
+    msg["From"]    = gmail_user
+    msg["To"]      = email_to
     msg.attach(MIMEText(html_body, "html"))
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
@@ -462,7 +534,7 @@ def send_email(subject: str, html_body: str) -> None:
 # ---------------------------------------------------------------------------
 
 def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> dict:
-    pair_name = pair_info["name"]
+    pair_name   = pair_info["name"]
     pair_ticker = pair_info["ticker"]
     news_symbols = PAIR_NEWS_SYMBOLS[pair_key]
 
@@ -485,11 +557,11 @@ def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> dict:
     print(f"[{timestamp}] {pair_name}: bias={bias} ✓")
 
     return {
-        "key": pair_key,
-        "name": pair_name,
+        "key":         pair_key,
+        "name":        pair_name,
         "market_data": market_data,
-        "response": response,
-        "bias": bias,
+        "response":    response,
+        "bias":        bias,
     }
 
 
@@ -498,7 +570,7 @@ def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> dict:
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    now_utc = datetime.now(timezone.utc)
+    now_utc   = datetime.now(timezone.utc)
     timestamp = now_utc.strftime("%Y-%m-%d %H:%M")
 
     if not is_fx_market_open(now_utc):
@@ -510,15 +582,23 @@ def main() -> int:
             print(f"ERROR: {var} not set.", file=sys.stderr)
             return 1
 
+    # --- Run all forecasts ---
     results = []
     for pair_key, pair_info in PAIRS.items():
         results.append(run_pair(pair_key, pair_info, timestamp))
 
-    print(f"\n[{timestamp}] Building and sending email...")
-    subject = f"Market Forecast | {timestamp} UTC"
-    html = build_email_html(timestamp, results)
+    # --- Build and save full HTML report to docs/ ---
+    print(f"\n[{timestamp}] Building GitHub Pages report...")
+    report_html = build_report_html(timestamp, results)
+    report_url  = save_report_and_cleanup(timestamp, report_html)
+    print(f"[{timestamp}] Report saved → {report_url}")
+
+    # --- Build and send slim email ---
+    print(f"[{timestamp}] Sending email...")
+    subject    = f"Market Forecast | {timestamp} UTC"
+    email_html = build_email_html(timestamp, results, report_url)
     try:
-        send_email(subject, html)
+        send_email(subject, email_html)
         print(f"[{timestamp}] Email sent ✓")
     except Exception as e:
         print(f"ERROR sending email: {e}", file=sys.stderr)

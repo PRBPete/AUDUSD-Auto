@@ -4,7 +4,7 @@ on:
   workflow_dispatch:             # Triggered externally by cron-job.org every hour
 
 permissions:
-  contents: read
+  contents: write                # Needed to push docs/ to GitHub Pages
   actions: write                 # Needed to delete old workflow runs
 
 concurrency:
@@ -14,7 +14,7 @@ concurrency:
 jobs:
   forecast:
     runs-on: ubuntu-latest
-    timeout-minutes: 10          # 10 instruments needs a little more headroom
+    timeout-minutes: 10
 
     steps:
       - name: Check out repository
@@ -38,6 +38,22 @@ jobs:
           GMAIL_APP_PASSWORD:  ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO:            ${{ secrets.EMAIL_TO }}
         run: python audusd_monitor.py
+
+      - name: Publish report to GitHub Pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --cached --quiet; then
+            echo "No report changes to commit (market likely closed)."
+          else
+            git commit -m "Hourly report $(date -u +'%Y-%m-%d %H:%M UTC')"
+            for i in 1 2 3; do
+              git pull --rebase origin ${{ github.ref_name }} && git push && break
+              echo "Push attempt $i failed, retrying..."
+              sleep 5
+            done
+          fi
 
       - name: Delete workflow runs older than 4 hours
         env:
