@@ -341,11 +341,13 @@ BIAS_COLOUR = {
 # ---------------------------------------------------------------------------
 
 def build_email_html(timestamp: str, results: list[dict]) -> str:
-    """Build a clean HTML email with a summary table + full forecasts."""
+    """Build a clean HTML email with a summary table + full forecasts + nav anchors."""
+    import re
 
-    # --- Summary table ---
+    # --- Summary table (instrument name links down to its section) ---
     rows = ""
     for r in results:
+        anchor = r["key"].lower()
         bias = r["bias"]
         colour = BIAS_COLOUR.get(bias, "#57606a")
         spot = r["market_data"].get("PAIR", {}).get("last", "n/a")
@@ -353,7 +355,8 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
         chg_str = f"{chg:+.2f}%" if isinstance(chg, float) else "n/a"
         rows += (
             f"<tr>"
-            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'><b>{r['name']}</b></td>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>"
+            f"<a href='#{anchor}' style='color:#0969da;text-decoration:none;font-weight:bold'>{r['name']}</a></td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{spot}</td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{chg_str}</td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8;"
@@ -375,9 +378,11 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
     </table>
     """
 
-    # --- Full forecasts ---
+    # --- Full forecasts (each section has an id anchor + back-to-top link) ---
     forecasts_html = ""
     for r in results:
+        anchor = r["key"].lower()
+
         # Convert markdown-ish text to basic HTML
         body = r["response"]
         body = body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -389,9 +394,8 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
                 for line in lines
             )
         # Bold
-        import re
         body = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", body)
-        # Tables (basic)
+        # Tables
         body = re.sub(r"\|(.+)\|", lambda m: "<tr>" + "".join(
             f"<td style='padding:4px 8px;border:1px solid #d0d7de'>{c.strip()}</td>"
             for c in m.group(1).split("|")
@@ -402,11 +406,14 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
         bias = r["bias"]
         colour = BIAS_COLOUR.get(bias, "#57606a")
         forecasts_html += f"""
-        <div style='margin-bottom:40px;border-left:4px solid {colour};padding-left:16px'>
+        <div id='{anchor}' style='margin-bottom:40px;border-left:4px solid {colour};padding-left:16px'>
           <h3 style='margin:0 0 8px;color:#24292f'>{r['name']}
             <span style='font-size:13px;font-weight:normal;color:{colour};margin-left:8px'>{bias}</span>
           </h3>
           <div style='font-size:14px;line-height:1.6;color:#24292f'>{body}</div>
+          <div style='margin-top:14px'>
+            <a href='#top' style='font-size:12px;color:#57606a;text-decoration:none'>&#8593; Back to top</a>
+          </div>
         </div>
         <hr style='border:none;border-top:1px solid #e1e4e8;margin:0 0 40px'>
         """
@@ -416,8 +423,10 @@ def build_email_html(timestamp: str, results: list[dict]) -> str:
     <html>
     <body style='font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
                  max-width:800px;margin:0 auto;padding:24px;color:#24292f'>
-      <h2 style='margin:0 0 4px'>Hourly Market Forecast</h2>
-      <p style='margin:0 0 24px;color:#57606a;font-size:14px'>{timestamp} UTC &nbsp;·&nbsp; 10 instruments</p>
+      <div id='top'>
+        <h2 style='margin:0 0 4px'>Hourly Market Forecast</h2>
+        <p style='margin:0 0 24px;color:#57606a;font-size:14px'>{timestamp} UTC &nbsp;·&nbsp; 10 instruments</p>
+      </div>
       {summary_table}
       {forecasts_html}
       <p style='font-size:12px;color:#57606a;margin-top:32px'>
