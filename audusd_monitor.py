@@ -225,15 +225,18 @@ Use prose unless a section explicitly calls for a table.
 One line each: current spot, 48h change, and where price sits relative to
 the key technical levels below.
 
-### Macro & Geopolitical Drivers  *(~67% weight)*
-3–5 sentences. Identify the dominant fundamental forces likely to move price
-over the next 36 hours: central bank tone, economic data releases due,
-geopolitical risk, commodity linkages, cross-asset flows, or risk-on/off
+### Macro & Geopolitical Drivers — **[RISE or DRIFT or FALL]**
+Replace [RISE or DRIFT or FALL] with your macro-only directional call (one word,
+bold). Then write 3–5 sentences identifying the dominant fundamental forces likely
+to move price over the next 36 hours: central bank tone, economic data releases
+due, geopolitical risk, commodity linkages, cross-asset flows, or risk-on/off
 shifts. Be specific — name the event, the expected impact, and the direction.
 
-### Technical Setup  *(~33% weight)*
-2–3 sentences. Describe the prevailing price structure, any pattern or momentum
-signal, and how technicals either confirm or conflict with the macro view.
+### Technical Setup — **[RISE or DRIFT or FALL]**
+Replace [RISE or DRIFT or FALL] with your technical-only directional call (one
+word, bold). Then write 2–3 sentences describing the prevailing price structure,
+any pattern or momentum signal, and how technicals either confirm or conflict
+with the macro view.
 
 ### Bias
 State the chosen direction on its own line in bold, exactly one of:
@@ -354,6 +357,14 @@ def markdown_to_html(text: str) -> str:
             for line in text.split("\n")
         )
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
+    # Colour-code bold RISE / DRIFT / FALL wherever they appear
+    _bias_colours = {"RISE": "#1a7f37", "DRIFT": "#9a6700", "FALL": "#cf222e"}
+    for word, colour in _bias_colours.items():
+        text = re.sub(
+            rf"<b>({word})</b>",
+            rf"<b><span style='color:{colour}'>\1</span></b>",
+            text, flags=re.IGNORECASE,
+        )
     text = re.sub(r"\|(.+)\|", lambda m: "<tr>" + "".join(
         f"<td style='padding:4px 8px;border:1px solid #d0d7de'>{c.strip()}</td>"
         for c in m.group(1).split("|")
