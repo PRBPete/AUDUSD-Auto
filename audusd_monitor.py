@@ -29,7 +29,7 @@ from anthropic import Anthropic
 # ---------------------------------------------------------------------------
 
 MODEL       = "claude-sonnet-4-6"
-MAX_TOKENS  = 2000
+MAX_TOKENS  = 3000
 PAGES_URL   = "https://prbpete.github.io/AUDUSD-Auto"
 
 REPO_ROOT = Path(__file__).resolve().parent
@@ -152,7 +152,7 @@ def fetch_news(news_symbols: list[str]) -> list[dict]:
     """Pull recent headlines for the given yfinance symbols."""
     headlines: list[dict] = []
     seen_titles: set[str] = set()
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
 
     for symbol in news_symbols:
         try:
@@ -193,42 +193,58 @@ def fetch_news(news_symbols: list[str]) -> list[dict]:
             })
 
     headlines.sort(key=lambda h: h["time_utc"], reverse=True)
-    return headlines[:12]
+    return headlines[:20]
 
 
 # ---------------------------------------------------------------------------
 # Prompt construction
 # ---------------------------------------------------------------------------
 
-PROMPT_TEMPLATE = """You are a professional market strategist producing a condensed
-hourly delta-update on {pair_name} for active traders. This is NOT the full COSTAR
-report — it is a tight tactical refresh.
+PROMPT_TEMPLATE = """You are a senior market strategist producing a 36-hour forward
+outlook on {pair_name} for professional traders.
 
-## Current market data (live, as of {timestamp_utc} UTC)
+Your analysis must weight inputs as follows:
+  - 2/3 (≈67%): macro fundamentals, geopolitical developments, central bank
+    posture, risk sentiment, and news flow from the last 48 hours.
+  - 1/3 (≈33%): technical analysis — price structure, key levels, momentum.
+
+## Current market data (as of {timestamp_utc} UTC)
 
 {market_data_block}
 
-## News headlines (last 24h)
+## News & macro headlines (last 48h)
 
 {news_block}
 
 ## Required output format
 
-Produce a concise update with EXACTLY these sections. Use prose, not bullets,
-unless the section is explicitly a table.
+Produce a structured report with EXACTLY these sections, in order.
+Use prose unless a section explicitly calls for a table.
 
 ### Snapshot
-- Spot, 24h change, distance from key levels (one line each).
+One line each: current spot, 48h change, and where price sits relative to
+the key technical levels below.
 
-### What changed in the last hour
-2–3 sentences. Focus on price action and the most recent driver. If nothing
-meaningfully changed, say so clearly.
+### Macro & Geopolitical Drivers  *(~67% weight)*
+3–5 sentences. Identify the dominant fundamental forces likely to move price
+over the next 36 hours: central bank tone, economic data releases due,
+geopolitical risk, commodity linkages, cross-asset flows, or risk-on/off
+shifts. Be specific — name the event, the expected impact, and the direction.
+
+### Technical Setup  *(~33% weight)*
+2–3 sentences. Describe the prevailing price structure, any pattern or momentum
+signal, and how technicals either confirm or conflict with the macro view.
 
 ### Bias
 State the chosen direction on its own line in bold, exactly one of:
 **RISE** | **DRIFT** | **FALL**
-Then include scenario probabilities in a small table (Rise / Drift / Fall, summing
-to 100%).
+Then give a 36-hour scenario probability table:
+
+| Scenario | Probability |
+|---|---|
+| Rise | ...% |
+| Drift | ...% |
+| Fall | ...% |
 
 ### Levels
 | Type | Level |
@@ -240,16 +256,19 @@ to 100%).
 | S2 | ... |
 
 ### Triggers
-One sentence on what would invalidate the bias (e.g. "break above 0.7184
-neutralises bearish view").
+One sentence: the specific event or price level that would invalidate the bias
+(e.g. "a break above 1.0950 or a hawkish Fed speaker tonight flips bias to RISE").
 
 ### Confidence
-Score 0–100 with a one-line justification.
+Score 0–100. One sentence justifying the score, noting any data gaps,
+conflicting signals, or scheduled risk events that increase uncertainty.
 
 ## Rules
-- Evidence-driven, no hype, no retail-trader language.
-- If data is missing or stale (e.g. weekend), flag it and reduce confidence.
-- Keep total length under ~350 words.
+- Lead with macro and geopolitical factors; technical levels support, not lead.
+- Be specific about upcoming scheduled events (data releases, speeches, votes).
+- Evidence-driven. No hype, no retail-trader language.
+- If data is missing or stale, flag it and reduce confidence accordingly.
+- Keep total length under ~500 words.
 - Do not invent prices not present in the data block.
 """
 
@@ -269,7 +288,7 @@ def build_prompt(pair_name: str, market_data: dict, news: list[dict], timestamp_
     market_block = "\n".join(md_lines)
     news_block = (
         "\n".join(f"- [{h['time_utc']} UTC | {h['publisher']}] {h['title']}" for h in news)
-        if news else "(no recent headlines retrieved)"
+        if news else "(no headlines retrieved in the last 48 hours)"
     )
     return PROMPT_TEMPLATE.format(
         pair_name=pair_name,
