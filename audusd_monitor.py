@@ -16,6 +16,7 @@ import re
 import smtplib
 import sys
 import traceback
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -121,9 +122,9 @@ def fetch_market_data(pair_ticker: str) -> dict:
     for name, symbol in tickers.items():
         try:
             ticker = yf.Ticker(symbol)
-            hist = ticker.history(period="2d", interval="1h")
+            hist = ticker.history(period="2d", interval="1h", timeout=10)
             if hist.empty:
-                hist = ticker.history(period="5d", interval="1d")
+                hist = ticker.history(period="5d", interval="1d", timeout=10)
             if hist.empty:
                 data[name] = {"error": "no data"}
                 continue
@@ -612,10 +613,34 @@ def main() -> int:
             print(f"ERROR: {var} not set.", file=sys.stderr)
             return 1
 
-    # --- Run all forecasts ---
-    results = []
-    for pair_key, pair_info in PAIRS.items():
-        results.append(run_pair(pair_key, pair_info, timestamp))
+    # --- Run all forecasts in parallel (5 workers) ---
+    print(f"[{timestamp}] Running {len(PAIRS)} instruments in parallel...")
+    results_dict: dict = {}
+
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {
+            executor.submit(run_pair, pair_key, pair_info, timestamp): pair_key
+            for pair_key, pair_info in PAIRS.items()
+        }
+        for future in as_completed(futures):
+            pair_key = futures[future]
+            try:
+                results_dict[pair_key] = future.result(timeout=180)
+            except Exception as e:
+                print(f"[{timestamp}] ERROR: {pair_key} failed — {e}", file=sys.stderr)
+                traceback.print_exc()
+                # Store a placeholder so one failure doesn't kill the whole report
+                results_dict[pair_key] = {
+                    "key":         pair_key,
+                    "name":        PAIRS[pair_key]["name"],
+                    "market_data": {},
+                    "response":    f"_Run failed: {type(e).__name__}: {e}_",
+                    "bias":        "—",
+                }
+
+    # Restore original PAIRS ordering
+    results = [results_dict[k] for k in PAIRS if k in results_dict]
+    print(f"[{timestamp}] All instruments complete ({len(results)}/{len(PAIRS)} succeeded).")
 
     # --- Build and save full HTML report to docs/ ---
     print(f"\n[{timestamp}] Building GitHub Pages report...")
