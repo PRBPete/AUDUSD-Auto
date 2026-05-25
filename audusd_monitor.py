@@ -264,15 +264,31 @@ One sentence: the specific event or price level that would invalidate the bias
 (e.g. "a break above 1.0950 or a hawkish Fed speaker tonight flips bias to RISE").
 
 ### Confidence
-Score 0–100. One sentence justifying the score, noting any data gaps,
-conflicting signals, or scheduled risk events that increase uncertainty.
+Write your score on its own line in this exact format: **CONFIDENCE: [0-100]**
+Then one sentence justifying the score (data gaps, conflicting signals, upcoming
+risk events that increase uncertainty).
+
+### Trade Setup
+Include this section ONLY if bias is RISE or FALL AND confidence is 58 or above.
+If bias is DRIFT, or confidence is 57 or below, omit this section entirely.
+
+When included, output this table using actual prices from the data block:
+
+| | Price |
+|---|---|
+| Entry | [spot price, or a nearby level if a breakout entry is more appropriate] |
+| Stop Loss | [level beyond the nearest invalidation point — S1 for RISE, R1 for FALL — with a small buffer] |
+| Take Profit | [first meaningful resistance for RISE, first meaningful support for FALL] |
+| Risk : Reward | [calculated ratio, e.g. 1 : 2.1] |
+
+Then one sentence explaining the entry rationale.
 
 ## Rules
 - Lead with macro and geopolitical factors; technical levels support, not lead.
 - Be specific about upcoming scheduled events (data releases, speeches, votes).
 - Evidence-driven. No hype, no retail-trader language.
 - If data is missing or stale, flag it and reduce confidence accordingly.
-- Keep total length under ~500 words.
+- Keep total length under ~550 words.
 - Do not invent prices not present in the data block.
 """
 
@@ -345,6 +361,27 @@ def extract_bias(response: str) -> str:
     return "—"
 
 
+def extract_confidence(response: str) -> int:
+    """
+    Parse the confidence score from Claude's **CONFIDENCE: N** line.
+    Falls back to any number in the ### Confidence section.
+    Returns 0 if nothing found (treated as low confidence).
+    """
+    # Primary: **CONFIDENCE: 72**
+    match = re.search(r"\*\*CONFIDENCE:\s*(\d{1,3})\*\*", response, re.IGNORECASE)
+    if match:
+        return min(100, int(match.group(1)))
+
+    # Fallback: first number in the ### Confidence section
+    section = re.search(r"###\s*Confidence(.*?)(?=###|\Z)", response, re.IGNORECASE | re.DOTALL)
+    if section:
+        num = re.search(r"\b(\d{1,3})\b", section.group(1))
+        if num:
+            return min(100, int(num.group(1)))
+
+    return 0
+
+
 # ---------------------------------------------------------------------------
 # Shared markdown → HTML converter
 # ---------------------------------------------------------------------------
@@ -382,6 +419,8 @@ def markdown_to_html(text: str) -> str:
 # Summary table (shared by both the email and the pages report)
 # ---------------------------------------------------------------------------
 
+CONFIDENCE_THRESHOLD = 58  # below this → "Not enough confidence", no trade setup
+
 def build_summary_table(results: list[dict], link_prefix: str = "#") -> str:
     """
     link_prefix="#"           → anchors within the same page (GitHub Pages report)
@@ -389,13 +428,24 @@ def build_summary_table(results: list[dict], link_prefix: str = "#") -> str:
     """
     rows = ""
     for r in results:
-        anchor = r["key"].lower()
-        bias   = r["bias"]
-        colour = BIAS_COLOUR.get(bias, "#57606a")
-        spot   = r["market_data"].get("PAIR", {}).get("last", "n/a")
-        chg    = r["market_data"].get("PAIR", {}).get("change_pct", 0)
-        chg_str = f"{chg:+.2f}%" if isinstance(chg, float) else "n/a"
-        href   = f"{link_prefix}{anchor}"
+        anchor     = r["key"].lower()
+        bias       = r["bias"]
+        confidence = r.get("confidence", 0)
+        colour     = BIAS_COLOUR.get(bias, "#57606a")
+        spot       = r["market_data"].get("PAIR", {}).get("last", "n/a")
+        chg        = r["market_data"].get("PAIR", {}).get("change_pct", 0)
+        chg_str    = f"{chg:+.2f}%" if isinstance(chg, float) else "n/a"
+        href       = f"{link_prefix}{anchor}"
+
+        has_trade  = confidence >= CONFIDENCE_THRESHOLD and bias in ("RISE", "FALL")
+        trade_cell = (
+            f"<span style='color:#1a7f37;font-weight:bold'>&#10003; Trade</span>"
+            if has_trade else
+            "<span style='color:#57606a'>—</span>"
+        )
+        conf_colour = "#1a7f37" if confidence >= CONFIDENCE_THRESHOLD else "#cf222e"
+        conf_cell   = f"<span style='color:{conf_colour};font-weight:bold'>{confidence}</span>"
+
         rows += (
             f"<tr>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>"
@@ -404,6 +454,8 @@ def build_summary_table(results: list[dict], link_prefix: str = "#") -> str:
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8'>{chg_str}</td>"
             f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8;"
             f"color:{colour};font-weight:bold'>{bias}</td>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8;text-align:center'>{conf_cell}</td>"
+            f"<td style='padding:6px 12px;border-bottom:1px solid #e1e4e8;text-align:center'>{trade_cell}</td>"
             f"</tr>"
         )
     return f"""
@@ -414,6 +466,8 @@ def build_summary_table(results: list[dict], link_prefix: str = "#") -> str:
           <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>Spot</th>
           <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>24h Chg</th>
           <th style='padding:8px 12px;text-align:left;border-bottom:2px solid #d0d7de'>Bias</th>
+          <th style='padding:8px 12px;text-align:center;border-bottom:2px solid #d0d7de'>Confidence</th>
+          <th style='padding:8px 12px;text-align:center;border-bottom:2px solid #d0d7de'>Trade</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
@@ -430,15 +484,28 @@ def build_report_html(timestamp: str, results: list[dict]) -> str:
 
     forecasts = ""
     for r in results:
-        anchor = r["key"].lower()
-        bias   = r["bias"]
-        colour = BIAS_COLOUR.get(bias, "#57606a")
-        body   = markdown_to_html(r["response"])
+        anchor     = r["key"].lower()
+        bias       = r["bias"]
+        confidence = r.get("confidence", 0)
+        colour     = BIAS_COLOUR.get(bias, "#57606a")
+
+        if confidence < CONFIDENCE_THRESHOLD:
+            # Short notice — no detailed report
+            body = (
+                f"<p style='color:#57606a;font-style:italic;margin:0'>"
+                f"Not enough confidence to produce a forecast "
+                f"(score: {confidence}/100 — minimum required: {CONFIDENCE_THRESHOLD})."
+                f"</p>"
+            )
+        else:
+            body = markdown_to_html(r["response"])
+
         forecasts += f"""
         <section id='{anchor}' style='margin-bottom:40px;border-left:4px solid {colour};padding-left:16px'>
           <h3 style='margin:0 0 8px;color:#24292f'>
             {r['name']}
             <span style='font-size:13px;font-weight:normal;color:{colour};margin-left:8px'>{bias}</span>
+            <span style='font-size:12px;font-weight:normal;color:#57606a;margin-left:8px'>confidence: {confidence}</span>
           </h3>
           <div style='font-size:14px;line-height:1.7;color:#24292f'>{body}</div>
           <p style='margin:14px 0 0'>
@@ -584,8 +651,9 @@ def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> dict:
         traceback.print_exc()
         response = f"API call failed: {type(e).__name__}: {e}"
 
-    bias = extract_bias(response)
-    print(f"[{timestamp}] {pair_name}: bias={bias} ✓")
+    bias       = extract_bias(response)
+    confidence = extract_confidence(response)
+    print(f"[{timestamp}] {pair_name}: bias={bias}  confidence={confidence} ✓")
 
     return {
         "key":         pair_key,
@@ -593,6 +661,7 @@ def run_pair(pair_key: str, pair_info: dict, timestamp: str) -> dict:
         "market_data": market_data,
         "response":    response,
         "bias":        bias,
+        "confidence":  confidence,
     }
 
 
