@@ -260,8 +260,8 @@ Then one sentence justifying the score (data gaps, conflicting signals, upcoming
 risk events that increase uncertainty).
 
 ### Trade Setup
-Include this section ONLY if bias is RISE or FALL AND confidence is 58 or above.
-If bias is DRIFT, or confidence is 57 or below, omit this section entirely.
+Include this section ONLY if bias is RISE or FALL AND confidence is 60 or above.
+If bias is DRIFT, or confidence is 59 or below, omit this section entirely.
 
 When included, silently identify the key support and resistance levels from the
 price data (recent swing highs/lows, round numbers, 24h range extremes) — do NOT
@@ -417,7 +417,7 @@ def markdown_to_html(text: str) -> str:
 # Summary table (shared by both the email and the pages report)
 # ---------------------------------------------------------------------------
 
-CONFIDENCE_THRESHOLD = 58  # below this → "Not enough confidence", no trade setup
+CONFIDENCE_THRESHOLD = 60  # below this → "Not enough confidence", no trade setup
 
 def build_summary_table(results: list[dict], link_prefix: str = "#") -> str:
     """
