@@ -261,18 +261,23 @@ risk events that increase uncertainty).
 Include this section ONLY if bias is RISE or FALL AND confidence is 58 or above.
 If bias is DRIFT, or confidence is 57 or below, omit this section entirely.
 
-When included, derive entry, stop loss and take profit from the 24h high/low
-range and spot price in the data block. Use a logical buffer beyond the key
-invalidation level for the stop, and the opposite range boundary as the target.
+When included, silently identify the key support and resistance levels from the
+price data (recent swing highs/lows, round numbers, 24h range extremes) — do NOT
+output a levels table. Use those levels internally to set:
+- Entry: current spot or a clean break beyond the nearest S/R level
+- Stop Loss: just beyond the nearest invalidating S/R level (support for RISE,
+  resistance for FALL), plus a small instrument-appropriate buffer
+- Take Profit: the next significant S/R level in the direction of the bias,
+  adjusted for realistic 36h momentum
 
 | | Price |
 |---|---|
-| Entry | [current spot, or just beyond a key intraday level if breakout entry is cleaner] |
-| Stop Loss | [beyond the 24h low for RISE, beyond the 24h high for FALL, plus a small buffer] |
-| Take Profit | [opposite end of the 24h range, adjusted for realistic 36h momentum] |
+| Entry | [derived from spot and nearest S/R] |
+| Stop Loss | [just beyond invalidating S/R level + buffer] |
+| Take Profit | [next significant S/R in bias direction] |
 | Risk : Reward | [calculated ratio, e.g. 1 : 2.1] |
 
-Then one sentence explaining the entry rationale.
+Then one sentence explaining the entry and level rationale.
 
 ## Rules
 - Lead with macro and geopolitical factors; technical levels support, not lead.
