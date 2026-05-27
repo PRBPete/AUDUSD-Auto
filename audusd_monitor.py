@@ -205,9 +205,9 @@ PROMPT_TEMPLATE = """You are a senior market strategist producing a 36-hour forw
 outlook on {pair_name} for professional traders.
 
 Your analysis must weight inputs as follows:
-  - 2/3 (≈67%): macro fundamentals, geopolitical developments, central bank
+  - 2/3 (≈66%): macro fundamentals, geopolitical developments, central bank
     posture, risk sentiment, and news flow from the last 48 hours.
-  - 1/3 (≈33%): technical analysis — price structure, key levels, momentum.
+  - 1/3 (≈34%): technical analysis — price structure, key levels, momentum.
 
 ## Current market data (as of {timestamp_utc} UTC)
 
@@ -226,16 +226,14 @@ Use prose unless a section explicitly calls for a table.
 One line each: current spot, 48h change, and where price sits relative to
 the key technical levels below.
 
-### Macro & Geopolitical Drivers — **[RISE or DRIFT or FALL]**
-Replace [RISE or DRIFT or FALL] with your macro-only directional call (one word,
-bold). Then write 3–5 sentences identifying the dominant fundamental forces likely
+### Macro & Geopolitical Drivers
+Write 3–5 sentences identifying the dominant fundamental forces likely
 to move price over the next 36 hours: central bank tone, economic data releases
 due, geopolitical risk, commodity linkages, cross-asset flows, or risk-on/off
 shifts. Be specific — name the event, the expected impact, and the direction.
 
-### Technical Setup — **[RISE or DRIFT or FALL]**
-Replace [RISE or DRIFT or FALL] with your technical-only directional call (one
-word, bold). Then write 2–3 sentences describing the prevailing price structure,
+### Technical Setup
+Write 2–3 sentences describing the prevailing price structure,
 any pattern or momentum signal, and how technicals either confirm or conflict
 with the macro view.
 
