@@ -59,7 +59,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          CUTOFF=$(date -u -d '4 hours ago' '+%Y-%m-%dT%H:%M:%SZ')
+          CUTOFF=$(date -u -d '72 hours ago' '+%Y-%m-%dT%H:%M:%SZ')
           echo "Deleting runs created before $CUTOFF"
           gh api "repos/${{ github.repository }}/actions/runs" --paginate \
             --jq ".workflow_runs[] | select(.created_at < \"$CUTOFF\") | .id" \

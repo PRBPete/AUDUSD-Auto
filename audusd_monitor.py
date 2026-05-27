@@ -250,15 +250,6 @@ Then give a 36-hour scenario probability table:
 | Drift | ...% |
 | Fall | ...% |
 
-### Levels
-| Type | Level |
-|---|---|
-| R2 | ... |
-| R1 | ... |
-| Spot | ... |
-| S1 | ... |
-| S2 | ... |
-
 ### Triggers
 One sentence: the specific event or price level that would invalidate the bias
 (e.g. "a break above 1.0950 or a hawkish Fed speaker tonight flips bias to RISE").
@@ -272,13 +263,15 @@ risk events that increase uncertainty).
 Include this section ONLY if bias is RISE or FALL AND confidence is 58 or above.
 If bias is DRIFT, or confidence is 57 or below, omit this section entirely.
 
-When included, output this table using actual prices from the data block:
+When included, derive entry, stop loss and take profit from the 24h high/low
+range and spot price in the data block. Use a logical buffer beyond the key
+invalidation level for the stop, and the opposite range boundary as the target.
 
 | | Price |
 |---|---|
-| Entry | [spot price, or a nearby level if a breakout entry is more appropriate] |
-| Stop Loss | [level beyond the nearest invalidation point — S1 for RISE, R1 for FALL — with a small buffer] |
-| Take Profit | [first meaningful resistance for RISE, first meaningful support for FALL] |
+| Entry | [current spot, or just beyond a key intraday level if breakout entry is cleaner] |
+| Stop Loss | [beyond the 24h low for RISE, beyond the 24h high for FALL, plus a small buffer] |
+| Take Profit | [opposite end of the 24h range, adjusted for realistic 36h momentum] |
 | Risk : Reward | [calculated ratio, e.g. 1 : 2.1] |
 
 Then one sentence explaining the entry rationale.
@@ -592,8 +585,8 @@ def save_report_and_cleanup(timestamp: str, html: str) -> str:
     # index.html always points to the latest report
     (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
 
-    # Delete timestamped reports older than 4 hours
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=4)
+    # Delete timestamped reports older than 72 hours
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=72)
     for f in DOCS_DIR.glob("report_*.html"):
         try:
             dt_str = f.stem[len("report_"):]          # e.g. 2026-05-19_14-00
@@ -705,6 +698,7 @@ def main() -> int:
                     "market_data": {},
                     "response":    f"_Run failed: {type(e).__name__}: {e}_",
                     "bias":        "—",
+                    "confidence":  0,
                 }
 
     # Restore original PAIRS ordering
