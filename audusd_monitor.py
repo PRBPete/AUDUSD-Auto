@@ -238,7 +238,9 @@ any pattern or momentum signal, and how technicals either confirm or conflict
 with the macro view.
 
 ### Bias
-State the chosen direction on its own line in bold, exactly one of:
+Synthesise the two sections above using the stated weighting (66% macro,
+34% technical) to produce a single combined directional call. State it on
+its own line in bold, exactly one of:
 **RISE** | **DRIFT** | **FALL**
 Then give a 36-hour scenario probability table:
 
